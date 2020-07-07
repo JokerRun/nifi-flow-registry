@@ -10756,26 +10756,6 @@
         }, {
           "comments" : "",
           "componentType" : "PROCESS_GROUP",
-          "connections" : [ ],
-          "controllerServices" : [ ],
-          "funnels" : [ ],
-          "groupIdentifier" : "6d7c3322-59a1-30a6-9092-1eb44e98b75e",
-          "identifier" : "3cbc61ff-489e-3b2c-b2a0-d8053b82f1b7",
-          "inputPorts" : [ ],
-          "labels" : [ ],
-          "name" : "cache test",
-          "outputPorts" : [ ],
-          "position" : {
-            "x" : 2024.0,
-            "y" : -160.0
-          },
-          "processGroups" : [ ],
-          "processors" : [ ],
-          "remoteProcessGroups" : [ ],
-          "variables" : { }
-        }, {
-          "comments" : "",
-          "componentType" : "PROCESS_GROUP",
           "connections" : [ {
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
