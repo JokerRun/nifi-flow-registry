@@ -105,12 +105,13 @@
             "dbcp-min-evictable-idle-time" : "30 mins",
             "Max Total Connections" : "8",
             "dbcp-max-conn-lifetime" : "-1",
-            "Database Connection URL" : "jdbc:mysql://localhost:3306/ddiprod?useUnicode=true&characterEncoding=utf8",
+            "Database Connection URL" : "#{source.db.jdbc.url}",
             "dbcp-time-between-eviction-runs" : "-1",
-            "Database User" : "root",
+            "Database User" : "#{source.db.user}",
             "dbcp-soft-min-evictable-idle-time" : "-1",
-            "database-driver-locations" : "/Users/jerryrun/gits/mysql-connector-java-8.0.15.jar",
-            "dbcp-max-idle-conns" : "8"
+            "database-driver-locations" : "#{driver.jar}",
+            "dbcp-max-idle-conns" : "8",
+            "Password" : "#{source.db.password}"
           },
           "propertyDescriptors" : {
             "dbcp-min-idle-conns" : {
@@ -21029,7 +21030,26 @@
       "parameterContexts" : {
         "ddi global params" : {
           "name" : "ddi global params",
-          "parameters" : [ ]
+          "parameters" : [ {
+            "description" : "",
+            "name" : "source.db.user",
+            "sensitive" : false,
+            "value" : "root"
+          }, {
+            "description" : "",
+            "name" : "source.db.jdbc.url",
+            "sensitive" : false,
+            "value" : "jdbc:mysql://localhost:3306/ddiprod?useUnicode=true&characterEncoding=utf8"
+          }, {
+            "description" : "",
+            "name" : "source.db.password",
+            "sensitive" : true
+          }, {
+            "description" : "",
+            "name" : "driver.jar",
+            "sensitive" : false,
+            "value" : "/Users/jerryrun/gits/mysql-connector-java-8.0.15.jar"
+          } ]
         }
       }
     }
