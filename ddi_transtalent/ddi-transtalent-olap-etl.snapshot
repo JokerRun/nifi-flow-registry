@@ -1199,8 +1199,8 @@
               "identifier" : "b1917866-128d-3205-a972-b200f647172b",
               "name" : "to load",
               "position" : {
-                "x" : 1320.0,
-                "y" : -960.0
+                "x" : 1272.0,
+                "y" : -712.0
               },
               "type" : "INPUT_PORT"
             } ],
@@ -8182,7 +8182,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "2a4dcf0f-9a81-317a-83a2-11ddf07a9d58",
-                "name" : "Load olap.fact_user_course_lesson_question",
+                "name" : "fact_user_course_lesson_question",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8525,7 +8525,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "2a4dcf0f-9a81-317a-83a2-11ddf07a9d58",
-                "name" : "Load olap.fact_user_course_lesson_question",
+                "name" : "fact_user_course_lesson_question",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -8542,7 +8542,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "2a4dcf0f-9a81-317a-83a2-11ddf07a9d58",
-                "name" : "Load olap.fact_user_course_lesson_question",
+                "name" : "fact_user_course_lesson_question",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8734,7 +8734,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "5768e7c7-0679-3c8f-9e00-3f732342bb9a",
-                "name" : "Load olap.fact_user_course_lesson_ka",
+                "name" : "fact_user_course_lesson_ka",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8777,7 +8777,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "5768e7c7-0679-3c8f-9e00-3f732342bb9a",
-                "name" : "Load olap.fact_user_course_lesson_ka",
+                "name" : "fact_user_course_lesson_ka",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -8794,7 +8794,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "2a4dcf0f-9a81-317a-83a2-11ddf07a9d58",
-                "name" : "Load olap.fact_user_course_lesson_question",
+                "name" : "fact_user_course_lesson_question",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -9244,7 +9244,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "5768e7c7-0679-3c8f-9e00-3f732342bb9a",
-                "name" : "Load olap.fact_user_course_lesson_ka",
+                "name" : "fact_user_course_lesson_ka",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -9317,7 +9317,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "2a4dcf0f-9a81-317a-83a2-11ddf07a9d58",
-                "name" : "Load olap.fact_user_course_lesson_question",
+                "name" : "fact_user_course_lesson_question",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -9539,7 +9539,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "5768e7c7-0679-3c8f-9e00-3f732342bb9a",
-                "name" : "Load olap.fact_user_course_lesson_ka",
+                "name" : "fact_user_course_lesson_ka",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -9556,7 +9556,7 @@
                 "comments" : "",
                 "groupId" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
                 "id" : "5768e7c7-0679-3c8f-9e00-3f732342bb9a",
-                "name" : "Load olap.fact_user_course_lesson_ka",
+                "name" : "fact_user_course_lesson_ka",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -9980,7 +9980,7 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "5768e7c7-0679-3c8f-9e00-3f732342bb9a",
-              "name" : "Load olap.fact_user_course_lesson_ka",
+              "name" : "fact_user_course_lesson_ka",
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : 2128.0,
@@ -9988,7 +9988,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_course_lesson_ka\nselect l.id                                   as user_course_lesson_id,\n       ylk.lesson_ka_id,\n       l.user_id,\n       l.lesson_meta_id                       as lesson_id,\n       l.course_id                            as user_course_id,\n       ylk.lesson_ka_name,\n       ylk.type,\n       group_concat(lq.id)                    as lessons_questions_ids,\n       count(lq.id)                           as total_cnt,\n       group_concat(lqu.selector = lq.answer) as correct_answer,\n       sum(lqu.selector = lq.answer)          as correct_cnt\nfrom lessons l\n         join lessons_questions lq on l.lesson_meta_id = lq.lesson_id\n         join lesson_questions_user lqu\n              on lq.id = lqu.lessons_questions_id\n                  and l.user_id = lqu.user_id\n         join (select id,\n                      lesson_question_id,\n                      lesson_ka_meta_id as lesson_ka_meta_ids,\n                      learning_path_meta_id,\n                      substring_index(substring_index(y.lesson_ka_meta_id, ',', b.help_topic_id), ',',\n                                      - 1) lesson_ka_meta_id\n               from yy_lesson_ka_map y\n                        JOIN mysql.help_topic b\n                             ON b.help_topic_id <=\n                                    -- 分割符号个数+1 (即元素个数)\n                                (length(y.lesson_ka_meta_id) - length(REPLACE(y.lesson_ka_meta_id, ',', '')) + 1)\n                                 and help_topic_id != 0\n) ylkm on ylkm.lesson_question_id = lq.id\n         join yy_lesson_ka_meta ylk on ylkm.lesson_ka_meta_id = ylk.lesson_ka_id\nwhere 1 = 1\n  and l.status = 2\n  and lq.id is not null -- 剔除没有问题组的\n  and lq.answer <> ''   -- 剔除自由答案\n  and (\n        l.start_time between ${date_start} and ${date_end}\n        or l.end_time between ${date_start} and ${date_end}\n        or lqu.created_at between ${date_start} and ${date_end}\n    )\n\n\ngroup by l.id, ylk.lesson_ka_id\n;",
+                "putsql-sql-statement" : "replace into fact_user_course_lesson_ka\nselect l.id                                   as user_course_lesson_id,\n       ylk.lesson_ka_id,\n       l.user_id,\n       l.lesson_meta_id                       as lesson_id,\n       l.course_id                            as user_course_id,\n       ylk.lesson_ka_name,\n       ylk.type,\n       group_concat(lq.id)                    as lessons_questions_ids,\n       count(lq.id)                           as total_cnt,\n       group_concat(lqu.selector = lq.answer) as correct_answer,\n       sum(lqu.selector = lq.answer)          as correct_cnt\nfrom lessons l\n         join lessons_questions lq on l.lesson_meta_id = lq.lesson_id\n         join lesson_questions_user lqu\n              on lq.id = lqu.lessons_questions_id\n                  and l.user_id = lqu.user_id\n         join (select id,\n                      lesson_question_id,\n                      lesson_ka_meta_id as lesson_ka_meta_ids,\n                      learning_path_meta_id,\n                      substring_index(substring_index(y.lesson_ka_meta_id, ',', b.help_topic_id), ',',\n                                      - 1) lesson_ka_meta_id\n               from yy_lesson_ka_map y\n                        JOIN mysql.help_topic b\n                             ON b.help_topic_id <=\n                                    -- 分割符号个数+1 (即元素个数)\n                                (length(y.lesson_ka_meta_id) - length(REPLACE(y.lesson_ka_meta_id, ',', '')) + 1)\n                                 and help_topic_id != 0\n) ylkm on ylkm.lesson_question_id = lq.id\n         join yy_lesson_ka_meta ylk on ylkm.lesson_ka_meta_id = ylk.lesson_ka_id\nwhere 1 = 1\n  and l.status = 2\n  and lq.id is not null -- 剔除没有问题组的\n  and lq.answer <> ''   -- 剔除自由答案\n#   and (\n#         l.start_time between ${date_start} and ${date_end}\n#         or l.end_time between ${date_start} and ${date_end}\n#         or lqu.created_at between ${date_start} and ${date_end}\n#     )\ngroup by l.id, ylk.lesson_ka_id\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -10332,7 +10332,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_practice\nselect p.id,\n       p.user_id,\n       lpm.id             as learning_path_id,\n       p.practice_meta_id as practice_id,\n       p.learning_path_id as user_learning_path_id,\n       p.progress,\n       p.status,\n       p.next_exercise_start_time,\n       p.start_time,\n       p.end_time,\n       ycem.exercise_num  as total_exercise_count,\n       sum(e.status = 2)  as finish_exercise_count\nfrom practices p\n         left join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join exercises e on p.id = e.practice_id\nwhere 1 = 1\n  and (p.start_time between ${date_start} and ${date_end}\n    or p.end_time between ${date_start} and ${date_end}\n    or e.start_time between ${date_start} and ${date_end}\n    or e.end_time between ${date_start} and ${date_end}\n    )\ngroup by p.id\n;\n",
+                "putsql-sql-statement" : "replace into fact_user_practice\nselect p.id,\n       p.user_id,\n       lpm.id             as learning_path_id,\n       p.practice_meta_id as practice_id,\n       p.learning_path_id as user_learning_path_id,\n       p.progress,\n       p.status,\n       p.next_exercise_start_time,\n       p.start_time,\n       p.end_time,\n       ycem.exercise_num  as total_exercise_count,\n       sum(e.status = 2)  as finish_exercise_count\nfrom practices p\n         left join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join exercises e on p.id = e.practice_id\nwhere 1 = 1\n#   and (p.start_time between ${date_start} and ${date_end}\n#     or p.end_time between ${date_start} and ${date_end}\n#     or e.start_time between ${date_start} and ${date_end}\n#     or e.end_time between ${date_start} and ${date_end}\n#     )\ngroup by p.id\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -10590,7 +10590,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_guide\nselect lp.id                    as user_learning_path_id,\n       lp.user_id,\n       lp.learning_path_meta_id as learning_path_id,\n       guide_shown\nfrom learning_paths lp\nwhere 1 = 1\n  and (lp.start_time between ${date_start} and ${date_end}\n    or lp.end_time between ${date_start} and ${date_end}\n    )\n;",
+                "putsql-sql-statement" : "replace into fact_user_guide\nselect lp.id                    as user_learning_path_id,\n       lp.user_id,\n       lp.learning_path_meta_id as learning_path_id,\n       guide_shown\nfrom learning_paths lp\nwhere 1 = 1\n#   and (lp.start_time between ${date_start} and ${date_end}\n#     or lp.end_time between ${date_start} and ${date_end}\n#     )\n;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -10762,7 +10762,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_learning_path\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id    as learning_path_id,\n       lp.learning_tour_id         as user_learning_tour_id,\n       lp.start_time,\n       lp.end_time,\n       lp.progress,\n       lp.status,\n       ycem.total_time,\n       lp.guide_shown,\n       preTest.point is not null   as pretest_done,\n       (ifnull(c.status, 0) != 0)  as course_done,\n       (ifnull(p.status, 0) != 0)  as practice_done,\n       postTest.point is not null  as posttest_done,\n       lp.guide_shown + (preTest.point is not null) + (postTest.point is not null) + (ifnull(p.status, 0) != 0) +\n       (ifnull(c.status, 0) != 0)  as finished_module,\n       (ycem.guide_num != 0) + (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) + (ycem.exercise_num != 0) +\n       (ycem.post_survey_num != 0) as total_elements_num\nfrom learning_paths lp\n         left join yy_course_elements_metas ycem\n                   on lp.learning_path_meta_id = ycem.learning_path_meta_id\n         left join yy_user_exam preTest\n                   on lp.user_id = preTest.user_id and lp.learning_path_meta_id = preTest.learning_path_meta_id and\n                      preTest.type = 1\n         left join yy_user_exam postTest\n                   on lp.user_id = postTest.user_id and lp.learning_path_meta_id = postTest.learning_path_meta_id and\n                      postTest.type = 2\n         left join courses c on lp.id = c.learning_path_id\n         left join practices p on lp.id = p.learning_path_id\nwhere 1 = 1\n  and (lp.start_time between ${date_start} and ${date_end}\n    or lp.end_time between ${date_start} and ${date_end}\n    or preTest.createDate between ${date_start} and ${date_end}\n    or preTest.updateDate between ${date_start} and ${date_end}\n    or c.start_time between ${date_start} and ${date_end}\n    or c.end_time between ${date_start} and ${date_end}\n    or p.start_time between ${date_start} and ${date_end}\n    or p.end_time between ${date_start} and ${date_end}\n    or postTest.createDate between ${date_start} and ${date_end}\n    or postTest.updateDate between ${date_start} and ${date_end}\n    )\n;",
+                "putsql-sql-statement" : "replace into fact_user_learning_path\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id    as learning_path_id,\n       lp.learning_tour_id         as user_learning_tour_id,\n       lp.start_time,\n       lp.end_time,\n       lp.progress,\n       lp.status,\n       ycem.total_time,\n       lp.guide_shown,\n       preTest.point is not null   as pretest_done,\n       (ifnull(c.status, 0) != 0)  as course_done,\n       (ifnull(p.status, 0) != 0)  as practice_done,\n       postTest.point is not null  as posttest_done,\n       lp.guide_shown + (preTest.point is not null) + (postTest.point is not null) + (ifnull(p.status, 0) != 0) +\n       (ifnull(c.status, 0) != 0)  as finished_module,\n       (ycem.guide_num != 0) + (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) + (ycem.exercise_num != 0) +\n       (ycem.post_survey_num != 0) as total_elements_num\nfrom learning_paths lp\n         left join yy_course_elements_metas ycem\n                   on lp.learning_path_meta_id = ycem.learning_path_meta_id\n         left join yy_user_exam preTest\n                   on lp.user_id = preTest.user_id and lp.learning_path_meta_id = preTest.learning_path_meta_id and\n                      preTest.type = 1\n         left join yy_user_exam postTest\n                   on lp.user_id = postTest.user_id and lp.learning_path_meta_id = postTest.learning_path_meta_id and\n                      postTest.type = 2\n         left join courses c on lp.id = c.learning_path_id\n         left join practices p on lp.id = p.learning_path_id\nwhere 1 = 1\n  and (lp.start_time between ${date_start} and ${date_end}\n    or lp.end_time between ${date_start} and ${date_end}\n    or preTest.createDate between ${date_start} and ${date_end}\n    or preTest.updateDate between ${date_start} and ${date_end}\n#     or c.start_time between ${date_start} and ${date_end}\n#     or c.end_time between ${date_start} and ${date_end}\n    or p.start_time between ${date_start} and ${date_end}\n    or p.end_time between ${date_start} and ${date_end}\n    or postTest.createDate between ${date_start} and ${date_end}\n    or postTest.updateDate between ${date_start} and ${date_end}\n    )",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -10840,7 +10840,7 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "2a4dcf0f-9a81-317a-83a2-11ddf07a9d58",
-              "name" : "Load olap.fact_user_course_lesson_question",
+              "name" : "fact_user_course_lesson_question",
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : 2128.0,
@@ -11020,7 +11020,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_course\nselect c.id,\n       lpm.id               as learning_path_id,\n       c.course_meta_id     as course_id,\n       c.learning_path_id   as user_learning_path_id,\n       c.user_id,\n       c.status,\n       c.progress,\n       c.start_time,\n       c.end_time,\n       ycem.course_unit_num as total_lessonn,\n       sum(l.status = 2)    as finished_lesson\nfrom courses c\n         join learning_path_metas lpm on c.course_meta_id = lpm.course_meta_id and lpm.enabled = 1\n         join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join lessons l on c.id = l.course_id\nwhere 1 = 1\n  and (\n        c.start_time between ${date_start} and ${date_end}\n        or c.end_time between ${date_start} and ${date_end}\n        or l.start_time between ${date_start} and ${date_end}\n        or l.end_time between ${date_start} and ${date_end}\n    )\ngroup by c.id\n;",
+                "putsql-sql-statement" : "replace into fact_user_course\nselect c.id,\n       lpm.id               as learning_path_id,\n       c.course_meta_id     as course_id,\n       c.learning_path_id   as user_learning_path_id,\n       c.user_id,\n       c.status,\n       c.progress,\n       c.start_time,\n       c.end_time,\n       ycem.course_unit_num as total_lessonn,\n       sum(l.status = 2)    as finished_lesson\nfrom courses c\n         join learning_path_metas lpm on c.course_meta_id = lpm.course_meta_id and lpm.enabled = 1\n         join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join lessons l on c.id = l.course_id\nwhere 1 = 1\n#   and (\n#         c.start_time between ${date_start} and ${date_end}\n#         or c.end_time between ${date_start} and ${date_end}\n#         or l.start_time between ${date_start} and ${date_end}\n#         or l.end_time between ${date_start} and ${date_end}\n#     )\ngroup by c.id\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",

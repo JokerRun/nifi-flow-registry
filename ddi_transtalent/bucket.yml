@@ -1,7 +1,17 @@
 flows:
-  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 13, file: ddi-transtalent-olap-etl.snapshot,
-    comments: 'jerry :: fact_user_login_count: Transaction Isolation Level --> TRANSACTION_READ_COMMITTED',
-    author: anonymous, created: 1595300394980, flowName: ddi-transtalent-olap-etl,
-    flowDesc: ddi 英跃OLAP ETL}
+  6c9898b5-b9f4-457f-9062-ede19c2fb7a3:
+    ver: 14
+    file: ddi-transtalent-olap-etl.snapshot
+    comments: |-
+      jerry :: 调整部分增量加载处理器(learning fact组)逻辑。
+      fact_user_learning_path
+      fact_user_guide
+      fact_user_course
+      fact_user_course_lesson_ka
+      fact_user_practice
+    author: anonymous
+    created: 1595317574979
+    flowName: ddi-transtalent-olap-etl
+    flowDesc: ddi 英跃OLAP ETL
 layoutVer: 1
 bucketId: a8f0cee7-bc39-42be-bd22-5bc3b3e28ca0
