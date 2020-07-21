@@ -16770,7 +16770,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into  fact_user_learning_path_module_used_time\nselect ycr.user_id,\n       ycr.learning_path_meta_id as learning_path_id,\n       ycr.moduleId as module_id,\n       ym.name as module_name,\n       sum(ycr.usedtime) as total_used_second\nfrom yy_customer_recorddetail ycr\n    left join yy_module ym on ycr.moduleId =ym.id - 1\nwhere ycr.user_id = ${user_id}\ngroup by user_id, learning_path_meta_id, moduleId",
+                "putsql-sql-statement" : "replace into  fact_user_learning_path_module_used_time\nselect ycr.user_id,\n       ycr.learning_path_meta_id as learning_path_id,\n       ycr.moduleId as module_id,\n       ym.name as module_name,\n       sum(ycr.usedtime) as total_used_second\nfrom yy_customer_recorddetail ycr\n    left join yy_module ym on ycr.moduleId =ym.id - 1\nwhere ycr.user_id in( ${user_id})\ngroup by user_id, learning_path_meta_id, moduleId",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -16856,7 +16856,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into  fact_user_learning_path_used_time\nselect ycr.user_id,\n       ycr.learning_path_meta_id as learning_path_id,\n       ycem.total_time * 60      as recommend_used_second,\n       sum(ycr.usedtime)         as total_used_second\nfrom yy_customer_record ycr\n         join yy_course_elements_metas ycem\n              on ycr.learning_path_meta_id = ycem.learning_path_meta_id\nwhere ycr.user_id = ${user_id}\ngroup by ycr.user_id, ycem.learning_path_meta_id",
+                "putsql-sql-statement" : "replace into  fact_user_learning_path_used_time\nselect ycr.user_id,\n       ycr.learning_path_meta_id as learning_path_id,\n       ycem.total_time * 60      as recommend_used_second,\n       sum(ycr.usedtime)         as total_used_second\nfrom yy_customer_record ycr\n         join yy_course_elements_metas ycem\n              on ycr.learning_path_meta_id = ycem.learning_path_meta_id\nwhere ycr.user_id in( ${user_id})\ngroup by ycr.user_id, ycem.learning_path_meta_id",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
