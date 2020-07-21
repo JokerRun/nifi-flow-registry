@@ -12168,7 +12168,8 @@
               "Fetch Size" : "0",
               "Columns to Return" : "id,user_id ",
               "db-fetch-where-clause" : "path = '/wx/login'",
-              "dbf-normalize" : "false"
+              "dbf-normalize" : "false",
+              "transaction-isolation-level" : "2"
             },
             "propertyDescriptors" : {
               "Table Name" : {
