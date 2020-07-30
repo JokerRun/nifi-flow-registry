@@ -323,7 +323,7 @@
           "name" : "ByEmailCSVReader",
           "properties" : {
             "ignore-csv-header" : "false",
-            "CSV Format" : "custom",
+            "CSV Format" : "excel",
             "Quote Character" : "\"",
             "Value Separator" : ",",
             "Escape Character" : "\\",
@@ -746,6 +746,36 @@
               "groupId" : "f42502ce-5b9f-3981-9f09-b0c8fbc1ca05",
               "id" : "f7030931-2a49-305c-8392-f30dd862944f",
               "name" : "SplitJson",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "f42502ce-5b9f-3981-9f09-b0c8fbc1ca05",
+              "id" : "fe268ae8-09b6-3c21-87a8-113390297c13",
+              "name" : "HandleHttpResponse",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "f42502ce-5b9f-3981-9f09-b0c8fbc1ca05",
+            "identifier" : "baba9b82-9d61-3b5f-9439-db14c4b1df38",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "failure" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "f42502ce-5b9f-3981-9f09-b0c8fbc1ca05",
+              "id" : "cea519b4-5d26-3eb7-a0e7-a91866a57be0",
+              "name" : "CSV To Json-ByEmail",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -1222,8 +1252,8 @@
             "name" : "HandleHttpResponse",
             "penaltyDuration" : "30 sec",
             "position" : {
-              "x" : 1064.0,
-              "y" : -168.0
+              "x" : 1048.0,
+              "y" : 16.0
             },
             "properties" : {
               "HTTP Context Map" : "ff2d1672-4f39-34f4-9ca4-879e8343acaf",
@@ -1448,7 +1478,7 @@
               }
             },
             "runDurationMillis" : 0,
-            "scheduledState" : "DISABLED",
+            "scheduledState" : "ENABLED",
             "schedulingPeriod" : "0 sec",
             "schedulingStrategy" : "TIMER_DRIVEN",
             "style" : { },
@@ -1859,7 +1889,7 @@
             "type" : "org.apache.nifi.processors.standard.MergeRecord",
             "yieldDuration" : "1 sec"
           }, {
-            "autoTerminatedRelationships" : [ "failure" ],
+            "autoTerminatedRelationships" : [ ],
             "bulletinLevel" : "WARN",
             "bundle" : {
               "artifact" : "nifi-standard-nar",
@@ -2192,14 +2222,14 @@
             },
             "properties" : {
               "excel-extract-first-row" : "0",
-              "CSV Format" : "custom",
+              "CSV Format" : "excel",
               "Quote Character" : "\"",
               "Include Header Line" : "true",
               "Value Separator" : ",",
               "Record Separator" : "\\n",
               "Escape Character" : "\\",
               "extract-sheets" : "Sheet1",
-              "excel-format-values" : "false",
+              "excel-format-values" : "true",
               "Trim Fields" : "true",
               "Quote Mode" : "NONE",
               "Include Trailing Delimiter" : "false"
