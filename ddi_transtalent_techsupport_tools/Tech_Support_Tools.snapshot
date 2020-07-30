@@ -320,7 +320,7 @@
           } ],
           "groupIdentifier" : "e374a85f-be60-3667-a614-ca27f1f8860f",
           "identifier" : "ed43a981-6a45-38f1-aaf9-8e46f8ad964b",
-          "name" : "CSVReader",
+          "name" : "ByEmailCSVReader",
           "properties" : {
             "ignore-csv-header" : "false",
             "CSV Format" : "custom",
@@ -331,9 +331,9 @@
             "Trim Fields" : "false",
             "schema-name" : "${schema.name}",
             "csv-reader-csv-parser" : "commons-csv",
-            "schema-access-strategy" : "infer-schema",
+            "schema-access-strategy" : "schema-text-property",
             "csvutils-character-set" : "UTF-8",
-            "schema-text" : "${avro.schema}"
+            "schema-text" : "#{JsonSchema.ByEmail}"
           },
           "propertyDescriptors" : {
             "ignore-csv-header" : {
@@ -1390,7 +1390,7 @@
             },
             "properties" : {
               "Support Fragmented Transactions" : "true",
-              "putsql-sql-statement" : "update company_users\nset tag_name       = concat('${tagname}', ';'),\n    employee_number='${employee}'\nwhere company_id = ${company_id}\n  and user_id = ${user_id}",
+              "putsql-sql-statement" : "update company_users\nset tag_name       = concat('${tagname}', ';'),\n    department='${employee}'\nwhere company_id = ${company_id}\n  and user_id = ${user_id}",
               "Batch Size" : "100",
               "Obtain Generated Keys" : "false",
               "JDBC Connection Pool" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
@@ -1881,7 +1881,7 @@
             "properties" : {
               "record-writer" : "d7bc2a0a-100b-3641-9615-6cd9d03ddf51",
               "record-reader" : "ed43a981-6a45-38f1-aaf9-8e46f8ad964b",
-              "include-zero-record-flowfiles" : "true"
+              "include-zero-record-flowfiles" : "false"
             },
             "propertyDescriptors" : {
               "record-writer" : {
