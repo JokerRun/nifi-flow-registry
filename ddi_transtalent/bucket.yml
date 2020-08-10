@@ -1,7 +1,7 @@
 flows:
-  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 20, file: ddi-transtalent-olap-etl.snapshot,
-    comments: 'jerry :: 屏蔽增量加载fact_user_learning_path时指定时间范围，避免局部数据不准确', author: anonymous,
-    created: 1597028073554, flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP
-      ETL}
+  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 21, file: ddi-transtalent-olap-etl.snapshot,
+    comments: 'jerry :: fix 打造高效团队情景模拟历史记录中的exercise_id实际上记录的是learning_path_id，而非exercise_id',
+    author: anonymous, created: 1597028832217, flowName: ddi-transtalent-olap-etl,
+    flowDesc: ddi 英跃OLAP ETL}
 layoutVer: 1
 bucketId: a8f0cee7-bc39-42be-bd22-5bc3b3e28ca0
