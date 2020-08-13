@@ -11441,7 +11441,7 @@
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
-              "identifier" : "366c39b2-1698-3b4b-9eeb-65c02a034875",
+              "identifier" : "02eb47ad-f17c-35c1-b140-ad4e8db7be90",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -11452,8 +11452,8 @@
               "source" : {
                 "comments" : "",
                 "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
-                "id" : "87e59de2-67b6-32ec-9bc2-45d135953e46",
-                "name" : "ExecuteSQL",
+                "id" : "e6fcfe98-ce82-30d0-86f8-b115ec699fd2",
+                "name" : "ExecuteSQLRecord 0 30 21 ? * * *",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -11581,6 +11581,112 @@
             },
             "processGroups" : [ ],
             "processors" : [ {
+              "autoTerminatedRelationships" : [ "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "e6fcfe98-ce82-30d0-86f8-b115ec699fd2",
+              "name" : "ExecuteSQLRecord 0 30 21 ? * * *",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 752.0,
+                "y" : -1072.0
+              },
+              "properties" : {
+                "esql-max-rows" : "0",
+                "esql-output-batch-size" : "0",
+                "esql-fetch-size" : "0",
+                "SQL select query" : "select group_concat(params) as ids\nfrom backstage_operation_logs where modular_name like '%清除%'\nand crated_at between '${now():format(\"yyyy-MM-dd\", \"GMT+8\")}' and '${now():toNumber():plus(86400000):format(\"yyyy-MM-dd\", \"GMT+8\")}';",
+                "esqlrecord-record-writer" : "2e622e5f-a776-38df-905f-f261baad7573",
+                "Max Wait Time" : "0 seconds",
+                "Database Connection Pooling Service" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
+                "dbf-user-logical-types" : "false",
+                "esqlrecord-normalize" : "false"
+              },
+              "propertyDescriptors" : {
+                "sql-pre-query" : {
+                  "displayName" : "SQL Pre-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-pre-query",
+                  "sensitive" : false
+                },
+                "esql-max-rows" : {
+                  "displayName" : "Max Rows Per Flow File",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-max-rows",
+                  "sensitive" : false
+                },
+                "esql-output-batch-size" : {
+                  "displayName" : "Output Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-output-batch-size",
+                  "sensitive" : false
+                },
+                "esql-fetch-size" : {
+                  "displayName" : "Fetch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-fetch-size",
+                  "sensitive" : false
+                },
+                "SQL select query" : {
+                  "displayName" : "SQL select query",
+                  "identifiesControllerService" : false,
+                  "name" : "SQL select query",
+                  "sensitive" : false
+                },
+                "esqlrecord-record-writer" : {
+                  "displayName" : "Record Writer",
+                  "identifiesControllerService" : true,
+                  "name" : "esqlrecord-record-writer",
+                  "sensitive" : false
+                },
+                "Max Wait Time" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Wait Time",
+                  "sensitive" : false
+                },
+                "Database Connection Pooling Service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "Database Connection Pooling Service",
+                  "sensitive" : false
+                },
+                "sql-post-query" : {
+                  "displayName" : "SQL Post-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-post-query",
+                  "sensitive" : false
+                },
+                "dbf-user-logical-types" : {
+                  "displayName" : "Use Avro Logical Types",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-user-logical-types",
+                  "sensitive" : false
+                },
+                "esqlrecord-normalize" : {
+                  "displayName" : "Normalize Table/Column Names",
+                  "identifiesControllerService" : false,
+                  "name" : "esqlrecord-normalize",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 30 21 ? * * *",
+              "schedulingStrategy" : "CRON_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
+              "yieldDuration" : "1 sec"
+            }, {
               "autoTerminatedRelationships" : [ "failure", "unmatched" ],
               "bulletinLevel" : "WARN",
               "bundle" : {
@@ -11601,7 +11707,7 @@
                 "y" : -728.0
               },
               "properties" : {
-                "Destination" : "flowfile-content",
+                "Destination" : "flowfile-attribute",
                 "user_id" : "$.ids",
                 "Return Type" : "auto-detect",
                 "Null Value Representation" : "empty string",
@@ -11690,126 +11796,6 @@
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
               "type" : "org.apache.nifi.processors.standard.SplitJson",
-              "yieldDuration" : "1 sec"
-            }, {
-              "autoTerminatedRelationships" : [ "failure" ],
-              "bulletinLevel" : "WARN",
-              "bundle" : {
-                "artifact" : "nifi-standard-nar",
-                "group" : "org.apache.nifi",
-                "version" : "1.11.4"
-              },
-              "comments" : "",
-              "componentType" : "PROCESSOR",
-              "concurrentlySchedulableTaskCount" : 1,
-              "executionNode" : "ALL",
-              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
-              "identifier" : "87e59de2-67b6-32ec-9bc2-45d135953e46",
-              "name" : "ExecuteSQL",
-              "penaltyDuration" : "30 sec",
-              "position" : {
-                "x" : 736.0,
-                "y" : -1048.0
-              },
-              "properties" : {
-                "esql-max-rows" : "0",
-                "dbf-default-precision" : "10",
-                "Max Wait Time" : "0 seconds",
-                "Database Connection Pooling Service" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
-                "dbf-user-logical-types" : "false",
-                "dbf-default-scale" : "0",
-                "compression-format" : "NONE",
-                "esql-output-batch-size" : "0",
-                "esql-fetch-size" : "0",
-                "SQL select query" : "select group_concat(params) as ids\nfrom backstage_operation_logs where modular_name like '%清除%'\nand crated_at between '${now():format(\"yyyy-MM-dd\", \"GMT+8\")}' and '${now():toNumber():plus(86400000):format(\"yyyy-MM-dd\", \"GMT+8\")}';",
-                "dbf-normalize" : "false"
-              },
-              "propertyDescriptors" : {
-                "esql-max-rows" : {
-                  "displayName" : "Max Rows Per Flow File",
-                  "identifiesControllerService" : false,
-                  "name" : "esql-max-rows",
-                  "sensitive" : false
-                },
-                "dbf-default-precision" : {
-                  "displayName" : "Default Decimal Precision",
-                  "identifiesControllerService" : false,
-                  "name" : "dbf-default-precision",
-                  "sensitive" : false
-                },
-                "Max Wait Time" : {
-                  "displayName" : "Max Wait Time",
-                  "identifiesControllerService" : false,
-                  "name" : "Max Wait Time",
-                  "sensitive" : false
-                },
-                "Database Connection Pooling Service" : {
-                  "displayName" : "Database Connection Pooling Service",
-                  "identifiesControllerService" : true,
-                  "name" : "Database Connection Pooling Service",
-                  "sensitive" : false
-                },
-                "sql-post-query" : {
-                  "displayName" : "SQL Post-Query",
-                  "identifiesControllerService" : false,
-                  "name" : "sql-post-query",
-                  "sensitive" : false
-                },
-                "dbf-user-logical-types" : {
-                  "displayName" : "Use Avro Logical Types",
-                  "identifiesControllerService" : false,
-                  "name" : "dbf-user-logical-types",
-                  "sensitive" : false
-                },
-                "dbf-default-scale" : {
-                  "displayName" : "Default Decimal Scale",
-                  "identifiesControllerService" : false,
-                  "name" : "dbf-default-scale",
-                  "sensitive" : false
-                },
-                "sql-pre-query" : {
-                  "displayName" : "SQL Pre-Query",
-                  "identifiesControllerService" : false,
-                  "name" : "sql-pre-query",
-                  "sensitive" : false
-                },
-                "compression-format" : {
-                  "displayName" : "Compression Format",
-                  "identifiesControllerService" : false,
-                  "name" : "compression-format",
-                  "sensitive" : false
-                },
-                "esql-output-batch-size" : {
-                  "displayName" : "Output Batch Size",
-                  "identifiesControllerService" : false,
-                  "name" : "esql-output-batch-size",
-                  "sensitive" : false
-                },
-                "esql-fetch-size" : {
-                  "displayName" : "Fetch Size",
-                  "identifiesControllerService" : false,
-                  "name" : "esql-fetch-size",
-                  "sensitive" : false
-                },
-                "SQL select query" : {
-                  "displayName" : "SQL select query",
-                  "identifiesControllerService" : false,
-                  "name" : "SQL select query",
-                  "sensitive" : false
-                },
-                "dbf-normalize" : {
-                  "displayName" : "Normalize Table/Column Names",
-                  "identifiesControllerService" : false,
-                  "name" : "dbf-normalize",
-                  "sensitive" : false
-                }
-              },
-              "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
-              "schedulingPeriod" : "0 30 21 ? * * *",
-              "schedulingStrategy" : "CRON_DRIVEN",
-              "style" : { },
-              "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
               "yieldDuration" : "1 sec"
             } ],
             "remoteProcessGroups" : [ ],
