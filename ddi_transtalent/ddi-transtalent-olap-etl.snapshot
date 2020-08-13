@@ -2356,18 +2356,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "02bf69f8-db69-3d26-b22e-34a73bc6b6f2",
-              "position" : {
-                "x" : -170.039641439648,
-                "y" : 907.4875501066488
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "d9b9a219-743c-3b6d-90ab-a75c999641d5",
               "position" : {
                 "x" : -784.0,
                 "y" : 224.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "02bf69f8-db69-3d26-b22e-34a73bc6b6f2",
+              "position" : {
+                "x" : -170.039641439648,
+                "y" : 907.4875501066488
               }
             }, {
               "componentType" : "FUNNEL",
@@ -4759,18 +4759,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
-              "position" : {
-                "x" : -552.0,
-                "y" : 776.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
               "position" : {
                 "x" : 512.0,
                 "y" : 1792.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
+              "position" : {
+                "x" : -552.0,
+                "y" : 776.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -4791,18 +4791,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
-              "position" : {
-                "x" : 520.0,
-                "y" : 1520.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
               "position" : {
                 "x" : -552.0,
                 "y" : 48.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
+              "position" : {
+                "x" : 520.0,
+                "y" : 1520.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -4815,18 +4815,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "78972236-1428-30e6-827c-3da08976a44d",
-              "position" : {
-                "x" : 341.5649034143595,
-                "y" : -56.71199118678834
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "4d1f10ec-990f-32d8-b179-319e63972b59",
               "position" : {
                 "x" : -552.0,
                 "y" : 272.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "78972236-1428-30e6-827c-3da08976a44d",
+              "position" : {
+                "x" : 341.5649034143595,
+                "y" : -56.71199118678834
               }
             }, {
               "componentType" : "FUNNEL",
@@ -8416,7 +8416,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n    (select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where 1 = 1\n       and (\n             erh.created_at between ${date_start} and ${date_end} or\n             erh.start_time between ${date_start} and ${date_end} or\n             erh.end_time between ${date_start} and ${date_end}\n         )\n     union\n        select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join practices p on erh.exercise_id=p.learning_path_id and erh.exercise_meta_id=41\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where 1 = 1\n       and (\n             erh.created_at between ${date_start} and ${date_end} or\n             erh.start_time between ${date_start} and ${date_end} or\n             erh.end_time between ${date_start} and ${date_end}\n         )\n    )\n;\n",
+                "putsql-sql-statement" : "\n\nreplace into fact_user_practice_exercise_his\n(\n     select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where 1 = 1\n       and (\n             erh.created_at between ${date_start} and ${date_end} or\n             erh.start_time between ${date_start} and ${date_end} or\n             erh.end_time between ${date_start} and ${date_end}\n         ))\n union\n (select erh.id,\n         erh.user_id,\n         lpm.id               as learning_path_id,\n         p.practice_meta_id   as practice_id,\n         erh.exercise_meta_id as exercise_id,\n         erh.exercise_id      as user_practice_exercise_id,\n         erh.start_time,\n         erh.end_time,\n         erh.ka1_score,\n         erh.ka2_score,\n         erh.ka3_score,\n         erh.ka4_score,\n         erh.ka5_score,\n         erh.ka6_score,\n         erh.ka7_score,\n         erh.ka1_star,\n         erh.ka2_star,\n         erh.ka3_star,\n         erh.ka4_star,\n         erh.ka5_star,\n         erh.ka6_star,\n         erh.ka7_star,\n         erh.level,\n         erh.description, -- TODO。\n         erh.created_at\n  from exercises_reports_his erh\n           join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n           join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n  where 1 = 1\n    and (\n          erh.created_at between ${date_start} and ${date_end} or\n          erh.start_time between ${date_start} and ${date_end} or\n          erh.end_time between ${date_start} and ${date_end}\n      )\n )\n;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -11055,6 +11055,36 @@
             "destination" : {
               "comments" : "",
               "groupId" : "5c38d510-ed3e-3a40-9648-62406529833a",
+              "id" : "a5cc7f0e-cd3c-358d-99bb-9546f6386709",
+              "name" : "PutSQL",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "eeb8d42e-8f28-3f45-bccc-09a421e82638",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "5c38d510-ed3e-3a40-9648-62406529833a",
+              "id" : "0a3fa93d-b8e5-3828-86bd-98c4e4ac3e10",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "5c38d510-ed3e-3a40-9648-62406529833a",
               "id" : "ec5caf28-1891-3280-bf89-b6b42b608f1a",
               "name" : "RouteOnAttribute",
               "type" : "PROCESSOR"
@@ -11075,6 +11105,35 @@
               "id" : "f788fd17-34fa-3540-8d16-1d1d148700f4",
               "name" : "Funnel",
               "type" : "FUNNEL"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "5c38d510-ed3e-3a40-9648-62406529833a",
+              "id" : "0a3fa93d-b8e5-3828-86bd-98c4e4ac3e10",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "b8790b3f-9541-30c4-ac7d-e76838ee391d",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "id" : "4f109a2a-7783-37c9-be5b-42092e80a1e7",
+              "name" : "user_ids",
+              "type" : "OUTPUT_PORT"
             },
             "zIndex" : 0
           }, {
@@ -11316,14 +11375,6 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "f53d28bc-9512-32aa-b4e9-da8f981c0786",
-            "position" : {
-              "x" : 594.314339028165,
-              "y" : 4.165925173674566
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "a485a7a5-09a3-314f-b187-7fc5c648d706",
             "position" : {
               "x" : 296.0,
@@ -11336,6 +11387,22 @@
             "position" : {
               "x" : 1160.0,
               "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "f53d28bc-9512-32aa-b4e9-da8f981c0786",
+            "position" : {
+              "x" : 594.314339028165,
+              "y" : 4.165925173674566
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "0a3fa93d-b8e5-3828-86bd-98c4e4ac3e10",
+            "position" : {
+              "x" : 794.9964631243905,
+              "y" : -384.02595637330467
             }
           }, {
             "componentType" : "FUNNEL",
@@ -11358,6 +11425,396 @@
             "y" : 48.0
           },
           "processGroups" : [ {
+            "comments" : "",
+            "componentType" : "PROCESS_GROUP",
+            "connections" : [ {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "b649a51b-0088-3e09-916c-280009dba6b0",
+                "name" : "SplitJson",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "366c39b2-1698-3b4b-9eeb-65c02a034875",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "87e59de2-67b6-32ec-9bc2-45d135953e46",
+                "name" : "ExecuteSQL",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "f904ced3-7dbc-3ac4-83ff-7240eb73997e",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "0c056edc-fd02-3275-83bf-f031a6ad55e2",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "matched" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "23b66918-5967-3ce8-af51-bb59402abb92",
+                "name" : "EvaluateJsonPath",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "4f109a2a-7783-37c9-be5b-42092e80a1e7",
+                "name" : "user_ids",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "50d6e372-8c9e-3794-b40a-494f4c0b0bfa",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "f904ced3-7dbc-3ac4-83ff-7240eb73997e",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "23b66918-5967-3ce8-af51-bb59402abb92",
+                "name" : "EvaluateJsonPath",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "7a6a65e5-4860-3b56-a2f7-653157e36df2",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "split" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "b649a51b-0088-3e09-916c-280009dba6b0",
+                "name" : "SplitJson",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            } ],
+            "controllerServices" : [ ],
+            "funnels" : [ {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "f904ced3-7dbc-3ac4-83ff-7240eb73997e",
+              "position" : {
+                "x" : 896.0,
+                "y" : -536.0
+              }
+            } ],
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+            "inputPorts" : [ ],
+            "labels" : [ ],
+            "name" : "获取当天清除数据学员的id",
+            "outputPorts" : [ {
+              "allowRemoteAccess" : false,
+              "componentType" : "OUTPUT_PORT",
+              "concurrentlySchedulableTaskCount" : 1,
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "4f109a2a-7783-37c9-be5b-42092e80a1e7",
+              "name" : "user_ids",
+              "position" : {
+                "x" : 828.9999495382945,
+                "y" : -423.99996782664675
+              },
+              "type" : "OUTPUT_PORT"
+            } ],
+            "position" : {
+              "x" : 656.0,
+              "y" : -696.0
+            },
+            "processGroups" : [ ],
+            "processors" : [ {
+              "autoTerminatedRelationships" : [ "failure", "unmatched" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "23b66918-5967-3ce8-af51-bb59402abb92",
+              "name" : "EvaluateJsonPath",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 744.0,
+                "y" : -728.0
+              },
+              "properties" : {
+                "Destination" : "flowfile-content",
+                "user_id" : "$.ids",
+                "Return Type" : "auto-detect",
+                "Null Value Representation" : "empty string",
+                "Path Not Found Behavior" : "ignore"
+              },
+              "propertyDescriptors" : {
+                "Destination" : {
+                  "displayName" : "Destination",
+                  "identifiesControllerService" : false,
+                  "name" : "Destination",
+                  "sensitive" : false
+                },
+                "user_id" : {
+                  "displayName" : "user_id",
+                  "identifiesControllerService" : false,
+                  "name" : "user_id",
+                  "sensitive" : false
+                },
+                "Return Type" : {
+                  "displayName" : "Return Type",
+                  "identifiesControllerService" : false,
+                  "name" : "Return Type",
+                  "sensitive" : false
+                },
+                "Null Value Representation" : {
+                  "displayName" : "Null Value Representation",
+                  "identifiesControllerService" : false,
+                  "name" : "Null Value Representation",
+                  "sensitive" : false
+                },
+                "Path Not Found Behavior" : {
+                  "displayName" : "Path Not Found Behavior",
+                  "identifiesControllerService" : false,
+                  "name" : "Path Not Found Behavior",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.EvaluateJsonPath",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ "original", "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "b649a51b-0088-3e09-916c-280009dba6b0",
+              "name" : "SplitJson",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 736.0,
+                "y" : -888.0
+              },
+              "properties" : {
+                "Null Value Representation" : "empty string",
+                "JsonPath Expression" : "$.*"
+              },
+              "propertyDescriptors" : {
+                "Null Value Representation" : {
+                  "displayName" : "Null Value Representation",
+                  "identifiesControllerService" : false,
+                  "name" : "Null Value Representation",
+                  "sensitive" : false
+                },
+                "JsonPath Expression" : {
+                  "displayName" : "JsonPath Expression",
+                  "identifiesControllerService" : false,
+                  "name" : "JsonPath Expression",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.SplitJson",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "87e59de2-67b6-32ec-9bc2-45d135953e46",
+              "name" : "ExecuteSQL",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 736.0,
+                "y" : -1048.0
+              },
+              "properties" : {
+                "esql-max-rows" : "0",
+                "dbf-default-precision" : "10",
+                "Max Wait Time" : "0 seconds",
+                "Database Connection Pooling Service" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
+                "dbf-user-logical-types" : "false",
+                "dbf-default-scale" : "0",
+                "compression-format" : "NONE",
+                "esql-output-batch-size" : "0",
+                "esql-fetch-size" : "0",
+                "SQL select query" : "select group_concat(params) as ids\nfrom backstage_operation_logs where modular_name like '%清除%'\nand crated_at between '${now():format(\"yyyy-MM-dd\", \"GMT+8\")}' and '${now():toNumber():plus(86400000):format(\"yyyy-MM-dd\", \"GMT+8\")}';",
+                "dbf-normalize" : "false"
+              },
+              "propertyDescriptors" : {
+                "esql-max-rows" : {
+                  "displayName" : "Max Rows Per Flow File",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-max-rows",
+                  "sensitive" : false
+                },
+                "dbf-default-precision" : {
+                  "displayName" : "Default Decimal Precision",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-default-precision",
+                  "sensitive" : false
+                },
+                "Max Wait Time" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Wait Time",
+                  "sensitive" : false
+                },
+                "Database Connection Pooling Service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "Database Connection Pooling Service",
+                  "sensitive" : false
+                },
+                "sql-post-query" : {
+                  "displayName" : "SQL Post-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-post-query",
+                  "sensitive" : false
+                },
+                "dbf-user-logical-types" : {
+                  "displayName" : "Use Avro Logical Types",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-user-logical-types",
+                  "sensitive" : false
+                },
+                "dbf-default-scale" : {
+                  "displayName" : "Default Decimal Scale",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-default-scale",
+                  "sensitive" : false
+                },
+                "sql-pre-query" : {
+                  "displayName" : "SQL Pre-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-pre-query",
+                  "sensitive" : false
+                },
+                "compression-format" : {
+                  "displayName" : "Compression Format",
+                  "identifiesControllerService" : false,
+                  "name" : "compression-format",
+                  "sensitive" : false
+                },
+                "esql-output-batch-size" : {
+                  "displayName" : "Output Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-output-batch-size",
+                  "sensitive" : false
+                },
+                "esql-fetch-size" : {
+                  "displayName" : "Fetch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-fetch-size",
+                  "sensitive" : false
+                },
+                "SQL select query" : {
+                  "displayName" : "SQL select query",
+                  "identifiesControllerService" : false,
+                  "name" : "SQL select query",
+                  "sensitive" : false
+                },
+                "dbf-normalize" : {
+                  "displayName" : "Normalize Table/Column Names",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-normalize",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 30 21 ? * * *",
+              "schedulingStrategy" : "CRON_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
+              "yieldDuration" : "1 sec"
+            } ],
+            "remoteProcessGroups" : [ ],
+            "variables" : { }
+          }, {
             "comments" : "",
             "componentType" : "PROCESS_GROUP",
             "connections" : [ {
@@ -13193,18 +13650,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
-              "position" : {
-                "x" : 2784.0,
-                "y" : 1024.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
               "position" : {
                 "x" : 2280.0,
                 "y" : 1136.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
+              "position" : {
+                "x" : 2784.0,
+                "y" : 1024.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -14386,7 +14843,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n    (select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where erh.user_id in (${user_id})\n\n     union\n     select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where erh.user_id in (${user_id})\n    );\n\n",
+                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n    (select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where erh.user_id in (${user_id})\n    )\n     union\n(select erh.id,\n        erh.user_id,\n        lpm.id               as learning_path_id,\n        p.practice_meta_id   as practice_id,\n        erh.exercise_meta_id as exercise_id,\n        erh.exercise_id      as user_practice_exercise_id,\n        erh.start_time,\n        erh.end_time,\n        erh.ka1_score,\n        erh.ka2_score,\n        erh.ka3_score,\n        erh.ka4_score,\n        erh.ka5_score,\n        erh.ka6_score,\n        erh.ka7_score,\n        erh.ka1_star,\n        erh.ka2_star,\n        erh.ka3_star,\n        erh.ka4_star,\n        erh.ka5_star,\n        erh.ka6_star,\n        erh.ka7_star,\n        erh.level,\n        erh.description, -- TODO。\n        erh.created_at\n from exercises_reports_his erh\n          join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n          join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n where erh.user_id in (${user_id})\n)\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -16685,18 +17142,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
-              "identifier" : "25885e50-77de-3655-b9a4-dcdd06012712",
-              "position" : {
-                "x" : -456.0,
-                "y" : -232.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
               "identifier" : "a11b55f1-523f-3415-a9ef-2c7cfda9c331",
               "position" : {
                 "x" : 341.5649034143595,
                 "y" : -56.71199118678834
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
+              "identifier" : "25885e50-77de-3655-b9a4-dcdd06012712",
+              "position" : {
+                "x" : -456.0,
+                "y" : -232.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -21237,18 +21694,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
-            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
-            "position" : {
-              "x" : 296.0,
-              "y" : 8.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
             "identifier" : "69699720-90c8-3f25-b3f6-e23dfe82ab76",
             "position" : {
               "x" : 1432.0,
               "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
+            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
+            "position" : {
+              "x" : 296.0,
+              "y" : 8.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -23496,18 +23953,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
-              "position" : {
-                "x" : -552.0,
-                "y" : 48.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
               "position" : {
                 "x" : 520.0,
                 "y" : 1520.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
+              "position" : {
+                "x" : -552.0,
+                "y" : 48.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -30405,18 +30862,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
-              "position" : {
-                "x" : 2736.0,
-                "y" : 624.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
               "position" : {
                 "x" : 2776.0,
                 "y" : 128.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
+              "position" : {
+                "x" : 2736.0,
+                "y" : 624.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -31088,7 +31545,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n    (select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     union\n     select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n    )\n;\n\n\n\n\n",
+                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n(\n     select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     )\n union\n (select erh.id,\n         erh.user_id,\n         lpm.id               as learning_path_id,\n         p.practice_meta_id   as practice_id,\n         erh.exercise_meta_id as exercise_id,\n         erh.exercise_id      as user_practice_exercise_id,\n         erh.start_time,\n         erh.end_time,\n         erh.ka1_score,\n         erh.ka2_score,\n         erh.ka3_score,\n         erh.ka4_score,\n         erh.ka5_score,\n         erh.ka6_score,\n         erh.ka7_score,\n         erh.ka1_star,\n         erh.ka2_star,\n         erh.ka3_star,\n         erh.ka4_star,\n         erh.ka5_star,\n         erh.ka6_star,\n         erh.ka7_star,\n         erh.level,\n         erh.description, -- TODO。\n         erh.created_at\n  from exercises_reports_his erh\n           join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n           join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n )\n;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -32326,12 +32783,12 @@
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "Max_Connections",
+            "name" : "sourceMinimumIdleConnections",
             "sensitive" : false,
             "value" : "1"
           }, {
             "description" : "",
-            "name" : "sourceMinimumIdleConnections",
+            "name" : "Max_Connections",
             "sensitive" : false,
             "value" : "1"
           }, {
