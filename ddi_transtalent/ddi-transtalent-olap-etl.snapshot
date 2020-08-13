@@ -9613,7 +9613,7 @@
               "y" : 144.0
             },
             "properties" : {
-              "CC" : "leon.wu@ddiworld.com,owen.zhang@ddiworld.com",
+              "CC" : "leon.wu@ddiworld.com,owen.zhang@ddiworld.com,tina.xiao@ddileaf.com",
               "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
               "Message" : "${now():format(\"yyyy-MM-dd HH:mm:ss\", \"GMT+8\")}增量同步成功。",
               "Attach File" : "true",
@@ -11465,9 +11465,9 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
-                "id" : "f904ced3-7dbc-3ac4-83ff-7240eb73997e",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
+                "id" : "2f9408a4-b921-3c29-a272-c1fb0af9f9d2",
+                "name" : "RouteOnAttribute",
+                "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
@@ -11484,6 +11484,36 @@
                 "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
                 "id" : "23b66918-5967-3ce8-af51-bb59402abb92",
                 "name" : "EvaluateJsonPath",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "f904ced3-7dbc-3ac4-83ff-7240eb73997e",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "51f8624c-6ee2-31a5-b587-5e141ba829f6",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "matched" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+                "id" : "2f9408a4-b921-3c29-a272-c1fb0af9f9d2",
+                "name" : "RouteOnAttribute",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -11570,8 +11600,8 @@
               "identifier" : "4f109a2a-7783-37c9-be5b-42092e80a1e7",
               "name" : "user_ids",
               "position" : {
-                "x" : 828.9999495382945,
-                "y" : -423.99996782664675
+                "x" : 800.0,
+                "y" : -424.0
               },
               "type" : "OUTPUT_PORT"
             } ],
@@ -11597,8 +11627,8 @@
               "name" : "ExecuteSQLRecord 0 30 21 ? * * *",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 752.0,
-                "y" : -1072.0
+                "x" : 744.0,
+                "y" : -1240.0
               },
               "properties" : {
                 "esql-max-rows" : "0",
@@ -11687,6 +11717,51 @@
               "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
               "yieldDuration" : "1 sec"
             }, {
+              "autoTerminatedRelationships" : [ "unmatched" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "ec23e184-aeb6-3d92-8ee3-0b8d754aad8f",
+              "identifier" : "2f9408a4-b921-3c29-a272-c1fb0af9f9d2",
+              "name" : "RouteOnAttribute",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 744.0,
+                "y" : -720.0
+              },
+              "properties" : {
+                "Routing Strategy" : "Route to 'match' if all match",
+                "notNull" : "${user_id :equals(''):not()}"
+              },
+              "propertyDescriptors" : {
+                "Routing Strategy" : {
+                  "displayName" : "Routing Strategy",
+                  "identifiesControllerService" : false,
+                  "name" : "Routing Strategy",
+                  "sensitive" : false
+                },
+                "notNull" : {
+                  "displayName" : "notNull",
+                  "identifiesControllerService" : false,
+                  "name" : "notNull",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+              "yieldDuration" : "1 sec"
+            }, {
               "autoTerminatedRelationships" : [ "failure", "unmatched" ],
               "bulletinLevel" : "WARN",
               "bundle" : {
@@ -11704,7 +11779,7 @@
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : 744.0,
-                "y" : -728.0
+                "y" : -896.0
               },
               "properties" : {
                 "Destination" : "flowfile-attribute",
@@ -11769,8 +11844,8 @@
               "name" : "SplitJson",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 736.0,
-                "y" : -888.0
+                "x" : 744.0,
+                "y" : -1064.0
               },
               "properties" : {
                 "Null Value Representation" : "empty string",
