@@ -295,7 +295,7 @@
           "name" : "Source",
           "properties" : {
             "dbcp-min-idle-conns" : "#{sourceMinimumIdleConnections}",
-            "Max Wait Time" : "-1",
+            "Max Wait Time" : "600 sec",
             "Database Driver Class Name" : "com.mysql.cj.jdbc.Driver",
             "dbcp-min-evictable-idle-time" : "30 mins",
             "Max Total Connections" : "#{Max_Connections}",
@@ -769,6 +769,7 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "comments" : "",
               "groupId" : "523dbc9d-c2fc-3c4d-8317-ec563d19dde5",
               "id" : "15e76761-da92-3b97-b8cb-34daef7230f1",
               "name" : "load_yestoday_learning_period",
@@ -875,6 +876,7 @@
             "prioritizers" : [ ],
             "selectedRelationships" : [ "" ],
             "source" : {
+              "comments" : "",
               "groupId" : "523dbc9d-c2fc-3c4d-8317-ec563d19dde5",
               "id" : "983e9045-ebd5-3158-ab1e-3d487509b776",
               "name" : "loaded",
@@ -1487,18 +1489,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
-              "position" : {
-                "x" : 88.0,
-                "y" : -944.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
               "position" : {
                 "x" : 726.9341012213749,
                 "y" : -298.41994736822187
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
+              "position" : {
+                "x" : 88.0,
+                "y" : -944.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -6186,18 +6188,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
-              "position" : {
-                "x" : 512.0,
-                "y" : 1792.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
               "position" : {
                 "x" : -552.0,
                 "y" : 776.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
+              "position" : {
+                "x" : 512.0,
+                "y" : 1792.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -6218,18 +6220,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
-              "position" : {
-                "x" : 520.0,
-                "y" : 1520.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
               "position" : {
                 "x" : -552.0,
                 "y" : 48.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
+              "position" : {
+                "x" : 520.0,
+                "y" : 1520.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -6965,7 +6967,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into dim_learning_path\nselect lpm.id,\n       lpm.name,\n       lpm.description,\n       lpm.target_user,\n       lpm.goal,\n       lpm.total_hours,\n       lpm.ability_id,\n       lpm.guide,\n       lpm.course_meta_id   as course_id,\n       lpm.practice_meta_id as practice_id,\n       lpm.short_description,\n       ycem.total_time,\n       ycem.guide_num,\n       ycem.pre_survey_num,\n       ycem.course_unit_num,\n       ycem.exercise_num,\n       ycem.post_survey_num,\n       ycem.apptask_num,\n       ycem.total_elements_num,\n       ycem.background_mapping_id\nfrom learning_path_metas lpm\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\nwhere lpm.enabled = 1",
+                "putsql-sql-statement" : "replace into dim_learning_path\nselect lpm.id,\n       lpm.name,\n       lpm.description,\n       lpm.target_user,\n       lpm.goal,\n       lpm.total_hours,\n       lpm.ability_id,\n       lpm.guide,\n       lpm.course_meta_id   as course_id,\n       lpm.practice_meta_id as practice_id,\n       lpm.short_description,\n       ycem.total_time,\n       ycem.guide_num,\n       ycem.pre_survey_num,\n       ycem.course_unit_num,\n       ycem.exercise_num,\n       ycem.post_survey_num,\n       ycem.apptask_num,\n       ycem.total_elements_num,\n       ycem.background_mapping_id,\n       ycem.report_index\nfrom learning_path_metas lpm\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\nwhere lpm.enabled = 1\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -9152,6 +9154,14 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
+              "position" : {
+                "x" : 2736.0,
+                "y" : 624.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
               "position" : {
                 "x" : 2736.0,
@@ -9164,14 +9174,6 @@
               "position" : {
                 "x" : 2776.0,
                 "y" : 128.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
-              "position" : {
-                "x" : 2736.0,
-                "y" : 624.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -10706,18 +10708,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
-              "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
-              "position" : {
-                "x" : 1376.0,
-                "y" : -576.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
               "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
               "position" : {
                 "x" : 736.0,
                 "y" : -760.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
+              "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
+              "position" : {
+                "x" : 1376.0,
+                "y" : -576.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -11048,6 +11050,7 @@
               "prioritizers" : [ ],
               "selectedRelationships" : [ "" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "523dbc9d-c2fc-3c4d-8317-ec563d19dde5",
                 "id" : "15e76761-da92-3b97-b8cb-34daef7230f1",
                 "name" : "load_yestoday_learning_period",
@@ -11186,6 +11189,7 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
                 "groupId" : "523dbc9d-c2fc-3c4d-8317-ec563d19dde5",
                 "id" : "983e9045-ebd5-3158-ab1e-3d487509b776",
                 "name" : "loaded",
@@ -11270,6 +11274,7 @@
             "identifier" : "523dbc9d-c2fc-3c4d-8317-ec563d19dde5",
             "inputPorts" : [ {
               "allowRemoteAccess" : false,
+              "comments" : "",
               "componentType" : "INPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
               "groupIdentifier" : "523dbc9d-c2fc-3c4d-8317-ec563d19dde5",
@@ -11285,6 +11290,7 @@
             "name" : "batch load from session to fact_user_learn_period",
             "outputPorts" : [ {
               "allowRemoteAccess" : false,
+              "comments" : "",
               "componentType" : "OUTPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
               "groupIdentifier" : "523dbc9d-c2fc-3c4d-8317-ec563d19dde5",
@@ -13700,14 +13706,6 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "4ed14dcf-a5f3-3717-bff1-3b22357dfe57",
-            "position" : {
-              "x" : 904.0,
-              "y" : 0.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "2ad92b76-dc10-323a-bd66-338c291d0e1b",
             "position" : {
               "x" : 1392.0,
@@ -13716,10 +13714,10 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "f53d28bc-9512-32aa-b4e9-da8f981c0786",
+            "identifier" : "4ed14dcf-a5f3-3717-bff1-3b22357dfe57",
             "position" : {
-              "x" : 594.314339028165,
-              "y" : 4.165925173674566
+              "x" : 904.0,
+              "y" : 0.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -13728,6 +13726,14 @@
             "position" : {
               "x" : 296.0,
               "y" : 8.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "f53d28bc-9512-32aa-b4e9-da8f981c0786",
+            "position" : {
+              "x" : 594.314339028165,
+              "y" : 4.165925173674566
             }
           }, {
             "componentType" : "FUNNEL",
@@ -16054,18 +16060,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
-              "position" : {
-                "x" : 2784.0,
-                "y" : 1024.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
               "position" : {
                 "x" : 2280.0,
                 "y" : 1136.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
+              "position" : {
+                "x" : 2784.0,
+                "y" : 1024.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -16126,18 +16132,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "a2d4d118-d16e-3f44-8368-fc86a768ec00",
-              "position" : {
-                "x" : 726.9341012213749,
-                "y" : -298.41994736822187
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "1d9aab4c-552c-3755-a20e-0804e04973c2",
               "position" : {
                 "x" : 2736.0,
                 "y" : -680.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "a2d4d118-d16e-3f44-8368-fc86a768ec00",
+              "position" : {
+                "x" : 726.9341012213749,
+                "y" : -298.41994736822187
               }
             }, {
               "componentType" : "FUNNEL",
@@ -19468,18 +19474,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
-              "identifier" : "9348d9c0-57d9-307c-844f-2ebb2502632b",
-              "position" : {
-                "x" : 1016.0,
-                "y" : -112.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
               "identifier" : "24b0766e-8195-3813-96e7-58ecfbfe9da8",
               "position" : {
                 "x" : 512.0,
                 "y" : 1256.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
+              "identifier" : "9348d9c0-57d9-307c-844f-2ebb2502632b",
+              "position" : {
+                "x" : 1016.0,
+                "y" : -112.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -20035,7 +20041,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into olap.dim_learning_path\nselect lpm.id,\n       lpm.name,\n       lpm.description,\n       lpm.target_user,\n       lpm.goal,\n       lpm.total_hours,\n       lpm.ability_id,\n       lpm.guide,\n       lpm.course_meta_id   as course_id,\n       lpm.practice_meta_id as practice_id,\n       lpm.short_description,\n       ycem.total_time,\n       ycem.guide_num,\n       ycem.pre_survey_num,\n       ycem.course_unit_num,\n       ycem.exercise_num,\n       ycem.post_survey_num,\n       ycem.apptask_num,\n       ycem.total_elements_num,\n       ycem.background_mapping_id\nfrom learning_path_metas lpm\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\nwhere lpm.enabled = 1",
+                "putsql-sql-statement" : "replace into dim_learning_path\nselect lpm.id,\n       lpm.name,\n       lpm.description,\n       lpm.target_user,\n       lpm.goal,\n       lpm.total_hours,\n       lpm.ability_id,\n       lpm.guide,\n       lpm.course_meta_id   as course_id,\n       lpm.practice_meta_id as practice_id,\n       lpm.short_description,\n       ycem.total_time,\n       ycem.guide_num,\n       ycem.pre_survey_num,\n       ycem.course_unit_num,\n       ycem.exercise_num,\n       ycem.post_survey_num,\n       ycem.apptask_num,\n       ycem.total_elements_num,\n       ycem.background_mapping_id,\n       ycem.report_index\nfrom learning_path_metas lpm\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\nwhere lpm.enabled = 1",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -23616,7 +23622,7 @@
               "y" : -448.0
             },
             "properties" : {
-              "Support Fragmented Transactions" : "true",
+              "Support Fragmented Transactions" : "false",
               "putsql-sql-statement" : "SET session TRANSACTION ISOLATION LEVEL Read committed;",
               "Batch Size" : "100",
               "Obtain Generated Keys" : "false",
@@ -24038,18 +24044,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
-            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
-            "position" : {
-              "x" : 296.0,
-              "y" : 8.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
             "identifier" : "69699720-90c8-3f25-b3f6-e23dfe82ab76",
             "position" : {
               "x" : 1432.0,
               "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
+            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
+            "position" : {
+              "x" : 296.0,
+              "y" : 8.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -24397,18 +24403,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
-              "position" : {
-                "x" : 88.0,
-                "y" : -944.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
               "position" : {
                 "x" : 726.9341012213749,
                 "y" : -298.41994736822187
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
+              "position" : {
+                "x" : 88.0,
+                "y" : -944.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -26297,18 +26303,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
-              "position" : {
-                "x" : -552.0,
-                "y" : 48.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
               "position" : {
                 "x" : 520.0,
                 "y" : 1520.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
+              "position" : {
+                "x" : -552.0,
+                "y" : 48.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -26321,18 +26327,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "78972236-1428-30e6-827c-3da08976a44d",
-              "position" : {
-                "x" : 341.5649034143595,
-                "y" : -56.71199118678834
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "4d1f10ec-990f-32d8-b179-319e63972b59",
               "position" : {
                 "x" : -552.0,
                 "y" : 272.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "78972236-1428-30e6-827c-3da08976a44d",
+              "position" : {
+                "x" : 341.5649034143595,
+                "y" : -56.71199118678834
               }
             }, {
               "componentType" : "FUNNEL",
@@ -27130,7 +27136,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into dim_learning_path\nselect lpm.id,\n       lpm.name,\n       lpm.description,\n       lpm.target_user,\n       lpm.goal,\n       lpm.total_hours,\n       lpm.ability_id,\n       lpm.guide,\n       lpm.course_meta_id   as course_id,\n       lpm.practice_meta_id as practice_id,\n       lpm.short_description,\n       ycem.total_time,\n       ycem.guide_num,\n       ycem.pre_survey_num,\n       ycem.course_unit_num,\n       ycem.exercise_num,\n       ycem.post_survey_num,\n       ycem.apptask_num,\n       ycem.total_elements_num,\n       ycem.background_mapping_id\nfrom learning_path_metas lpm\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\nwhere lpm.enabled = 1",
+                "putsql-sql-statement" : "replace into dim_learning_path\nselect lpm.id,\n       lpm.name,\n       lpm.description,\n       lpm.target_user,\n       lpm.goal,\n       lpm.total_hours,\n       lpm.ability_id,\n       lpm.guide,\n       lpm.course_meta_id   as course_id,\n       lpm.practice_meta_id as practice_id,\n       lpm.short_description,\n       ycem.total_time,\n       ycem.guide_num,\n       ycem.pre_survey_num,\n       ycem.course_unit_num,\n       ycem.exercise_num,\n       ycem.post_survey_num,\n       ycem.apptask_num,\n       ycem.total_elements_num,\n       ycem.background_mapping_id,\n       ycem.report_index\nfrom learning_path_metas lpm\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\nwhere lpm.enabled = 1\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -33206,18 +33212,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
-              "position" : {
-                "x" : 2776.0,
-                "y" : 128.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
               "position" : {
                 "x" : 2736.0,
                 "y" : -680.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
+              "position" : {
+                "x" : 2776.0,
+                "y" : 128.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -34900,18 +34906,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
-              "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
-              "position" : {
-                "x" : 1376.0,
-                "y" : -576.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
               "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
               "position" : {
                 "x" : 736.0,
                 "y" : -760.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
+              "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
+              "position" : {
+                "x" : 1376.0,
+                "y" : -576.0
               }
             } ],
             "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
@@ -36130,6 +36136,86 @@
                 "group" : "org.apache.nifi",
                 "version" : "1.11.4"
               },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "7e9c7088-a54c-34e6-8b7f-50093c1cb7f4",
+              "identifier" : "d474e4f4-0fdd-3d6a-9e1c-0dbe9a35f4d5",
+              "name" : "ReplaceText",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 728.0,
+                "y" : 80.0
+              },
+              "properties" : {
+                "Regular Expression" : "INSERT INTO ",
+                "Replacement Value" : "REPLACE INTO ",
+                "Evaluation Mode" : "Entire text",
+                "Line-by-Line Evaluation Mode" : "All",
+                "Character Set" : "UTF-8",
+                "Maximum Buffer Size" : "1 MB",
+                "Replacement Strategy" : "Regex Replace"
+              },
+              "propertyDescriptors" : {
+                "Regular Expression" : {
+                  "displayName" : "Search Value",
+                  "identifiesControllerService" : false,
+                  "name" : "Regular Expression",
+                  "sensitive" : false
+                },
+                "Replacement Value" : {
+                  "displayName" : "Replacement Value",
+                  "identifiesControllerService" : false,
+                  "name" : "Replacement Value",
+                  "sensitive" : false
+                },
+                "Evaluation Mode" : {
+                  "displayName" : "Evaluation Mode",
+                  "identifiesControllerService" : false,
+                  "name" : "Evaluation Mode",
+                  "sensitive" : false
+                },
+                "Line-by-Line Evaluation Mode" : {
+                  "displayName" : "Line-by-Line Evaluation Mode",
+                  "identifiesControllerService" : false,
+                  "name" : "Line-by-Line Evaluation Mode",
+                  "sensitive" : false
+                },
+                "Character Set" : {
+                  "displayName" : "Character Set",
+                  "identifiesControllerService" : false,
+                  "name" : "Character Set",
+                  "sensitive" : false
+                },
+                "Maximum Buffer Size" : {
+                  "displayName" : "Maximum Buffer Size",
+                  "identifiesControllerService" : false,
+                  "name" : "Maximum Buffer Size",
+                  "sensitive" : false
+                },
+                "Replacement Strategy" : {
+                  "displayName" : "Replacement Strategy",
+                  "identifiesControllerService" : false,
+                  "name" : "Replacement Strategy",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "DISABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.ReplaceText",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
               "comments" : "0 30 0,3,6,9,12,15,18,21 * * ? \n\n2020-08-21 12:30:00\n2020-08-21 15:30:00\n2020-08-21 18:30:00\n2020-08-21 21:30:00\n2020-08-22 00:30:00\n2020-08-22 03:30:00\n2020-08-22 06:30:00\n2020-08-22 09:30:00\n2020-08-22 12:30:00\n2020-08-22 15:30:00",
               "componentType" : "PROCESSOR",
               "concurrentlySchedulableTaskCount" : 1,
@@ -36228,131 +36314,6 @@
               "schedulingStrategy" : "CRON_DRIVEN",
               "style" : { },
               "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
-              "yieldDuration" : "1 sec"
-            }, {
-              "autoTerminatedRelationships" : [ "failure" ],
-              "bulletinLevel" : "WARN",
-              "bundle" : {
-                "artifact" : "nifi-standard-nar",
-                "group" : "org.apache.nifi",
-                "version" : "1.11.4"
-              },
-              "comments" : "",
-              "componentType" : "PROCESSOR",
-              "concurrentlySchedulableTaskCount" : 1,
-              "executionNode" : "ALL",
-              "groupIdentifier" : "7e9c7088-a54c-34e6-8b7f-50093c1cb7f4",
-              "identifier" : "d474e4f4-0fdd-3d6a-9e1c-0dbe9a35f4d5",
-              "name" : "ReplaceText",
-              "penaltyDuration" : "30 sec",
-              "position" : {
-                "x" : 728.0,
-                "y" : 80.0
-              },
-              "properties" : {
-                "Regular Expression" : "INSERT INTO ",
-                "Replacement Value" : "REPLACE INTO ",
-                "Evaluation Mode" : "Entire text",
-                "Line-by-Line Evaluation Mode" : "All",
-                "Character Set" : "UTF-8",
-                "Maximum Buffer Size" : "1 MB",
-                "Replacement Strategy" : "Regex Replace"
-              },
-              "propertyDescriptors" : {
-                "Regular Expression" : {
-                  "displayName" : "Search Value",
-                  "identifiesControllerService" : false,
-                  "name" : "Regular Expression",
-                  "sensitive" : false
-                },
-                "Replacement Value" : {
-                  "displayName" : "Replacement Value",
-                  "identifiesControllerService" : false,
-                  "name" : "Replacement Value",
-                  "sensitive" : false
-                },
-                "Evaluation Mode" : {
-                  "displayName" : "Evaluation Mode",
-                  "identifiesControllerService" : false,
-                  "name" : "Evaluation Mode",
-                  "sensitive" : false
-                },
-                "Line-by-Line Evaluation Mode" : {
-                  "displayName" : "Line-by-Line Evaluation Mode",
-                  "identifiesControllerService" : false,
-                  "name" : "Line-by-Line Evaluation Mode",
-                  "sensitive" : false
-                },
-                "Character Set" : {
-                  "displayName" : "Character Set",
-                  "identifiesControllerService" : false,
-                  "name" : "Character Set",
-                  "sensitive" : false
-                },
-                "Maximum Buffer Size" : {
-                  "displayName" : "Maximum Buffer Size",
-                  "identifiesControllerService" : false,
-                  "name" : "Maximum Buffer Size",
-                  "sensitive" : false
-                },
-                "Replacement Strategy" : {
-                  "displayName" : "Replacement Strategy",
-                  "identifiesControllerService" : false,
-                  "name" : "Replacement Strategy",
-                  "sensitive" : false
-                }
-              },
-              "runDurationMillis" : 0,
-              "scheduledState" : "DISABLED",
-              "schedulingPeriod" : "0 sec",
-              "schedulingStrategy" : "TIMER_DRIVEN",
-              "style" : { },
-              "type" : "org.apache.nifi.processors.standard.ReplaceText",
-              "yieldDuration" : "1 sec"
-            }, {
-              "autoTerminatedRelationships" : [ "original", "failure" ],
-              "bulletinLevel" : "WARN",
-              "bundle" : {
-                "artifact" : "nifi-standard-nar",
-                "group" : "org.apache.nifi",
-                "version" : "1.11.4"
-              },
-              "comments" : "",
-              "componentType" : "PROCESSOR",
-              "concurrentlySchedulableTaskCount" : 1,
-              "executionNode" : "ALL",
-              "groupIdentifier" : "7e9c7088-a54c-34e6-8b7f-50093c1cb7f4",
-              "identifier" : "970f18f8-1e06-3228-aece-9468b82cc5d2",
-              "name" : "SplitJson",
-              "penaltyDuration" : "30 sec",
-              "position" : {
-                "x" : 1312.0,
-                "y" : -120.0
-              },
-              "properties" : {
-                "Null Value Representation" : "empty string",
-                "JsonPath Expression" : "$.*"
-              },
-              "propertyDescriptors" : {
-                "Null Value Representation" : {
-                  "displayName" : "Null Value Representation",
-                  "identifiesControllerService" : false,
-                  "name" : "Null Value Representation",
-                  "sensitive" : false
-                },
-                "JsonPath Expression" : {
-                  "displayName" : "JsonPath Expression",
-                  "identifiesControllerService" : false,
-                  "name" : "JsonPath Expression",
-                  "sensitive" : false
-                }
-              },
-              "runDurationMillis" : 0,
-              "scheduledState" : "DISABLED",
-              "schedulingPeriod" : "0 sec",
-              "schedulingStrategy" : "TIMER_DRIVEN",
-              "style" : { },
-              "type" : "org.apache.nifi.processors.standard.SplitJson",
               "yieldDuration" : "1 sec"
             }, {
               "autoTerminatedRelationships" : [ "original", "failure" ],
@@ -36474,6 +36435,51 @@
               "type" : "org.apache.nifi.processors.standard.ConvertJSONToSQL",
               "yieldDuration" : "1 sec"
             }, {
+              "autoTerminatedRelationships" : [ "original", "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "7e9c7088-a54c-34e6-8b7f-50093c1cb7f4",
+              "identifier" : "970f18f8-1e06-3228-aece-9468b82cc5d2",
+              "name" : "SplitJson",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 1312.0,
+                "y" : -120.0
+              },
+              "properties" : {
+                "Null Value Representation" : "empty string",
+                "JsonPath Expression" : "$.*"
+              },
+              "propertyDescriptors" : {
+                "Null Value Representation" : {
+                  "displayName" : "Null Value Representation",
+                  "identifiesControllerService" : false,
+                  "name" : "Null Value Representation",
+                  "sensitive" : false
+                },
+                "JsonPath Expression" : {
+                  "displayName" : "JsonPath Expression",
+                  "identifiesControllerService" : false,
+                  "name" : "JsonPath Expression",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "DISABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.SplitJson",
+              "yieldDuration" : "1 sec"
+            }, {
               "autoTerminatedRelationships" : [ "failure" ],
               "bulletinLevel" : "WARN",
               "bundle" : {
@@ -36571,6 +36577,7 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
                 "groupId" : "8c87021a-7de9-31f5-9aa8-886467e47f70",
                 "id" : "50191495-c1cc-31b2-ae2b-140de04fee09",
                 "name" : "loaded",
@@ -36833,6 +36840,7 @@
               "prioritizers" : [ ],
               "selectedRelationships" : [ "" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "8c87021a-7de9-31f5-9aa8-886467e47f70",
                 "id" : "a0a0980a-6532-3f11-8364-80190aa80b79",
                 "name" : "load_yestoday_learning_period",
@@ -36900,6 +36908,7 @@
             "identifier" : "8c87021a-7de9-31f5-9aa8-886467e47f70",
             "inputPorts" : [ {
               "allowRemoteAccess" : false,
+              "comments" : "",
               "componentType" : "INPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
               "groupIdentifier" : "8c87021a-7de9-31f5-9aa8-886467e47f70",
@@ -36915,6 +36924,7 @@
             "name" : "batch load from session to fact_user_learn_period",
             "outputPorts" : [ {
               "allowRemoteAccess" : false,
+              "comments" : "",
               "componentType" : "OUTPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
               "groupIdentifier" : "8c87021a-7de9-31f5-9aa8-886467e47f70",
@@ -38622,12 +38632,12 @@
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "sourceMinimumIdleConnections",
+            "name" : "Max_Connections",
             "sensitive" : false,
             "value" : "1"
           }, {
             "description" : "",
-            "name" : "Max_Connections",
+            "name" : "sourceMinimumIdleConnections",
             "sensitive" : false,
             "value" : "1"
           }, {
