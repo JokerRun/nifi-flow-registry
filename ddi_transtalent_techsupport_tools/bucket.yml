@@ -1,6 +1,6 @@
 flows:
-  f47d0253-5302-493a-82a5-7dc0d0780671: {ver: 4, file: Tech_Support_Tools.snapshot,
-    comments: 添加渠道学员批量注册工具, author: anonymous, created: 1596522593028, flowName: Tech
+  f47d0253-5302-493a-82a5-7dc0d0780671: {ver: 5, file: Tech_Support_Tools.snapshot,
+    comments: 'jerry :: 添加应用监控组', author: anonymous, created: 1599127692943, flowName: Tech
       Support Tools, flowDesc: 技术支持工具集}
 layoutVer: 1
 bucketId: afa0b2d3-a020-4c79-acf9-365deabe4e47
