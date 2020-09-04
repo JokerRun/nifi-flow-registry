@@ -2844,7 +2844,7 @@
               "properties" : {
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
-                "event" : "# DNA个性测验进度为100%，但五个因子的得分为空"
+                "event" : "# 情景模拟答题记录exercise_answers"
               },
               "propertyDescriptors" : {
                 "Delete Attributes Expression" : {
