@@ -1,6 +1,6 @@
 flows:
-  f47d0253-5302-493a-82a5-7dc0d0780671: {ver: 7, file: Tech_Support_Tools.snapshot,
-    comments: 'jerry :: fix # 情景模拟答题记录exercise_answers # 前后测报告页问题', author: anonymous,
-    created: 1599187881322, flowName: Tech Support Tools, flowDesc: 技术支持工具集}
+  f47d0253-5302-493a-82a5-7dc0d0780671: {ver: 8, file: Tech_Support_Tools.snapshot,
+    comments: 'jerry :: 现有校验器添加check_sql  +  exercise_answers校验添加情景模拟多选题类型过滤', author: anonymous,
+    created: 1599461040090, flowName: Tech Support Tools, flowDesc: 技术支持工具集}
 layoutVer: 1
 bucketId: afa0b2d3-a020-4c79-acf9-365deabe4e47

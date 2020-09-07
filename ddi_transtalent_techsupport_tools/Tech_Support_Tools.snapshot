@@ -2842,11 +2842,18 @@
                 "y" : 48.0
               },
               "properties" : {
+                "check_sql" : "select *\nfrom exercise_answers\nwhere (exercise_id,question_id) in(select  e.id as exercise_id, question_id \nfrom exercises e\n         left join exercise_answers ea on e.id = ea.exercise_id\n         join exercise_questions eq on ea.question_id=eq.id\nwhere e.end_time between ${date_start} and ${date_end} and eq.choiceType!=1\ngroup by e.id , question_id\nhaving count(1) > 1);\n",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
                 "event" : "# 情景模拟答题记录exercise_answers"
               },
               "propertyDescriptors" : {
+                "check_sql" : {
+                  "displayName" : "check_sql",
+                  "identifiesControllerService" : false,
+                  "name" : "check_sql",
+                  "sensitive" : false
+                },
                 "Delete Attributes Expression" : {
                   "displayName" : "Delete Attributes Expression",
                   "identifiesControllerService" : false,
@@ -2906,11 +2913,18 @@
                 "y" : 48.0
               },
               "properties" : {
+                "check_sql" : "select *\nfrom lesson_questions_user\nwhere (user_id, lessons_questions_id) in (\n    select user_id, lessons_questions_id\n    from lesson_questions_user\n    where created_at between ${date_start} and ${date_end}\n    group by user_id, lessons_questions_id\n    having count(1) > 1\n);\n",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
                 "event" : "# 课程学习练一练重复答题"
               },
               "propertyDescriptors" : {
+                "check_sql" : {
+                  "displayName" : "check_sql",
+                  "identifiesControllerService" : false,
+                  "name" : "check_sql",
+                  "sensitive" : false
+                },
                 "Delete Attributes Expression" : {
                   "displayName" : "Delete Attributes Expression",
                   "identifiesControllerService" : false,
@@ -2970,11 +2984,18 @@
                 "y" : 40.0
               },
               "properties" : {
+                "check_sql" : "# DNA个性测验进度为100%，但五个因子的得分为空\nselect s.id       as s_id,\n       sr.id      as sr_id,\n       srd.id     as srd_id,\n       s.end_time as s_end_time,\n       s.status   as s_status,\n       s.user_id  as s_user_id\nfrom surveys s\n         left join survey_reports sr on s.id = sr.survey_id\n         left join survey_report_details srd on sr.id = srd.report_id\nwhere s.type = 1\n  and s.status = 1\n  and srd.id is null\n  and s.end_time between ${date_start} and ${date_end}\n;",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
                 "event" : "# DNA个性测验进度为100%，但五个因子的得分为空"
               },
               "propertyDescriptors" : {
+                "check_sql" : {
+                  "displayName" : "check_sql",
+                  "identifiesControllerService" : false,
+                  "name" : "check_sql",
+                  "sensitive" : false
+                },
                 "Delete Attributes Expression" : {
                   "displayName" : "Delete Attributes Expression",
                   "identifiesControllerService" : false,
@@ -3140,11 +3161,18 @@
                 "y" : 48.0
               },
               "properties" : {
+                "check_sql" : "# 前后测报告页问题\nselect s.id     as s_id,\n       sr.id    as sr_id,\n       srd.id   as srd_id,\n       count(1) as cnt\nfrom surveys s\n         left join survey_reports sr on s.id = sr.survey_id\n         left join survey_report_details srd on sr.id = srd.report_id\nwhere s.type != 1\n  and srd.created_time between ${date_start} and ${date_end}\ngroup by srd.id\nhaving count(1) > 1;\n;\n\n",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
                 "event" : "# 前后测报告页问题"
               },
               "propertyDescriptors" : {
+                "check_sql" : {
+                  "displayName" : "check_sql",
+                  "identifiesControllerService" : false,
+                  "name" : "check_sql",
+                  "sensitive" : false
+                },
                 "Delete Attributes Expression" : {
                   "displayName" : "Delete Attributes Expression",
                   "identifiesControllerService" : false,
@@ -3310,11 +3338,18 @@
                 "y" : 48.0
               },
               "properties" : {
+                "check_sql" : "\nselect *\nfrom authquestion_user\nwhere (user_id, question_id) in (\n    select user_id, question_id\n    from authquestion_user\n    where created_at between ${date_start} and ${date_end}\n    group by user_id, exercise_meta_id, question_id\n    having count(1) > 1\n)",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
                 "event" : "# 情景模拟答题记录 authquestion_user\n"
               },
               "propertyDescriptors" : {
+                "check_sql" : {
+                  "displayName" : "check_sql",
+                  "identifiesControllerService" : false,
+                  "name" : "check_sql",
+                  "sensitive" : false
+                },
                 "Delete Attributes Expression" : {
                   "displayName" : "Delete Attributes Expression",
                   "identifiesControllerService" : false,
@@ -3377,7 +3412,7 @@
                 "esql-max-rows" : "0",
                 "esql-output-batch-size" : "0",
                 "esql-fetch-size" : "0",
-                "SQL select query" : "select  e.id as exercise_id, question_id , count(1) as cnt\nfrom exercises e\n         left join exercise_answers ea on e.id = ea.exercise_id\nwhere e.end_time between ${date_start} and ${date_end}\ngroup by e.id , question_id\nhaving count(1) > 1\n;",
+                "SQL select query" : "select  e.id as exercise_id, question_id , count(1) as cnt\nfrom exercises e\n         left join exercise_answers ea on e.id = ea.exercise_id\n         join exercise_questions eq on ea.question_id=eq.id\nwhere e.end_time between ${date_start} and ${date_end} and eq.choiceType!=1\ngroup by e.id , question_id\nhaving count(1) > 1\n;",
                 "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
                 "Max Wait Time" : "0 seconds",
                 "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
