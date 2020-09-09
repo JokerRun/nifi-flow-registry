@@ -1114,9 +1114,9 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-                "id" : "0496075c-be84-3cf3-9c9c-9bffb2422608",
-                "name" : "loaded",
-                "type" : "OUTPUT_PORT"
+                "id" : "a4deab20-1917-3f17-b5d4-b7806ccb6dcf",
+                "name" : "fact_user_module_retention",
+                "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
@@ -1132,7 +1132,7 @@
                 "comments" : "",
                 "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
                 "id" : "4753b154-4a0a-342f-aa14-3f9743b83bea",
-                "name" : "Load olap.fact_user_learning_path_module_used_time",
+                "name" : "Load fact_user_learning_period",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -1144,9 +1144,9 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-                "id" : "4165dcae-c4ec-3c03-aafa-29e964c13b60",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
+                "id" : "4753b154-4a0a-342f-aa14-3f9743b83bea",
+                "name" : "Load fact_user_learning_period",
+                "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
@@ -1193,6 +1193,36 @@
                 "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
                 "id" : "6a2d750c-0d28-358f-88b2-768dc75a1ced",
                 "name" : "Load olap.fact_user_learning_path_module_used_time",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+                "id" : "d6797ebf-4628-37a4-acc2-4d097b586952",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "fe9fa651-eca1-33f5-bf73-9f07658f5a09",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+                "id" : "a4deab20-1917-3f17-b5d4-b7806ccb6dcf",
+                "name" : "fact_user_module_retention",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -1258,7 +1288,37 @@
                 "comments" : "",
                 "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
                 "id" : "4753b154-4a0a-342f-aa14-3f9743b83bea",
-                "name" : "Load olap.fact_user_learning_path_module_used_time",
+                "name" : "Load fact_user_learning_period",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+                "id" : "0496075c-be84-3cf3-9c9c-9bffb2422608",
+                "name" : "loaded",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "49f92535-db79-3b3b-bd03-ea94355ec212",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+                "id" : "a4deab20-1917-3f17-b5d4-b7806ccb6dcf",
+                "name" : "fact_user_module_retention",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -1266,18 +1326,18 @@
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
               "bends" : [ {
-                "x" : 1673.6970864508671,
-                "y" : 97.08061720697344
+                "x" : 1681.2748452399296,
+                "y" : -77.2075354877287
               }, {
-                "x" : 1673.6970864508671,
-                "y" : 147.08061720697344
+                "x" : 1681.2748452399296,
+                "y" : -27.207535487728705
               } ],
               "componentType" : "CONNECTION",
               "destination" : {
                 "comments" : "",
                 "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
                 "id" : "4753b154-4a0a-342f-aa14-3f9743b83bea",
-                "name" : "Load olap.fact_user_learning_path_module_used_time",
+                "name" : "Load fact_user_learning_period",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -1294,7 +1354,7 @@
                 "comments" : "",
                 "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
                 "id" : "4753b154-4a0a-342f-aa14-3f9743b83bea",
-                "name" : "Load olap.fact_user_learning_path_module_used_time",
+                "name" : "Load fact_user_learning_period",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -1325,6 +1385,42 @@
                 "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
                 "id" : "e9b997e8-bd2a-3e8b-9453-7bfcf4e2d36f",
                 "name" : "Load olap.fact_user_login_count",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 1698.6970864508671,
+                "y" : 142.91941572992266
+              }, {
+                "x" : 1698.6970864508671,
+                "y" : 192.91941572992266
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+                "id" : "a4deab20-1917-3f17-b5d4-b7806ccb6dcf",
+                "name" : "fact_user_module_retention",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "4c71188e-331d-3ed2-ac76-4bd1a9c572a4",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+                "id" : "a4deab20-1917-3f17-b5d4-b7806ccb6dcf",
+                "name" : "fact_user_module_retention",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -1427,36 +1523,6 @@
             }, {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-                "id" : "4753b154-4a0a-342f-aa14-3f9743b83bea",
-                "name" : "Load olap.fact_user_learning_path_module_used_time",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "7599896a-d11a-34b5-8d00-06922b2c9584",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-                "id" : "4165dcae-c4ec-3c03-aafa-29e964c13b60",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
               "bends" : [ {
                 "x" : 1674.9065591071171,
                 "y" : -285.02257798345624
@@ -1525,18 +1591,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
-              "position" : {
-                "x" : 726.9341012213749,
-                "y" : -298.41994736822187
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
               "position" : {
                 "x" : 88.0,
                 "y" : -944.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
+              "position" : {
+                "x" : 726.9341012213749,
+                "y" : -298.41994736822187
               }
             }, {
               "componentType" : "FUNNEL",
@@ -1549,18 +1615,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "3440388a-a2f3-3016-be41-12dc75c53634",
+              "identifier" : "d6797ebf-4628-37a4-acc2-4d097b586952",
               "position" : {
-                "x" : 752.0,
-                "y" : 96.0
+                "x" : 776.0,
+                "y" : 144.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "4165dcae-c4ec-3c03-aafa-29e964c13b60",
+              "identifier" : "3440388a-a2f3-3016-be41-12dc75c53634",
               "position" : {
-                "x" : 1360.0,
-                "y" : -96.0
+                "x" : 760.0,
+                "y" : -80.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -1604,8 +1670,8 @@
               "identifier" : "0496075c-be84-3cf3-9c9c-9bffb2422608",
               "name" : "loaded",
               "position" : {
-                "x" : 1288.0,
-                "y" : 264.0
+                "x" : 1280.0,
+                "y" : 360.0
               },
               "type" : "OUTPUT_PORT"
             } ],
@@ -2630,6 +2696,92 @@
               "concurrentlySchedulableTaskCount" : 1,
               "executionNode" : "ALL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "a4deab20-1917-3f17-b5d4-b7806ccb6dcf",
+              "name" : "fact_user_module_retention",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 1232.0,
+                "y" : 112.0
+              },
+              "properties" : {
+                "Support Fragmented Transactions" : "true",
+                "putsql-sql-statement" : "replace into fact_user_module_retention\nselect lp.user_id,\n       lp.learning_path_meta_id,\n       pre.point is not null as pre_status,\n       c.status as c_status,\n       p.status > 0 as p_status,\n       post.point is not null as post_status\nfrom learning_paths lp\n         left join yy_user_exam pre on lp.user_id=pre.user_id and lp.learning_path_meta_id=pre.learning_path_meta_id and pre.type = 1\n         left join courses c on lp.id = c.learning_path_id\n         left join practices p on lp.id = p.learning_path_id\n         left join yy_user_exam post on lp.user_id=post.user_id and lp.learning_path_meta_id=pre.learning_path_meta_id and post.type = 2\nwhere 1 = 1\n  and (lp.start_time between ${date_start} and ${date_end}\n    or lp.end_time between ${date_start} and ${date_end}\n    or pre.createDate between ${date_start} and ${date_end}\n    or pre.updateDate between ${date_start} and ${date_end}\n    #     or c.start_time between ${date_start} and ${date_end}\n#     or c.end_time between ${date_start} and ${date_end}\n    or p.start_time between ${date_start} and ${date_end}\n    or p.end_time between ${date_start} and ${date_end}\n    or post.createDate between ${date_start} and ${date_end}\n    or post.updateDate between ${date_start} and ${date_end}\n    )\n;",
+                "Batch Size" : "100",
+                "Obtain Generated Keys" : "false",
+                "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
+                "database-session-autocommit" : "false",
+                "rollback-on-failure" : "false"
+              },
+              "propertyDescriptors" : {
+                "Support Fragmented Transactions" : {
+                  "displayName" : "Support Fragmented Transactions",
+                  "identifiesControllerService" : false,
+                  "name" : "Support Fragmented Transactions",
+                  "sensitive" : false
+                },
+                "putsql-sql-statement" : {
+                  "displayName" : "SQL Statement",
+                  "identifiesControllerService" : false,
+                  "name" : "putsql-sql-statement",
+                  "sensitive" : false
+                },
+                "Transaction Timeout" : {
+                  "displayName" : "Transaction Timeout",
+                  "identifiesControllerService" : false,
+                  "name" : "Transaction Timeout",
+                  "sensitive" : false
+                },
+                "Batch Size" : {
+                  "displayName" : "Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "Batch Size",
+                  "sensitive" : false
+                },
+                "Obtain Generated Keys" : {
+                  "displayName" : "Obtain Generated Keys",
+                  "identifiesControllerService" : false,
+                  "name" : "Obtain Generated Keys",
+                  "sensitive" : false
+                },
+                "JDBC Connection Pool" : {
+                  "displayName" : "JDBC Connection Pool",
+                  "identifiesControllerService" : true,
+                  "name" : "JDBC Connection Pool",
+                  "sensitive" : false
+                },
+                "database-session-autocommit" : {
+                  "displayName" : "Database Session AutoCommit",
+                  "identifiesControllerService" : false,
+                  "name" : "database-session-autocommit",
+                  "sensitive" : false
+                },
+                "rollback-on-failure" : {
+                  "displayName" : "Rollback On Failure",
+                  "identifiesControllerService" : false,
+                  "name" : "rollback-on-failure",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.PutSQL",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "e9b997e8-bd2a-3e8b-9453-7bfcf4e2d36f",
               "name" : "Load olap.fact_user_login_count",
               "penaltyDuration" : "30 sec",
@@ -2803,11 +2955,11 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "4753b154-4a0a-342f-aa14-3f9743b83bea",
-              "name" : "Load olap.fact_user_learning_path_module_used_time",
+              "name" : "Load fact_user_learning_period",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 1208.0,
-                "y" : 64.0
+                "x" : 1216.0,
+                "y" : -112.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -3790,18 +3942,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "02bf69f8-db69-3d26-b22e-34a73bc6b6f2",
-              "position" : {
-                "x" : -168.0,
-                "y" : 856.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "d9b9a219-743c-3b6d-90ab-a75c999641d5",
               "position" : {
                 "x" : -784.0,
                 "y" : 224.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "02bf69f8-db69-3d26-b22e-34a73bc6b6f2",
+              "position" : {
+                "x" : -168.0,
+                "y" : 856.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -3814,18 +3966,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "32d8cd1e-1d4a-34fa-8c6e-30373f696718",
-              "position" : {
-                "x" : -800.0,
-                "y" : 1024.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "0d05043a-fa16-36fc-982a-a7110105b2a9",
               "position" : {
                 "x" : -784.0,
                 "y" : 0.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "32d8cd1e-1d4a-34fa-8c6e-30373f696718",
+              "position" : {
+                "x" : -800.0,
+                "y" : 1024.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -3838,18 +3990,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "aa22cc65-be22-39fd-b43a-f5334807a68c",
-              "position" : {
-                "x" : -784.0,
-                "y" : 656.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "e74d50c3-7b37-315a-ac42-c3d7aeeb4a82",
               "position" : {
                 "x" : -776.0,
                 "y" : 1232.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "aa22cc65-be22-39fd-b43a-f5334807a68c",
+              "position" : {
+                "x" : -784.0,
+                "y" : 656.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -7653,18 +7805,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
-              "position" : {
-                "x" : -552.0,
-                "y" : 776.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
               "position" : {
                 "x" : 512.0,
                 "y" : 1792.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
+              "position" : {
+                "x" : -552.0,
+                "y" : 776.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -7709,18 +7861,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "4d1f10ec-990f-32d8-b179-319e63972b59",
-              "position" : {
-                "x" : -552.0,
-                "y" : 272.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "78972236-1428-30e6-827c-3da08976a44d",
               "position" : {
                 "x" : 341.5649034143595,
                 "y" : -56.71199118678834
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "4d1f10ec-990f-32d8-b179-319e63972b59",
+              "position" : {
+                "x" : -552.0,
+                "y" : 272.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -7733,18 +7885,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "7b46f7ad-d85f-3a49-ad54-7a8018bbbf1a",
-              "position" : {
-                "x" : 512.0,
-                "y" : 2008.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "99fa7c83-f5e5-39ee-9f51-b95e5cd964cc",
               "position" : {
                 "x" : 512.0,
                 "y" : 1256.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "7b46f7ad-d85f-3a49-ad54-7a8018bbbf1a",
+              "position" : {
+                "x" : 512.0,
+                "y" : 2008.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -7757,18 +7909,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
-              "position" : {
-                "x" : -552.0,
-                "y" : 496.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
               "position" : {
                 "x" : 1480.0,
                 "y" : 888.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
+              "position" : {
+                "x" : -552.0,
+                "y" : 496.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -10579,18 +10731,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "74c63417-5d1b-3faa-b69e-0c93758c07c8",
-              "position" : {
-                "x" : 726.9341012213749,
-                "y" : 205.58005263177813
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
               "position" : {
                 "x" : 2736.0,
                 "y" : 816.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "74c63417-5d1b-3faa-b69e-0c93758c07c8",
+              "position" : {
+                "x" : 726.9341012213749,
+                "y" : 205.58005263177813
               }
             }, {
               "componentType" : "FUNNEL",
@@ -10627,18 +10779,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
-              "position" : {
-                "x" : 2736.0,
-                "y" : -680.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
               "position" : {
                 "x" : 2776.0,
                 "y" : 128.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
+              "position" : {
+                "x" : 2736.0,
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12173,18 +12325,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
-              "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
-              "position" : {
-                "x" : 736.0,
-                "y" : -760.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
               "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
               "position" : {
                 "x" : 1376.0,
                 "y" : -576.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
+              "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
+              "position" : {
+                "x" : 736.0,
+                "y" : -760.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -14270,18 +14422,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "a485a7a5-09a3-314f-b187-7fc5c648d706",
-            "position" : {
-              "x" : 296.0,
-              "y" : 8.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "f53d28bc-9512-32aa-b4e9-da8f981c0786",
             "position" : {
               "x" : 594.314339028165,
               "y" : 4.165925173674566
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "a485a7a5-09a3-314f-b187-7fc5c648d706",
+            "position" : {
+              "x" : 296.0,
+              "y" : 8.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -16608,18 +16760,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
-              "position" : {
-                "x" : 2280.0,
-                "y" : 1136.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
               "position" : {
                 "x" : 2784.0,
                 "y" : 1024.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
+              "position" : {
+                "x" : 2280.0,
+                "y" : 1136.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -20022,18 +20174,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
-              "identifier" : "24b0766e-8195-3813-96e7-58ecfbfe9da8",
-              "position" : {
-                "x" : 512.0,
-                "y" : 1256.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
               "identifier" : "9348d9c0-57d9-307c-844f-2ebb2502632b",
               "position" : {
                 "x" : 1016.0,
                 "y" : -112.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "d9c5ee11-0004-3ece-ac0b-9913d7e21ac6",
+              "identifier" : "24b0766e-8195-3813-96e7-58ecfbfe9da8",
+              "position" : {
+                "x" : 512.0,
+                "y" : 1256.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -24592,18 +24744,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
-            "identifier" : "69699720-90c8-3f25-b3f6-e23dfe82ab76",
-            "position" : {
-              "x" : 1432.0,
-              "y" : -16.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
             "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
             "position" : {
               "x" : 296.0,
               "y" : 8.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
+            "identifier" : "69699720-90c8-3f25-b3f6-e23dfe82ab76",
+            "position" : {
+              "x" : 1432.0,
+              "y" : -16.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -26851,18 +27003,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
-              "position" : {
-                "x" : 520.0,
-                "y" : 1520.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
               "position" : {
                 "x" : -552.0,
                 "y" : 48.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
+              "position" : {
+                "x" : 520.0,
+                "y" : 1520.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -26875,18 +27027,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "4d1f10ec-990f-32d8-b179-319e63972b59",
-              "position" : {
-                "x" : -552.0,
-                "y" : 272.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "78972236-1428-30e6-827c-3da08976a44d",
               "position" : {
                 "x" : 341.5649034143595,
                 "y" : -56.71199118678834
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "4d1f10ec-990f-32d8-b179-319e63972b59",
+              "position" : {
+                "x" : -552.0,
+                "y" : 272.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -26923,18 +27075,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
-              "position" : {
-                "x" : 1480.0,
-                "y" : 888.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
               "position" : {
                 "x" : -552.0,
                 "y" : 496.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
+              "position" : {
+                "x" : 1480.0,
+                "y" : 888.0
               }
             } ],
             "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
@@ -33688,18 +33840,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "ec8a9322-e3f2-3be0-8871-f45e725595a9",
-              "position" : {
-                "x" : 2784.0,
-                "y" : 1024.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "0624aeca-6c2f-34d0-b01c-42df9ea992e3",
               "position" : {
                 "x" : 2736.0,
                 "y" : 400.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "ec8a9322-e3f2-3be0-8871-f45e725595a9",
+              "position" : {
+                "x" : 2784.0,
+                "y" : 1024.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -33760,18 +33912,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
-              "position" : {
-                "x" : 2736.0,
-                "y" : -680.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
               "position" : {
                 "x" : 2776.0,
                 "y" : 128.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
+              "position" : {
+                "x" : 2736.0,
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -39180,12 +39332,12 @@
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "Max_Connections",
+            "name" : "sourceMinimumIdleConnections",
             "sensitive" : false,
             "value" : "1"
           }, {
             "description" : "",
-            "name" : "sourceMinimumIdleConnections",
+            "name" : "Max_Connections",
             "sensitive" : false,
             "value" : "1"
           }, {
