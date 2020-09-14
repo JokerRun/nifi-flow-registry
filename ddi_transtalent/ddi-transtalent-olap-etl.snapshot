@@ -13372,18 +13372,18 @@
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
             "bends" : [ {
-              "x" : 1570.347900390625,
-              "y" : 1428.5675048828125
+              "x" : 1556.347900390625,
+              "y" : 1550.5675048828125
             }, {
-              "x" : 1570.347900390625,
-              "y" : 1478.5675048828125
+              "x" : 1556.347900390625,
+              "y" : 1600.5675048828125
             } ],
             "componentType" : "CONNECTION",
             "destination" : {
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "PutSQL",
+              "name" : "fact_accumulated_active_user",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
@@ -13400,7 +13400,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "PutSQL",
+              "name" : "fact_accumulated_active_user",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13449,7 +13449,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9cabf38c-fe6c-38b3-81bc-349a6fe3d7b4",
-              "name" : "PutSQL",
+              "name" : "fact_daily_active_user",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
@@ -13466,7 +13466,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9cabf38c-fe6c-38b3-81bc-349a6fe3d7b4",
-              "name" : "PutSQL",
+              "name" : "fact_daily_active_user",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13496,7 +13496,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9cabf38c-fe6c-38b3-81bc-349a6fe3d7b4",
-              "name" : "PutSQL",
+              "name" : "fact_daily_active_user",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13556,7 +13556,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "PutSQL",
+              "name" : "fact_accumulated_active_user",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13599,7 +13599,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9cabf38c-fe6c-38b3-81bc-349a6fe3d7b4",
-              "name" : "PutSQL",
+              "name" : "fact_daily_active_user",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
@@ -13628,8 +13628,8 @@
             "destination" : {
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
-              "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "PutSQL",
+              "id" : "5b977b08-589d-357d-939f-53c0d65f2f5b",
+              "name" : "ReplaceText",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
@@ -13647,6 +13647,36 @@
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "b5080316-1a91-3c8f-aa35-162035952e7b",
               "name" : "MergeContent",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
+              "name" : "fact_accumulated_active_user",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "f44a535a-3258-33ee-9822-497837547856",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "5b977b08-589d-357d-939f-53c0d65f2f5b",
+              "name" : "ReplaceText",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13783,8 +13813,8 @@
             "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
             "identifier" : "e0ac722e-393d-3f95-94eb-50138e11a93f",
             "position" : {
-              "x" : 1264.0,
-              "y" : 1568.0
+              "x" : 1256.0,
+              "y" : 1704.0
             }
           } ],
           "groupIdentifier" : "6d7c3322-59a1-30a6-9092-1eb44e98b75e",
@@ -14072,15 +14102,14 @@
             "executionNode" : "ALL",
             "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
             "identifier" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-            "name" : "PutSQL",
+            "name" : "fact_accumulated_active_user",
             "penaltyDuration" : "30 sec",
             "position" : {
-              "x" : 1104.0,
-              "y" : 1384.0
+              "x" : 1096.0,
+              "y" : 1504.0
             },
             "properties" : {
               "Support Fragmented Transactions" : "true",
-              "putsql-sql-statement" : "\nreplace into fact_accumulated_active_user\nselect ddp.date_key, count(distinct user_id) accumulate_active_user, ddp.date_key\nfrom (select date_key,min(time_start) as operation_date\n      from dim_date_period\n      where time_start \n between '${now():toNumber():minus(86400000):format(\"yyyy-MM-dd\", \"GMT+8\")}'\n and '${now():format(\"yyyy-MM-dd\", \"GMT+8\")}'\n      group by date_key) ddp\n         left join fact_daily_active_user fdau on ddp.date_key >= fdau.date_key\ngroup by ddp.date_key\n;",
               "Batch Size" : "100",
               "Obtain Generated Keys" : "false",
               "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -14665,7 +14694,7 @@
             "executionNode" : "ALL",
             "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
             "identifier" : "9cabf38c-fe6c-38b3-81bc-349a6fe3d7b4",
-            "name" : "PutSQL",
+            "name" : "fact_daily_active_user",
             "penaltyDuration" : "30 sec",
             "position" : {
               "x" : 1104.0,
@@ -14735,6 +14764,86 @@
             "schedulingStrategy" : "TIMER_DRIVEN",
             "style" : { },
             "type" : "org.apache.nifi.processors.standard.PutSQL",
+            "yieldDuration" : "1 sec"
+          }, {
+            "autoTerminatedRelationships" : [ "failure" ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "5b977b08-589d-357d-939f-53c0d65f2f5b",
+            "name" : "ReplaceText",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 1096.0,
+              "y" : 1328.0
+            },
+            "properties" : {
+              "Regular Expression" : "(^.*$)",
+              "Replacement Value" : "\nreplace into fact_accumulated_active_user\nselect ddp.date_key, count(distinct user_id) accumulate_active_user, ddp.date_key\nfrom (select date_key,min(time_start) as operation_date\n      from dim_date_period\n      where time_start\n between '${now():toNumber():minus(86400000):format(\"yyyy-MM-dd\", \"GMT+8\")}'\n and '${now():format(\"yyyy-MM-dd\", \"GMT+8\")}'\n      group by date_key) ddp\n         left join fact_daily_active_user fdau on ddp.date_key >= fdau.date_key\ngroup by ddp.date_key\n;",
+              "Evaluation Mode" : "Entire text",
+              "Line-by-Line Evaluation Mode" : "All",
+              "Character Set" : "UTF-8",
+              "Maximum Buffer Size" : "1 MB",
+              "Replacement Strategy" : "Regex Replace"
+            },
+            "propertyDescriptors" : {
+              "Regular Expression" : {
+                "displayName" : "Search Value",
+                "identifiesControllerService" : false,
+                "name" : "Regular Expression",
+                "sensitive" : false
+              },
+              "Replacement Value" : {
+                "displayName" : "Replacement Value",
+                "identifiesControllerService" : false,
+                "name" : "Replacement Value",
+                "sensitive" : false
+              },
+              "Evaluation Mode" : {
+                "displayName" : "Evaluation Mode",
+                "identifiesControllerService" : false,
+                "name" : "Evaluation Mode",
+                "sensitive" : false
+              },
+              "Line-by-Line Evaluation Mode" : {
+                "displayName" : "Line-by-Line Evaluation Mode",
+                "identifiesControllerService" : false,
+                "name" : "Line-by-Line Evaluation Mode",
+                "sensitive" : false
+              },
+              "Character Set" : {
+                "displayName" : "Character Set",
+                "identifiesControllerService" : false,
+                "name" : "Character Set",
+                "sensitive" : false
+              },
+              "Maximum Buffer Size" : {
+                "displayName" : "Maximum Buffer Size",
+                "identifiesControllerService" : false,
+                "name" : "Maximum Buffer Size",
+                "sensitive" : false
+              },
+              "Replacement Strategy" : {
+                "displayName" : "Replacement Strategy",
+                "identifiesControllerService" : false,
+                "name" : "Replacement Strategy",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.ReplaceText",
             "yieldDuration" : "1 sec"
           }, {
             "autoTerminatedRelationships" : [ "original", "failure" ],
@@ -14931,7 +15040,7 @@
             "penaltyDuration" : "30 sec",
             "position" : {
               "x" : 1104.0,
-              "y" : 1200.0
+              "y" : 1160.0
             },
             "properties" : {
               "Keep Path" : "false",
