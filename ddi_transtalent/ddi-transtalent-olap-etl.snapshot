@@ -13372,11 +13372,11 @@
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
             "bends" : [ {
-              "x" : 1556.347900390625,
-              "y" : 1550.5675048828125
+              "x" : 1559.4217529296875,
+              "y" : 1727.30810546875
             }, {
-              "x" : 1556.347900390625,
-              "y" : 1600.5675048828125
+              "x" : 1559.4217529296875,
+              "y" : 1777.30810546875
             } ],
             "componentType" : "CONNECTION",
             "destination" : {
@@ -13401,6 +13401,36 @@
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
               "name" : "fact_accumulated_active_user",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
+              "name" : "fact_accumulated_active_user",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "96e0f66e-2718-3931-ac76-1adbc5816bb8",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "7fdf11c6-1eeb-36fe-a5c7-f1f26330a70d",
+              "name" : "UpdateAttribute",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13658,8 +13688,8 @@
             "destination" : {
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
-              "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "fact_accumulated_active_user",
+              "id" : "7fdf11c6-1eeb-36fe-a5c7-f1f26330a70d",
+              "name" : "UpdateAttribute",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
@@ -13814,7 +13844,7 @@
             "identifier" : "e0ac722e-393d-3f95-94eb-50138e11a93f",
             "position" : {
               "x" : 1256.0,
-              "y" : 1704.0
+              "y" : 1880.0
             }
           } ],
           "groupIdentifier" : "6d7c3322-59a1-30a6-9092-1eb44e98b75e",
@@ -14106,10 +14136,10 @@
             "penaltyDuration" : "30 sec",
             "position" : {
               "x" : 1096.0,
-              "y" : 1504.0
+              "y" : 1680.0
             },
             "properties" : {
-              "Support Fragmented Transactions" : "true",
+              "Support Fragmented Transactions" : "false",
               "Batch Size" : "100",
               "Obtain Generated Keys" : "false",
               "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -14679,6 +14709,64 @@
             "schedulingStrategy" : "TIMER_DRIVEN",
             "style" : { },
             "type" : "org.apache.nifi.processors.standard.ReplaceText",
+            "yieldDuration" : "1 sec"
+          }, {
+            "autoTerminatedRelationships" : [ ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-update-attribute-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "7fdf11c6-1eeb-36fe-a5c7-f1f26330a70d",
+            "name" : "UpdateAttribute",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 1104.0,
+              "y" : 1496.0
+            },
+            "properties" : {
+              "Delete Attributes Expression" : "sql(.*)",
+              "Store State" : "Do not store state",
+              "canonical-value-lookup-cache-size" : "100"
+            },
+            "propertyDescriptors" : {
+              "Delete Attributes Expression" : {
+                "displayName" : "Delete Attributes Expression",
+                "identifiesControllerService" : false,
+                "name" : "Delete Attributes Expression",
+                "sensitive" : false
+              },
+              "Store State" : {
+                "displayName" : "Store State",
+                "identifiesControllerService" : false,
+                "name" : "Store State",
+                "sensitive" : false
+              },
+              "canonical-value-lookup-cache-size" : {
+                "displayName" : "Cache Value Lookup Cache Size",
+                "identifiesControllerService" : false,
+                "name" : "canonical-value-lookup-cache-size",
+                "sensitive" : false
+              },
+              "Stateful Variables Initial Value" : {
+                "displayName" : "Stateful Variables Initial Value",
+                "identifiesControllerService" : false,
+                "name" : "Stateful Variables Initial Value",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
             "yieldDuration" : "1 sec"
           }, {
             "autoTerminatedRelationships" : [ "failure" ],
