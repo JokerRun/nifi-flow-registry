@@ -13316,6 +13316,36 @@
             "destination" : {
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "2d587b3a-80a4-35e5-bc8c-d9125013fdcc",
+              "name" : "update fact_accumulated_active_user.registry",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "30783d76-4fb6-359c-a26c-b587f88f8471",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "5568e3b9-70de-3ed2-9429-d464f1d7b1f6",
+              "name" : "fact_accumulated_active_user",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "cbd22cca-7a1d-3aa8-a76a-b884bae24cfb",
               "name" : "ConvertJSONToSQL",
               "type" : "PROCESSOR"
@@ -13383,7 +13413,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "fact_accumulated_active_user",
+              "name" : "set transaction isolation level",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
@@ -13400,7 +13430,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "fact_accumulated_active_user",
+              "name" : "set transaction isolation level",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13413,7 +13443,7 @@
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "fact_accumulated_active_user",
+              "name" : "set transaction isolation level",
               "type" : "PROCESSOR"
             },
             "flowFileExpiration" : "0 sec",
@@ -13468,6 +13498,42 @@
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
             "bends" : [ {
+              "x" : 1560.24169921875,
+              "y" : 2130.78955078125
+            }, {
+              "x" : 1560.24169921875,
+              "y" : 2180.78955078125
+            } ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "2d587b3a-80a4-35e5-bc8c-d9125013fdcc",
+              "name" : "update fact_accumulated_active_user.registry",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "ce4b37c5-0a3b-31b1-8c07-81eb8e2a032a",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "retry" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "2d587b3a-80a4-35e5-bc8c-d9125013fdcc",
+              "name" : "update fact_accumulated_active_user.registry",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ {
               "x" : 1569.118896484375,
               "y" : 1026.3204345703125
             }, {
@@ -13497,6 +13563,42 @@
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "9cabf38c-fe6c-38b3-81bc-349a6fe3d7b4",
               "name" : "fact_daily_active_user",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ {
+              "x" : 1564.4422607421875,
+              "y" : 1922.9012451171875
+            }, {
+              "x" : 1564.4422607421875,
+              "y" : 1972.9012451171875
+            } ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "5568e3b9-70de-3ed2-9429-d464f1d7b1f6",
+              "name" : "fact_accumulated_active_user",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "31e4bdb5-cc62-3cc0-be73-a2a62c8f2479",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "retry" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "5568e3b9-70de-3ed2-9429-d464f1d7b1f6",
+              "name" : "fact_accumulated_active_user",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13538,6 +13640,66 @@
             "destination" : {
               "comments" : "",
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "5568e3b9-70de-3ed2-9429-d464f1d7b1f6",
+              "name" : "fact_accumulated_active_user",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "57215ea9-6033-363c-8fa9-241f8497e332",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
+              "name" : "set transaction isolation level",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "1a0aa9f7-9523-342a-bd62-9125cde4a15e",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "98afccd3-73a5-3d13-a599-2ffcb952a31c",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+              "id" : "2d587b3a-80a4-35e5-bc8c-d9125013fdcc",
+              "name" : "update fact_accumulated_active_user.registry",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "4c004977-4ada-3fee-b377-c39b5021a2a0",
               "name" : "EvaluateJsonPath",
               "type" : "PROCESSOR"
@@ -13557,36 +13719,6 @@
               "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
               "id" : "e2439057-2110-360c-a82a-d921f10e7d63",
               "name" : "SplitJson",
-              "type" : "PROCESSOR"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
-              "id" : "e0ac722e-393d-3f95-94eb-50138e11a93f",
-              "name" : "Funnel",
-              "type" : "FUNNEL"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
-            "identifier" : "907bed7e-3da6-3b5d-b4c3-b545d5dba3f3",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "success" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
-              "id" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-              "name" : "fact_accumulated_active_user",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -13841,10 +13973,10 @@
           "funnels" : [ {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
-            "identifier" : "e0ac722e-393d-3f95-94eb-50138e11a93f",
+            "identifier" : "1a0aa9f7-9523-342a-bd62-9125cde4a15e",
             "position" : {
-              "x" : 1256.0,
-              "y" : 1880.0
+              "x" : 1280.0,
+              "y" : 2504.0
             }
           } ],
           "groupIdentifier" : "6d7c3322-59a1-30a6-9092-1eb44e98b75e",
@@ -14132,7 +14264,7 @@
             "executionNode" : "ALL",
             "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
             "identifier" : "9e5603d2-a9c5-3115-9030-79db7c68a61c",
-            "name" : "fact_accumulated_active_user",
+            "name" : "set transaction isolation level",
             "penaltyDuration" : "30 sec",
             "position" : {
               "x" : 1096.0,
@@ -14140,6 +14272,7 @@
             },
             "properties" : {
               "Support Fragmented Transactions" : "false",
+              "putsql-sql-statement" : "set session transaction isolation level read committed;\n",
               "Batch Size" : "100",
               "Obtain Generated Keys" : "false",
               "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -14472,6 +14605,92 @@
             "type" : "org.apache.nifi.processors.standard.QueryDatabaseTable",
             "yieldDuration" : "1 sec"
           }, {
+            "autoTerminatedRelationships" : [ "failure" ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "2d587b3a-80a4-35e5-bc8c-d9125013fdcc",
+            "name" : "update fact_accumulated_active_user.registry",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 1104.0,
+              "y" : 2088.0
+            },
+            "properties" : {
+              "Support Fragmented Transactions" : "false",
+              "putsql-sql-statement" : "update\n# select *\n# from\n    fact_accumulated_active_user faau\n    left join\n    (select dd.date_key, count(cu.id) as total_registry\n     from dim_date dd\n               left join company_users cu on cu.create_at <= dd.start_at\n     where dd.start_at between ${date_start} and ${date_end}\n     group by dd.date_key) cu\n    on faau.date_key = cu.date_key\nset faau.accumulate_registry_user=cu.total_registry\nwhere faau.operation_date between ${date_start} and ${date_end}\n;",
+              "Batch Size" : "100",
+              "Obtain Generated Keys" : "false",
+              "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
+              "database-session-autocommit" : "false",
+              "rollback-on-failure" : "false"
+            },
+            "propertyDescriptors" : {
+              "Support Fragmented Transactions" : {
+                "displayName" : "Support Fragmented Transactions",
+                "identifiesControllerService" : false,
+                "name" : "Support Fragmented Transactions",
+                "sensitive" : false
+              },
+              "putsql-sql-statement" : {
+                "displayName" : "SQL Statement",
+                "identifiesControllerService" : false,
+                "name" : "putsql-sql-statement",
+                "sensitive" : false
+              },
+              "Transaction Timeout" : {
+                "displayName" : "Transaction Timeout",
+                "identifiesControllerService" : false,
+                "name" : "Transaction Timeout",
+                "sensitive" : false
+              },
+              "Batch Size" : {
+                "displayName" : "Batch Size",
+                "identifiesControllerService" : false,
+                "name" : "Batch Size",
+                "sensitive" : false
+              },
+              "Obtain Generated Keys" : {
+                "displayName" : "Obtain Generated Keys",
+                "identifiesControllerService" : false,
+                "name" : "Obtain Generated Keys",
+                "sensitive" : false
+              },
+              "JDBC Connection Pool" : {
+                "displayName" : "JDBC Connection Pool",
+                "identifiesControllerService" : true,
+                "name" : "JDBC Connection Pool",
+                "sensitive" : false
+              },
+              "database-session-autocommit" : {
+                "displayName" : "Database Session AutoCommit",
+                "identifiesControllerService" : false,
+                "name" : "database-session-autocommit",
+                "sensitive" : false
+              },
+              "rollback-on-failure" : {
+                "displayName" : "Rollback On Failure",
+                "identifiesControllerService" : false,
+                "name" : "rollback-on-failure",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.PutSQL",
+            "yieldDuration" : "1 sec"
+          }, {
             "autoTerminatedRelationships" : [ "failure", "retry" ],
             "bulletinLevel" : "WARN",
             "bundle" : {
@@ -14494,6 +14713,91 @@
             "properties" : {
               "Support Fragmented Transactions" : "false",
               "putsql-sql-statement" : "insert into fact_user_login_count(user_id, login_cnt)\nvalues (${user_id}, ${cnt})\non duplicate key update login_cnt = login_cnt + ${cnt}\n",
+              "Batch Size" : "100",
+              "Obtain Generated Keys" : "false",
+              "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
+              "database-session-autocommit" : "false",
+              "rollback-on-failure" : "false"
+            },
+            "propertyDescriptors" : {
+              "Support Fragmented Transactions" : {
+                "displayName" : "Support Fragmented Transactions",
+                "identifiesControllerService" : false,
+                "name" : "Support Fragmented Transactions",
+                "sensitive" : false
+              },
+              "putsql-sql-statement" : {
+                "displayName" : "SQL Statement",
+                "identifiesControllerService" : false,
+                "name" : "putsql-sql-statement",
+                "sensitive" : false
+              },
+              "Transaction Timeout" : {
+                "displayName" : "Transaction Timeout",
+                "identifiesControllerService" : false,
+                "name" : "Transaction Timeout",
+                "sensitive" : false
+              },
+              "Batch Size" : {
+                "displayName" : "Batch Size",
+                "identifiesControllerService" : false,
+                "name" : "Batch Size",
+                "sensitive" : false
+              },
+              "Obtain Generated Keys" : {
+                "displayName" : "Obtain Generated Keys",
+                "identifiesControllerService" : false,
+                "name" : "Obtain Generated Keys",
+                "sensitive" : false
+              },
+              "JDBC Connection Pool" : {
+                "displayName" : "JDBC Connection Pool",
+                "identifiesControllerService" : true,
+                "name" : "JDBC Connection Pool",
+                "sensitive" : false
+              },
+              "database-session-autocommit" : {
+                "displayName" : "Database Session AutoCommit",
+                "identifiesControllerService" : false,
+                "name" : "database-session-autocommit",
+                "sensitive" : false
+              },
+              "rollback-on-failure" : {
+                "displayName" : "Rollback On Failure",
+                "identifiesControllerService" : false,
+                "name" : "rollback-on-failure",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.PutSQL",
+            "yieldDuration" : "1 sec"
+          }, {
+            "autoTerminatedRelationships" : [ "failure" ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "fa7b62e4-8c9e-3d0d-90de-0d8c672ce466",
+            "identifier" : "5568e3b9-70de-3ed2-9429-d464f1d7b1f6",
+            "name" : "fact_accumulated_active_user",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 1104.0,
+              "y" : 1880.0
+            },
+            "properties" : {
+              "Support Fragmented Transactions" : "false",
               "Batch Size" : "100",
               "Obtain Generated Keys" : "false",
               "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -14875,7 +15179,7 @@
             },
             "properties" : {
               "Regular Expression" : "(^.*$)",
-              "Replacement Value" : "\nreplace into fact_accumulated_active_user\nselect ddp.date_key, count(distinct user_id) accumulate_active_user, ddp.date_key\nfrom (select date_key,min(time_start) as operation_date\n      from dim_date_period\n      where time_start\n between '${now():toNumber():minus(86400000):format(\"yyyy-MM-dd\", \"GMT+8\")}'\n and '${now():format(\"yyyy-MM-dd\", \"GMT+8\")}'\n      group by date_key) ddp\n         left join fact_daily_active_user fdau on ddp.date_key >= fdau.date_key\ngroup by ddp.date_key\n;",
+              "Replacement Value" : "replace into fact_accumulated_active_user(date_key, accumulate_active_user, operation_date)\nselect dd.date_key,\n       count(distinct user_id) accumulate_active_user,\n       dd.start_at\nfrom dim_date dd\n         left join fact_daily_active_user fdau on dd.date_key >= fdau.date_key\nwhere dd.start_at\n#           between ${date_start} and ${date_end}\n between '${now():toNumber():minus(86400000):format(\"yyyy-MM-dd\", \"GMT+8\")}'\n and '${now():format(\"yyyy-MM-dd\", \"GMT+8\")}'\ngroup by dd.date_key\n;\n",
               "Evaluation Mode" : "Entire text",
               "Line-by-Line Evaluation Mode" : "All",
               "Character Set" : "UTF-8",
