@@ -989,18 +989,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "58aa7066-c770-353f-beb1-bbee8c045953",
-            "identifier" : "226a6418-079b-3998-981e-71c1a57cd521",
-            "position" : {
-              "x" : 219.0,
-              "y" : 305.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "58aa7066-c770-353f-beb1-bbee8c045953",
             "identifier" : "25891568-e914-38b7-b1a1-8cf2c9b2fae6",
             "position" : {
               "x" : 1784.0,
               "y" : 376.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "58aa7066-c770-353f-beb1-bbee8c045953",
+            "identifier" : "226a6418-079b-3998-981e-71c1a57cd521",
+            "position" : {
+              "x" : 219.0,
+              "y" : 305.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -1449,66 +1449,6 @@
             "destination" : {
               "comments" : "",
               "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-              "id" : "4d1502aa-77b7-336d-ace7-f339cc1ffd40",
-              "name" : "RouteOnAttribute",
-              "type" : "PROCESSOR"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-            "identifier" : "6572329d-273c-3512-99ec-dcfff57eff17",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-              "id" : "98cf8830-1295-3cda-a7ff-49a8d79de1e8",
-              "name" : "Funnel",
-              "type" : "FUNNEL"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-              "id" : "98cf8830-1295-3cda-a7ff-49a8d79de1e8",
-              "name" : "Funnel",
-              "type" : "FUNNEL"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-            "identifier" : "46272469-1de7-33b7-9f53-04725e6ec457",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
-              "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
-              "name" : "error_reference_checked",
-              "type" : "OUTPUT_PORT"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
               "id" : "c56785aa-ea28-3f7e-a79a-440a741398be",
               "name" : "Funnel",
               "type" : "FUNNEL"
@@ -1569,36 +1509,6 @@
             "destination" : {
               "comments" : "",
               "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-              "id" : "6ece82fb-c91f-30da-ac7f-9ea7a736cb0c",
-              "name" : "PutEmail",
-              "type" : "PROCESSOR"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-            "identifier" : "63212fed-bd04-3518-af0d-e682a6ec2313",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "unmatched" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-              "id" : "4d1502aa-77b7-336d-ace7-f339cc1ffd40",
-              "name" : "RouteOnAttribute",
-              "type" : "PROCESSOR"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
               "id" : "9120d74c-764d-3b8d-981f-2631a3444922",
               "name" : "Yestoday",
               "type" : "PROCESSOR"
@@ -1627,6 +1537,7 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "comments" : "",
               "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
               "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
               "name" : "duplicate_check",
@@ -1688,35 +1599,6 @@
             "destination" : {
               "comments" : "",
               "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-              "id" : "4d1502aa-77b7-336d-ace7-f339cc1ffd40",
-              "name" : "RouteOnAttribute",
-              "type" : "PROCESSOR"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-            "identifier" : "c7bc487d-d517-333c-b2b5-995501bce558",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
-              "name" : "duplicate_checked",
-              "type" : "OUTPUT_PORT"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
               "id" : "50bb389c-d1b8-3e70-818f-4d3bbfd4559c",
               "name" : "Funnel",
               "type" : "FUNNEL"
@@ -1767,6 +1649,156 @@
               "id" : "c56785aa-ea28-3f7e-a79a-440a741398be",
               "name" : "Funnel",
               "type" : "FUNNEL"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+              "id" : "4d1502aa-77b7-336d-ace7-f339cc1ffd40",
+              "name" : "RouteOnAttribute",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+            "identifier" : "46272469-1de7-33b7-9f53-04725e6ec457",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
+              "name" : "error_reference_checked",
+              "type" : "OUTPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+              "id" : "6ece82fb-c91f-30da-ac7f-9ea7a736cb0c",
+              "name" : "PutEmail",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+            "identifier" : "63212fed-bd04-3518-af0d-e682a6ec2313",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "unmatched" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+              "id" : "4d1502aa-77b7-336d-ace7-f339cc1ffd40",
+              "name" : "RouteOnAttribute",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
+              "name" : "missing_check",
+              "type" : "INPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+            "identifier" : "1d9de09c-5d57-3b10-9ccc-7ab797d69541",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+              "id" : "c56785aa-ea28-3f7e-a79a-440a741398be",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+              "id" : "4d1502aa-77b7-336d-ace7-f339cc1ffd40",
+              "name" : "RouteOnAttribute",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+            "identifier" : "1faef72f-3540-3d51-8b3a-b6f92802dfcb",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
+              "name" : "missing_checked",
+              "type" : "OUTPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+              "id" : "4d1502aa-77b7-336d-ace7-f339cc1ffd40",
+              "name" : "RouteOnAttribute",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+            "identifier" : "c7bc487d-d517-333c-b2b5-995501bce558",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
+              "name" : "duplicate_checked",
+              "type" : "OUTPUT_PORT"
             },
             "zIndex" : 0
           } ],
@@ -2026,14 +2058,6 @@
           "funnels" : [ {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
-            "identifier" : "98cf8830-1295-3cda-a7ff-49a8d79de1e8",
-            "position" : {
-              "x" : 528.0,
-              "y" : 208.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
             "identifier" : "c56785aa-ea28-3f7e-a79a-440a741398be",
             "position" : {
               "x" : -64.0,
@@ -2062,6 +2086,36 @@
             "comments" : "",
             "componentType" : "PROCESS_GROUP",
             "connections" : [ {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "30c94014-381f-3470-9dbc-c7d2f5991d19",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "f68bb7ec-18e2-3670-b407-df890084a895",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "79cd54a7-f4b6-3779-b3bd-40e992d99788",
+                "name" : "# practices 串数据,导致学员完成状态异常",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
               "bends" : [ ],
@@ -2100,7 +2154,7 @@
                 "comments" : "",
                 "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
                 "id" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
-                "name" : "# learning_path串用问题(may cause by: learning_tour接口问题)",
+                "name" : "# course 串数据,导致学员完成状态异常",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -2117,6 +2171,36 @@
                 "comments" : "",
                 "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
                 "id" : "269f0195-8f8a-3895-895f-b304229e4e72",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "79cd54a7-f4b6-3779-b3bd-40e992d99788",
+                "name" : "# practices 串数据,导致学员完成状态异常",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "b596977a-1668-3c37-8195-c5004e7b2eeb",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "6a68d59c-4012-31fe-9b3d-2b9aac04f71a",
                 "name" : "Funnel",
                 "type" : "FUNNEL"
               },
@@ -2159,6 +2243,66 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "6a68d59c-4012-31fe-9b3d-2b9aac04f71a",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "f0a4fef4-7ad7-3e43-b23e-937fb4ddeabe",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
+                "name" : "error_reference_check",
+                "type" : "INPUT_PORT"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "de3749a6-a047-37cf-97e7-baa5e1ee7f0a",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "eb568d58-5472-3245-8906-7a817bb22dd6",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "30c94014-381f-3470-9dbc-c7d2f5991d19",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
                 "id" : "24198302-382c-3fd1-8798-0d6e8659ead2",
                 "name" : "UpdateAttribute",
                 "type" : "PROCESSOR"
@@ -2177,8 +2321,38 @@
                 "comments" : "",
                 "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
                 "id" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
-                "name" : "# learning_path串用问题(may cause by: learning_tour接口问题)",
+                "name" : "# course 串数据,导致学员完成状态异常",
                 "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
+                "name" : "error_reference_checked",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "6f68c045-b7b4-3840-945c-33a73373a4b4",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+                "id" : "de3749a6-a047-37cf-97e7-baa5e1ee7f0a",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
               },
               "zIndex" : 0
             }, {
@@ -2218,7 +2392,7 @@
               "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
               "identifier" : "00ca57ed-d484-3577-85e0-4e65be95b852",
               "position" : {
-                "x" : 720.0,
+                "x" : 232.0,
                 "y" : 280.0
               }
             }, {
@@ -2226,8 +2400,24 @@
               "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
               "identifier" : "269f0195-8f8a-3895-895f-b304229e4e72",
               "position" : {
-                "x" : 696.0,
+                "x" : 232.0,
                 "y" : -288.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "6a68d59c-4012-31fe-9b3d-2b9aac04f71a",
+              "position" : {
+                "x" : 840.0,
+                "y" : -296.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "de3749a6-a047-37cf-97e7-baa5e1ee7f0a",
+              "position" : {
+                "x" : 840.0,
+                "y" : 272.0
               }
             } ],
             "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
@@ -2263,8 +2453,8 @@
               "type" : "OUTPUT_PORT"
             } ],
             "position" : {
-              "x" : 352.0,
-              "y" : -104.0
+              "x" : 344.0,
+              "y" : -80.0
             },
             "processGroups" : [ ],
             "processors" : [ {
@@ -2284,14 +2474,14 @@
               "name" : "UpdateAttribute",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 576.0,
+                "x" : 80.0,
                 "y" : 48.0
               },
               "properties" : {
-                "check_sql" : "# learning_path串用问题(may cause by: learning_tour接口问题)\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id,\n       group_concat(distinct c.id) course_ids,\n       group_concat(distinct c.user_id) cuser_ids,\n       group_concat(distinct p.id) practice_ids,\n       group_concat(distinct p.user_id)puser_ids,\n       lp.start_time as lp_start_time,\n       lp.end_time\nfrom learning_paths lp\n         left join courses c on lp.id = c.learning_path_id\n         left join practices p on lp.id = p.learning_path_id\nwhere lp.start_time between ${date_start} and ${date_end}\n   or lp.end_time between ${date_start} and ${date_end}\n#     or lp.end_time is null\ngroup by lp.id\nhaving count(1) > 1\n;",
+                "check_sql" : "# check\nselect courses.id,\n       user_id,\n       course_meta_id,\n       dc.name,\n       courses.learning_path_id,\n       status,\n       progress,\n       start_time,\n       end_time\nfrom courses\n         join dim_course dc on courses.course_meta_id = dc.id\nwhere courses.learning_path_id in (select learning_path_id\n                                   from courses\n                                   where user_id not in (select id from users where role_id = 4)\n                                   group by learning_path_id\n                                   having count(1) > 1\n)\n  and user_id not in (select id from users where role_id = 4)\n;\n# http://m.transtalent.cn/api/loginAs/106971\n",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
-                "event" : "# learning_path串用问题(may cause by: learning_tour接口问题)"
+                "event" : "# course 串数据,导致学员完成状态异常\n"
               },
               "propertyDescriptors" : {
                 "check_sql" : {
@@ -2352,17 +2542,17 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
               "identifier" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
-              "name" : "# learning_path串用问题(may cause by: learning_tour接口问题)",
+              "name" : "# course 串数据,导致学员完成状态异常",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 576.0,
+                "x" : 80.0,
                 "y" : -136.0
               },
               "properties" : {
                 "esql-max-rows" : "0",
                 "esql-output-batch-size" : "0",
                 "esql-fetch-size" : "0",
-                "SQL select query" : "\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id,\n       group_concat(distinct c.id) course_ids,\n       group_concat(distinct c.user_id) cuser_ids,\n       group_concat(distinct p.id) practice_ids,\n       group_concat(distinct p.user_id)puser_ids,\n       lp.start_time as lp_start_time,\n       lp.end_time\nfrom learning_paths lp\n         left join courses c on lp.id = c.learning_path_id\n         left join practices p on lp.id = p.learning_path_id\nwhere lp.start_time between ${date_start} and ${date_end}\n   or lp.end_time between ${date_start} and ${date_end}\n#     or lp.end_time is null\ngroup by lp.id\nhaving count(1) > 1\n;",
+                "SQL select query" : "select id,\n       user_id,\n       course_meta_id,\n       learning_path_id,\n       status,\n       progress,\n       max(start_time) as max_start_time,\n       max(end_time)   as max_end_time\nfrom courses\nwhere user_id not in (select id from users where role_id = 4)\ngroup by learning_path_id\nhaving count(1) > 1\n   and (max_start_time between ${date_start} and ${date_end}\n    or max_end_time between ${date_start} and ${date_end})\n;",
                 "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
                 "Max Wait Time" : "0 seconds",
                 "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
@@ -2444,6 +2634,183 @@
               "style" : { },
               "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
               "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "79cd54a7-f4b6-3779-b3bd-40e992d99788",
+              "name" : "# practices 串数据,导致学员完成状态异常",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 688.0,
+                "y" : -144.0
+              },
+              "properties" : {
+                "esql-max-rows" : "0",
+                "esql-output-batch-size" : "0",
+                "esql-fetch-size" : "0",
+                "SQL select query" : "select id,\n       user_id,\n       practice_meta_id,\n       learning_path_id,\n       progress,\n       status,\n       next_exercise_start_time,\n       max(start_time) as max_start_time,\n       max(end_time)   as max_end_time\nfrom practices\nwhere user_id not in (select id from users where role_id = 4)\ngroup by learning_path_id\nhaving count(1) > 1\n   and (max_start_time between ${date_start} and ${date_end}\n    or max_end_time between ${date_start} and ${date_end})\n;",
+                "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
+                "Max Wait Time" : "0 seconds",
+                "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
+                "dbf-user-logical-types" : "false",
+                "esqlrecord-normalize" : "false"
+              },
+              "propertyDescriptors" : {
+                "sql-pre-query" : {
+                  "displayName" : "SQL Pre-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-pre-query",
+                  "sensitive" : false
+                },
+                "esql-max-rows" : {
+                  "displayName" : "Max Rows Per Flow File",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-max-rows",
+                  "sensitive" : false
+                },
+                "esql-output-batch-size" : {
+                  "displayName" : "Output Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-output-batch-size",
+                  "sensitive" : false
+                },
+                "esql-fetch-size" : {
+                  "displayName" : "Fetch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-fetch-size",
+                  "sensitive" : false
+                },
+                "SQL select query" : {
+                  "displayName" : "SQL select query",
+                  "identifiesControllerService" : false,
+                  "name" : "SQL select query",
+                  "sensitive" : false
+                },
+                "esqlrecord-record-writer" : {
+                  "displayName" : "Record Writer",
+                  "identifiesControllerService" : true,
+                  "name" : "esqlrecord-record-writer",
+                  "sensitive" : false
+                },
+                "Max Wait Time" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Wait Time",
+                  "sensitive" : false
+                },
+                "Database Connection Pooling Service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "Database Connection Pooling Service",
+                  "sensitive" : false
+                },
+                "sql-post-query" : {
+                  "displayName" : "SQL Post-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-post-query",
+                  "sensitive" : false
+                },
+                "dbf-user-logical-types" : {
+                  "displayName" : "Use Avro Logical Types",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-user-logical-types",
+                  "sensitive" : false
+                },
+                "esqlrecord-normalize" : {
+                  "displayName" : "Normalize Table/Column Names",
+                  "identifiesControllerService" : false,
+                  "name" : "esqlrecord-normalize",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-update-attribute-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "5cb0336f-8743-3645-918d-76b2aa0d8bfd",
+              "identifier" : "30c94014-381f-3470-9dbc-c7d2f5991d19",
+              "name" : "UpdateAttribute",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 688.0,
+                "y" : 40.0
+              },
+              "properties" : {
+                "check_sql" : "\n# check\nselect p.id,\n       user_id,\n       practice_meta_id,\n       p.learning_path_id,\n       dp.description,\n       progress,\n       status,\n       next_exercise_start_time,\n       start_time,\n       end_time,\n       dp.learning_path_id,\n       dp.id,\n       description,\n       exercise_interval\nfrom practices p left join dim_practice dp on p.practice_meta_id = dp.id\nwhere p.user_id not in (select id from users where role_id = 4)\n  and p.learning_path_id in (select learning_path_id\n                           from practices\n                           group by learning_path_id\n                           having count(1) > 1);\n",
+                "Store State" : "Do not store state",
+                "canonical-value-lookup-cache-size" : "100",
+                "event" : "# practices 串数据,导致学员完成状态异常\n"
+              },
+              "propertyDescriptors" : {
+                "check_sql" : {
+                  "displayName" : "check_sql",
+                  "identifiesControllerService" : false,
+                  "name" : "check_sql",
+                  "sensitive" : false
+                },
+                "Delete Attributes Expression" : {
+                  "displayName" : "Delete Attributes Expression",
+                  "identifiesControllerService" : false,
+                  "name" : "Delete Attributes Expression",
+                  "sensitive" : false
+                },
+                "Store State" : {
+                  "displayName" : "Store State",
+                  "identifiesControllerService" : false,
+                  "name" : "Store State",
+                  "sensitive" : false
+                },
+                "canonical-value-lookup-cache-size" : {
+                  "displayName" : "Cache Value Lookup Cache Size",
+                  "identifiesControllerService" : false,
+                  "name" : "canonical-value-lookup-cache-size",
+                  "sensitive" : false
+                },
+                "Stateful Variables Initial Value" : {
+                  "displayName" : "Stateful Variables Initial Value",
+                  "identifiesControllerService" : false,
+                  "name" : "Stateful Variables Initial Value",
+                  "sensitive" : false
+                },
+                "event" : {
+                  "displayName" : "event",
+                  "identifiesControllerService" : false,
+                  "name" : "event",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+              "yieldDuration" : "1 sec"
             } ],
             "remoteProcessGroups" : [ ],
             "variables" : { }
@@ -2456,6 +2823,7 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
                 "name" : "duplicate_checked",
@@ -2502,6 +2870,7 @@
               "prioritizers" : [ ],
               "selectedRelationships" : [ "" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
                 "name" : "duplicate_check",
@@ -2517,7 +2886,7 @@
                 "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "22af2fa2-8d68-3632-92f7-c73f8f863864",
-                "name" : "# courses重复数据",
+                "name" : "# courses重复数据，可能导致learning_tours接口报错无法登陆",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -2547,7 +2916,7 @@
                 "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "f333ad07-6e05-3c61-9b36-3410f1b76f2f",
-                "name" : "# practices重复数据",
+                "name" : "# practices重复数据，可能导致learning_tours接口报错无法登陆",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -2621,6 +2990,7 @@
               "prioritizers" : [ ],
               "selectedRelationships" : [ "" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
                 "name" : "duplicate_check",
@@ -2655,6 +3025,36 @@
                 "id" : "e6892a33-a154-3bb8-a0d1-ea977a39f469",
                 "name" : "Funnel",
                 "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+                "id" : "6c3e4c90-ff7f-3f43-aef7-01353d3ac680",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "52f765bc-a4aa-3bb3-a0f0-518a092e3d97",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+                "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
+                "name" : "duplicate_check",
+                "type" : "INPUT_PORT"
               },
               "zIndex" : 0
             }, {
@@ -2725,6 +3125,36 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+                "id" : "562a38b3-d04e-350a-8f9e-60495d5c84a8",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "4a44590d-2660-3387-b1a7-d61bb080ad9a",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+                "id" : "5e0ad6e1-57bc-3f37-a5cb-e7bba00ac69f",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "0dad39b8-b1f8-337c-8626-2bf308309d84",
                 "name" : "Funnel",
                 "type" : "FUNNEL"
@@ -2770,6 +3200,7 @@
               "prioritizers" : [ ],
               "selectedRelationships" : [ "" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
                 "name" : "duplicate_check",
@@ -2829,6 +3260,7 @@
               "prioritizers" : [ ],
               "selectedRelationships" : [ "" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
                 "name" : "duplicate_check",
@@ -2841,6 +3273,37 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
+                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+                "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
+                "name" : "duplicate_checked",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "38cf3c7d-abb9-3d84-baad-27e7a7c0f671",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+                "id" : "562a38b3-d04e-350a-8f9e-60495d5c84a8",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
                 "name" : "duplicate_checked",
@@ -2947,6 +3410,7 @@
               "prioritizers" : [ ],
               "selectedRelationships" : [ "" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
                 "name" : "duplicate_check",
@@ -2959,6 +3423,7 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
                 "name" : "duplicate_checked",
@@ -3038,7 +3503,7 @@
                 "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "22af2fa2-8d68-3632-92f7-c73f8f863864",
-                "name" : "# courses重复数据",
+                "name" : "# courses重复数据，可能导致learning_tours接口报错无法登陆",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -3050,25 +3515,26 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "269f0195-8f8a-3895-895f-b304229e4e72",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
+                "id" : "5e0ad6e1-57bc-3f37-a5cb-e7bba00ac69f",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "c234eeae-38ef-3bb9-965b-54c1fa60d802",
+              "identifier" : "49e4b68c-c249-33aa-8c6a-6b2df67145f3",
               "labelIndex" : 1,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
               "name" : "",
               "partitioningAttribute" : "",
               "prioritizers" : [ ],
-              "selectedRelationships" : [ "" ],
+              "selectedRelationships" : [ "success" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
-                "name" : "duplicate_check",
-                "type" : "INPUT_PORT"
+                "id" : "9bf7f3bc-d254-37fa-a6ef-2222b7a682d6",
+                "name" : "# DNA状态重复数据",
+                "type" : "PROCESSOR"
               },
               "zIndex" : 0
             }, {
@@ -3077,6 +3543,7 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
                 "name" : "duplicate_checked",
@@ -3096,35 +3563,6 @@
                 "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "0dad39b8-b1f8-337c-8626-2bf308309d84",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
-                "name" : "duplicate_checked",
-                "type" : "OUTPUT_PORT"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "408be962-71d6-34a4-b723-ec6499909370",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "00ca57ed-d484-3577-85e0-4e65be95b852",
                 "name" : "Funnel",
                 "type" : "FUNNEL"
               },
@@ -3165,6 +3603,37 @@
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
+                "comments" : "",
+                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+                "id" : "9bf7f3bc-d254-37fa-a6ef-2222b7a682d6",
+                "name" : "# DNA状态重复数据",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "f8f3312d-47e9-3b62-9a69-94bc6523c6cc",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+                "id" : "6c3e4c90-ff7f-3f43-aef7-01353d3ac680",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
                 "name" : "duplicate_checked",
@@ -3286,66 +3755,6 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "00ca57ed-d484-3577-85e0-4e65be95b852",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "7b24bac2-c301-37b2-b9f1-a217aece385c",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "success" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "24198302-382c-3fd1-8798-0d6e8659ead2",
-                "name" : "UpdateAttribute",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
-                "name" : "DNA个性测验进度为100%，但五个因子的得分为空",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "3f6c3769-d991-3498-a7a0-fdad75c75c33",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "269f0195-8f8a-3895-895f-b304229e4e72",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "fd4ea8e6-fbff-3d96-96e7-9af2046a220e",
                 "name" : "UpdateAttribute",
                 "type" : "PROCESSOR"
@@ -3364,7 +3773,7 @@
                 "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "f333ad07-6e05-3c61-9b36-3410f1b76f2f",
-                "name" : "# practices重复数据",
+                "name" : "# practices重复数据，可能导致learning_tours接口报错无法登陆",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -3405,35 +3814,6 @@
               "componentType" : "CONNECTION",
               "destination" : {
                 "comments" : "",
-                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "24198302-382c-3fd1-8798-0d6e8659ead2",
-                "name" : "UpdateAttribute",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "e99cf727-dc4b-38e1-adc6-cf83cac7955c",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "success" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-                "id" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
-                "name" : "DNA个性测验进度为100%，但五个因子的得分为空",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
                 "name" : "duplicate_checked",
@@ -3480,6 +3860,7 @@
               "prioritizers" : [ ],
               "selectedRelationships" : [ "" ],
               "source" : {
+                "comments" : "",
                 "groupId" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
                 "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
                 "name" : "duplicate_check",
@@ -3503,6 +3884,14 @@
               "position" : {
                 "x" : 312.0,
                 "y" : -296.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "6c3e4c90-ff7f-3f43-aef7-01353d3ac680",
+              "position" : {
+                "x" : 2744.0,
+                "y" : -320.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -3531,14 +3920,6 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "0dad39b8-b1f8-337c-8626-2bf308309d84",
-              "position" : {
-                "x" : 2368.0,
-                "y" : 256.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
               "identifier" : "43850ef7-9cce-3476-b777-42da5559baa4",
               "position" : {
                 "x" : 336.0,
@@ -3547,25 +3928,17 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "0dad39b8-b1f8-337c-8626-2bf308309d84",
+              "position" : {
+                "x" : 2368.0,
+                "y" : 256.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
               "identifier" : "08da71bc-4252-3b8b-bba9-e6cfa5f152cb",
               "position" : {
                 "x" : 736.0,
-                "y" : -296.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "00ca57ed-d484-3577-85e0-4e65be95b852",
-              "position" : {
-                "x" : -64.0,
-                "y" : 272.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "269f0195-8f8a-3895-895f-b304229e4e72",
-              "position" : {
-                "x" : -88.0,
                 "y" : -296.0
               }
             }, {
@@ -3600,11 +3973,20 @@
                 "x" : 760.0,
                 "y" : 272.0
               }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "562a38b3-d04e-350a-8f9e-60495d5c84a8",
+              "position" : {
+                "x" : 2768.0,
+                "y" : 248.0
+              }
             } ],
             "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
             "identifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
             "inputPorts" : [ {
               "allowRemoteAccess" : false,
+              "comments" : "",
               "componentType" : "INPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
@@ -3620,6 +4002,7 @@
             "name" : "重复数据监控组",
             "outputPorts" : [ {
               "allowRemoteAccess" : false,
+              "comments" : "",
               "componentType" : "OUTPUT_PORT",
               "concurrentlySchedulableTaskCount" : 1,
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
@@ -3632,7 +4015,7 @@
               "type" : "OUTPUT_PORT"
             } ],
             "position" : {
-              "x" : -232.0,
+              "x" : -208.0,
               "y" : -80.0
             },
             "processGroups" : [ ],
@@ -3720,18 +4103,18 @@
               "concurrentlySchedulableTaskCount" : 1,
               "executionNode" : "ALL",
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "24198302-382c-3fd1-8798-0d6e8659ead2",
+              "identifier" : "5e0ad6e1-57bc-3f37-a5cb-e7bba00ac69f",
               "name" : "UpdateAttribute",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : -208.0,
-                "y" : 40.0
+                "x" : 2616.0,
+                "y" : 24.0
               },
               "properties" : {
-                "check_sql" : "# DNA个性测验进度为100%，但五个因子的得分为空\nselect s.id       as s_id,\n       sr.id      as sr_id,\n       srd.id     as srd_id,\n       s.end_time as s_end_time,\n       s.status   as s_status,\n       s.user_id  as s_user_id\nfrom surveys s\n         left join survey_reports sr on s.id = sr.survey_id\n         left join survey_report_details srd on sr.id = srd.report_id\nwhere s.type = 1\n  and s.status = 1\n  and srd.id is null\n  and s.end_time between ${date_start} and ${date_end}\n;",
+                "check_sql" : "# DNA状态重复数据\nselect user_id, survey_meta_id, count(1) as cnt\nfrom surveys\nwhere type = 1\n#   and (status = 1 or progress = 100)\ngroup by user_id\nhaving count(1) > 1;",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
-                "event" : "# DNA个性测验进度为100%，但五个因子的得分为空"
+                "event" : "# DNA状态重复数据"
               },
               "propertyDescriptors" : {
                 "check_sql" : {
@@ -3777,112 +4160,6 @@
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
               "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-              "yieldDuration" : "1 sec"
-            }, {
-              "autoTerminatedRelationships" : [ "failure" ],
-              "bulletinLevel" : "WARN",
-              "bundle" : {
-                "artifact" : "nifi-standard-nar",
-                "group" : "org.apache.nifi",
-                "version" : "1.11.4"
-              },
-              "comments" : "",
-              "componentType" : "PROCESSOR",
-              "concurrentlySchedulableTaskCount" : 1,
-              "executionNode" : "ALL",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
-              "name" : "DNA个性测验进度为100%，但五个因子的得分为空",
-              "penaltyDuration" : "30 sec",
-              "position" : {
-                "x" : -208.0,
-                "y" : -144.0
-              },
-              "properties" : {
-                "esql-max-rows" : "0",
-                "esql-output-batch-size" : "0",
-                "esql-fetch-size" : "0",
-                "SQL select query" : "select s.id       as s_id,\n       sr.id      as sr_id,\n       srd.id     as srd_id,\n       s.end_time as s_end_time,\n       s.status   as s_status,\n       s.user_id  as s_user_id\nfrom surveys s\n         left join survey_reports sr on s.id = sr.survey_id\n         left join survey_report_details srd on sr.id = srd.report_id\nwhere s.type = 1\n  and s.status = 1\n  and srd.id is null\n  and s.end_time between ${date_start} and ${date_end}\n;",
-                "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
-                "Max Wait Time" : "0 seconds",
-                "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
-                "dbf-user-logical-types" : "false",
-                "esqlrecord-normalize" : "false"
-              },
-              "propertyDescriptors" : {
-                "sql-pre-query" : {
-                  "displayName" : "SQL Pre-Query",
-                  "identifiesControllerService" : false,
-                  "name" : "sql-pre-query",
-                  "sensitive" : false
-                },
-                "esql-max-rows" : {
-                  "displayName" : "Max Rows Per Flow File",
-                  "identifiesControllerService" : false,
-                  "name" : "esql-max-rows",
-                  "sensitive" : false
-                },
-                "esql-output-batch-size" : {
-                  "displayName" : "Output Batch Size",
-                  "identifiesControllerService" : false,
-                  "name" : "esql-output-batch-size",
-                  "sensitive" : false
-                },
-                "esql-fetch-size" : {
-                  "displayName" : "Fetch Size",
-                  "identifiesControllerService" : false,
-                  "name" : "esql-fetch-size",
-                  "sensitive" : false
-                },
-                "SQL select query" : {
-                  "displayName" : "SQL select query",
-                  "identifiesControllerService" : false,
-                  "name" : "SQL select query",
-                  "sensitive" : false
-                },
-                "esqlrecord-record-writer" : {
-                  "displayName" : "Record Writer",
-                  "identifiesControllerService" : true,
-                  "name" : "esqlrecord-record-writer",
-                  "sensitive" : false
-                },
-                "Max Wait Time" : {
-                  "displayName" : "Max Wait Time",
-                  "identifiesControllerService" : false,
-                  "name" : "Max Wait Time",
-                  "sensitive" : false
-                },
-                "Database Connection Pooling Service" : {
-                  "displayName" : "Database Connection Pooling Service",
-                  "identifiesControllerService" : true,
-                  "name" : "Database Connection Pooling Service",
-                  "sensitive" : false
-                },
-                "sql-post-query" : {
-                  "displayName" : "SQL Post-Query",
-                  "identifiesControllerService" : false,
-                  "name" : "sql-post-query",
-                  "sensitive" : false
-                },
-                "dbf-user-logical-types" : {
-                  "displayName" : "Use Avro Logical Types",
-                  "identifiesControllerService" : false,
-                  "name" : "dbf-user-logical-types",
-                  "sensitive" : false
-                },
-                "esqlrecord-normalize" : {
-                  "displayName" : "Normalize Table/Column Names",
-                  "identifiesControllerService" : false,
-                  "name" : "esqlrecord-normalize",
-                  "sensitive" : false
-                }
-              },
-              "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
-              "schedulingPeriod" : "0 sec",
-              "schedulingStrategy" : "TIMER_DRIVEN",
-              "style" : { },
-              "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
               "yieldDuration" : "1 sec"
             }, {
               "autoTerminatedRelationships" : [ ],
@@ -3976,10 +4253,10 @@
                 "y" : 40.0
               },
               "properties" : {
-                "check_sql" : "# courses重复数据，可能导致learning_tours接口报错无法登陆\nselect *\nfrom courses\nwhere (user_id,learning_path_id) in (select user_id,learning_path_id\n             from courses\n             group by user_id,learning_path_id\n             having count(1) > 1);",
+                "check_sql" : "# check\nselect *\nfrom courses\nwhere (user_id,course_meta_id) in (select user_id,course_meta_id\n             from courses\n             group by user_id,course_meta_id\n             having count(1) > 1);\n# http://m.transtalent.cn/api/loginAs/120614",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
-                "event" : "# courses重复数据，可能导致learning_tours接口报错无法登陆"
+                "event" : "# courses重复数据，可能导致learning_tours接口报错无法登陆\n"
               },
               "propertyDescriptors" : {
                 "check_sql" : {
@@ -4204,6 +4481,112 @@
               "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
               "yieldDuration" : "1 sec"
             }, {
+              "autoTerminatedRelationships" : [ "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "9bf7f3bc-d254-37fa-a6ef-2222b7a682d6",
+              "name" : "# DNA状态重复数据",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 2616.0,
+                "y" : -160.0
+              },
+              "properties" : {
+                "esql-max-rows" : "0",
+                "esql-output-batch-size" : "0",
+                "esql-fetch-size" : "0",
+                "SQL select query" : "\nselect user_id, survey_meta_id, count(1) as cnt\nfrom surveys\nwhere type = 1\n#   and (status = 1 or progress = 100)\ngroup by user_id\nhaving count(1) > 1;",
+                "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
+                "Max Wait Time" : "0 seconds",
+                "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
+                "dbf-user-logical-types" : "false",
+                "esqlrecord-normalize" : "false"
+              },
+              "propertyDescriptors" : {
+                "sql-pre-query" : {
+                  "displayName" : "SQL Pre-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-pre-query",
+                  "sensitive" : false
+                },
+                "esql-max-rows" : {
+                  "displayName" : "Max Rows Per Flow File",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-max-rows",
+                  "sensitive" : false
+                },
+                "esql-output-batch-size" : {
+                  "displayName" : "Output Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-output-batch-size",
+                  "sensitive" : false
+                },
+                "esql-fetch-size" : {
+                  "displayName" : "Fetch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-fetch-size",
+                  "sensitive" : false
+                },
+                "SQL select query" : {
+                  "displayName" : "SQL select query",
+                  "identifiesControllerService" : false,
+                  "name" : "SQL select query",
+                  "sensitive" : false
+                },
+                "esqlrecord-record-writer" : {
+                  "displayName" : "Record Writer",
+                  "identifiesControllerService" : true,
+                  "name" : "esqlrecord-record-writer",
+                  "sensitive" : false
+                },
+                "Max Wait Time" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Wait Time",
+                  "sensitive" : false
+                },
+                "Database Connection Pooling Service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "Database Connection Pooling Service",
+                  "sensitive" : false
+                },
+                "sql-post-query" : {
+                  "displayName" : "SQL Post-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-post-query",
+                  "sensitive" : false
+                },
+                "dbf-user-logical-types" : {
+                  "displayName" : "Use Avro Logical Types",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-user-logical-types",
+                  "sensitive" : false
+                },
+                "esqlrecord-normalize" : {
+                  "displayName" : "Normalize Table/Column Names",
+                  "identifiesControllerService" : false,
+                  "name" : "esqlrecord-normalize",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
+              "yieldDuration" : "1 sec"
+            }, {
               "autoTerminatedRelationships" : [ ],
               "bulletinLevel" : "WARN",
               "bundle" : {
@@ -4394,7 +4777,7 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
               "identifier" : "f333ad07-6e05-3c61-9b36-3410f1b76f2f",
-              "name" : "# practices重复数据",
+              "name" : "# practices重复数据，可能导致learning_tours接口报错无法登陆",
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : 2216.0,
@@ -4404,7 +4787,7 @@
                 "esql-max-rows" : "0",
                 "esql-output-batch-size" : "0",
                 "esql-fetch-size" : "0",
-                "SQL select query" : "select learning_path_id, user_id, start_time\nfrom practices\ngroup by learning_path_id, user_id\nhaving count(1) > 1\n;\n",
+                "SQL select query" : "select learning_path_id,user_id,start_time\nfrom practices\ngroup by user_id,practice_meta_id\nhaving count(1)>1\n;",
                 "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
                 "Max Wait Time" : "0 seconds",
                 "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
@@ -4606,7 +4989,7 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
               "identifier" : "22af2fa2-8d68-3632-92f7-c73f8f863864",
-              "name" : "# courses重复数据",
+              "name" : "# courses重复数据，可能导致learning_tours接口报错无法登陆",
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : 1840.0,
@@ -4616,7 +4999,7 @@
                 "esql-max-rows" : "0",
                 "esql-output-batch-size" : "0",
                 "esql-fetch-size" : "0",
-                "SQL select query" : "select learning_path_id, user_id, start_time\nfrom courses\ngroup by learning_path_id, user_id\nhaving count(1) > 1\n;\n",
+                "SQL select query" : "select user_id,course_meta_id\nfrom courses\ngroup by user_id,course_meta_id\nhaving count(1) > 1\n;",
                 "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
                 "Max Wait Time" : "0 seconds",
                 "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
@@ -4825,10 +5208,742 @@
                 "y" : 32.0
               },
               "properties" : {
-                "check_sql" : "# practices 重复数据，可能导致learning_tours接口报错无法登陆\nselect *\nfrom practices\nwhere (user_id,learning_path_id) in (select user_id,learning_path_id\n             from practices\n             group by user_id,learning_path_id\n             having count(1) > 1);",
+                "check_sql" : "# check\nselect *\nfrom practices\nwhere (user_id,practice_meta_id) in (select user_id,practice_meta_id\n             from practices\n             group by user_id,practice_meta_id\n             having count(1) > 1);\n# select 该delete\nselect * from practices where id in(84839, 85468, 85474, 85475);\nselect * from exercises where practice_id in(84839, 85468, 85474, 85475);",
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
                 "event" : "# practices 重复数据，可能导致learning_tours接口报错无法登陆"
+              },
+              "propertyDescriptors" : {
+                "check_sql" : {
+                  "displayName" : "check_sql",
+                  "identifiesControllerService" : false,
+                  "name" : "check_sql",
+                  "sensitive" : false
+                },
+                "Delete Attributes Expression" : {
+                  "displayName" : "Delete Attributes Expression",
+                  "identifiesControllerService" : false,
+                  "name" : "Delete Attributes Expression",
+                  "sensitive" : false
+                },
+                "Store State" : {
+                  "displayName" : "Store State",
+                  "identifiesControllerService" : false,
+                  "name" : "Store State",
+                  "sensitive" : false
+                },
+                "canonical-value-lookup-cache-size" : {
+                  "displayName" : "Cache Value Lookup Cache Size",
+                  "identifiesControllerService" : false,
+                  "name" : "canonical-value-lookup-cache-size",
+                  "sensitive" : false
+                },
+                "Stateful Variables Initial Value" : {
+                  "displayName" : "Stateful Variables Initial Value",
+                  "identifiesControllerService" : false,
+                  "name" : "Stateful Variables Initial Value",
+                  "sensitive" : false
+                },
+                "event" : {
+                  "displayName" : "event",
+                  "identifiesControllerService" : false,
+                  "name" : "event",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+              "yieldDuration" : "1 sec"
+            } ],
+            "remoteProcessGroups" : [ ],
+            "variables" : { }
+          }, {
+            "comments" : "",
+            "componentType" : "PROCESS_GROUP",
+            "connections" : [ {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "ead47878-f193-304f-97c3-2e9a3525a5c1",
+                "name" : "# 数据缺失.情景模拟后台进度与学员端不一致",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "9bde437a-288b-3154-a50d-d1ea15e09cee",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "1949d477-2280-3b37-a102-ec02623d6fbf",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "0e4e5ed7-1a85-3f8a-a753-d8fc4f926253",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "7ab6c94d-c803-38b8-b2f1-3ad3d2f57983",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "00642aea-c82d-3c49-ae68-47e53f2eba78",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "00ca57ed-d484-3577-85e0-4e65be95b852",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "7b24bac2-c301-37b2-b9f1-a217aece385c",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "24198302-382c-3fd1-8798-0d6e8659ead2",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
+                "name" : "DNA个性测验进度为100%，但五个因子的得分为空",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "3f6c3769-d991-3498-a7a0-fdad75c75c33",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "269f0195-8f8a-3895-895f-b304229e4e72",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "1949d477-2280-3b37-a102-ec02623d6fbf",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "526db5dc-27b4-3cd7-80d4-27d312648785",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
+                "name" : "missing_check",
+                "type" : "INPUT_PORT"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "269f0195-8f8a-3895-895f-b304229e4e72",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "c234eeae-38ef-3bb9-965b-54c1fa60d802",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
+                "name" : "missing_check",
+                "type" : "INPUT_PORT"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "24198302-382c-3fd1-8798-0d6e8659ead2",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "e99cf727-dc4b-38e1-adc6-cf83cac7955c",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
+                "name" : "DNA个性测验进度为100%，但五个因子的得分为空",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "00642aea-c82d-3c49-ae68-47e53f2eba78",
+                "name" : "UpdateAttribute",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "21446c60-5cd2-33e9-95d7-ff3d813183b8",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "ead47878-f193-304f-97c3-2e9a3525a5c1",
+                "name" : "# 数据缺失.情景模拟后台进度与学员端不一致",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
+                "name" : "missing_checked",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "e2472fd2-4dab-37d8-b0d9-9880c2743361",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "0e4e5ed7-1a85-3f8a-a753-d8fc4f926253",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
+                "name" : "missing_checked",
+                "type" : "OUTPUT_PORT"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "408be962-71d6-34a4-b723-ec6499909370",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+                "id" : "00ca57ed-d484-3577-85e0-4e65be95b852",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "zIndex" : 0
+            } ],
+            "controllerServices" : [ ],
+            "funnels" : [ {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "00ca57ed-d484-3577-85e0-4e65be95b852",
+              "position" : {
+                "x" : 336.0,
+                "y" : 272.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "269f0195-8f8a-3895-895f-b304229e4e72",
+              "position" : {
+                "x" : 336.0,
+                "y" : -296.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "0e4e5ed7-1a85-3f8a-a753-d8fc4f926253",
+              "position" : {
+                "x" : 800.0,
+                "y" : 264.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "1949d477-2280-3b37-a102-ec02623d6fbf",
+              "position" : {
+                "x" : 800.0,
+                "y" : -304.0
+              }
+            } ],
+            "groupIdentifier" : "c5a461eb-de97-3653-a052-0cd8eb59bf09",
+            "identifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+            "inputPorts" : [ {
+              "allowRemoteAccess" : false,
+              "comments" : "",
+              "componentType" : "INPUT_PORT",
+              "concurrentlySchedulableTaskCount" : 1,
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "479a239c-13a3-3a8b-b1cc-daf27dc48775",
+              "name" : "missing_check",
+              "position" : {
+                "x" : 240.0,
+                "y" : -632.0
+              },
+              "type" : "INPUT_PORT"
+            } ],
+            "labels" : [ ],
+            "name" : "缺失数据监控组",
+            "outputPorts" : [ {
+              "allowRemoteAccess" : false,
+              "comments" : "",
+              "componentType" : "OUTPUT_PORT",
+              "concurrentlySchedulableTaskCount" : 1,
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "8a3cfa0d-d331-3276-ab0d-ad661236e8a5",
+              "name" : "missing_checked",
+              "position" : {
+                "x" : 240.0,
+                "y" : 624.0
+              },
+              "type" : "OUTPUT_PORT"
+            } ],
+            "position" : {
+              "x" : -664.0,
+              "y" : -80.0
+            },
+            "processGroups" : [ ],
+            "processors" : [ {
+              "autoTerminatedRelationships" : [ "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "0eeeb93d-966a-3b7b-b46f-d714045dcb63",
+              "name" : "DNA个性测验进度为100%，但五个因子的得分为空",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 184.0,
+                "y" : -144.0
+              },
+              "properties" : {
+                "esql-max-rows" : "0",
+                "esql-output-batch-size" : "0",
+                "esql-fetch-size" : "0",
+                "SQL select query" : "select s.id       as s_id,\n       sr.id      as sr_id,\n       srd.id     as srd_id,\n       s.end_time as s_end_time,\n       s.status   as s_status,\n       s.user_id  as s_user_id\nfrom surveys s\n         left join survey_reports sr on s.id = sr.survey_id\n         left join survey_report_details srd on sr.id = srd.report_id\nwhere s.type = 1\n  and s.status = 1\n  and srd.id is null\n  and s.end_time between ${date_start} and ${date_end}\n;",
+                "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
+                "Max Wait Time" : "0 seconds",
+                "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
+                "dbf-user-logical-types" : "false",
+                "esqlrecord-normalize" : "false"
+              },
+              "propertyDescriptors" : {
+                "sql-pre-query" : {
+                  "displayName" : "SQL Pre-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-pre-query",
+                  "sensitive" : false
+                },
+                "esql-max-rows" : {
+                  "displayName" : "Max Rows Per Flow File",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-max-rows",
+                  "sensitive" : false
+                },
+                "esql-output-batch-size" : {
+                  "displayName" : "Output Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-output-batch-size",
+                  "sensitive" : false
+                },
+                "esql-fetch-size" : {
+                  "displayName" : "Fetch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-fetch-size",
+                  "sensitive" : false
+                },
+                "SQL select query" : {
+                  "displayName" : "SQL select query",
+                  "identifiesControllerService" : false,
+                  "name" : "SQL select query",
+                  "sensitive" : false
+                },
+                "esqlrecord-record-writer" : {
+                  "displayName" : "Record Writer",
+                  "identifiesControllerService" : true,
+                  "name" : "esqlrecord-record-writer",
+                  "sensitive" : false
+                },
+                "Max Wait Time" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Wait Time",
+                  "sensitive" : false
+                },
+                "Database Connection Pooling Service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "Database Connection Pooling Service",
+                  "sensitive" : false
+                },
+                "sql-post-query" : {
+                  "displayName" : "SQL Post-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-post-query",
+                  "sensitive" : false
+                },
+                "dbf-user-logical-types" : {
+                  "displayName" : "Use Avro Logical Types",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-user-logical-types",
+                  "sensitive" : false
+                },
+                "esqlrecord-normalize" : {
+                  "displayName" : "Normalize Table/Column Names",
+                  "identifiesControllerService" : false,
+                  "name" : "esqlrecord-normalize",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-update-attribute-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "24198302-382c-3fd1-8798-0d6e8659ead2",
+              "name" : "UpdateAttribute",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 184.0,
+                "y" : 40.0
+              },
+              "properties" : {
+                "check_sql" : "# DNA个性测验进度为100%，但五个因子的得分为空\nselect s.id       as s_id,\n       sr.id      as sr_id,\n       srd.id     as srd_id,\n       s.end_time as s_end_time,\n       s.status   as s_status,\n       s.user_id  as s_user_id\nfrom surveys s\n         left join survey_reports sr on s.id = sr.survey_id\n         left join survey_report_details srd on sr.id = srd.report_id\nwhere s.type = 1\n  and s.status = 1\n  and srd.id is null\n  and s.end_time between ${date_start} and ${date_end}\n;",
+                "Store State" : "Do not store state",
+                "canonical-value-lookup-cache-size" : "100",
+                "event" : "# DNA个性测验进度为100%，但五个因子的得分为空"
+              },
+              "propertyDescriptors" : {
+                "check_sql" : {
+                  "displayName" : "check_sql",
+                  "identifiesControllerService" : false,
+                  "name" : "check_sql",
+                  "sensitive" : false
+                },
+                "Delete Attributes Expression" : {
+                  "displayName" : "Delete Attributes Expression",
+                  "identifiesControllerService" : false,
+                  "name" : "Delete Attributes Expression",
+                  "sensitive" : false
+                },
+                "Store State" : {
+                  "displayName" : "Store State",
+                  "identifiesControllerService" : false,
+                  "name" : "Store State",
+                  "sensitive" : false
+                },
+                "canonical-value-lookup-cache-size" : {
+                  "displayName" : "Cache Value Lookup Cache Size",
+                  "identifiesControllerService" : false,
+                  "name" : "canonical-value-lookup-cache-size",
+                  "sensitive" : false
+                },
+                "Stateful Variables Initial Value" : {
+                  "displayName" : "Stateful Variables Initial Value",
+                  "identifiesControllerService" : false,
+                  "name" : "Stateful Variables Initial Value",
+                  "sensitive" : false
+                },
+                "event" : {
+                  "displayName" : "event",
+                  "identifiesControllerService" : false,
+                  "name" : "event",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "ead47878-f193-304f-97c3-2e9a3525a5c1",
+              "name" : "# 数据缺失.情景模拟后台进度与学员端不一致",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 648.0,
+                "y" : -152.0
+              },
+              "properties" : {
+                "esql-max-rows" : "0",
+                "esql-output-batch-size" : "0",
+                "esql-fetch-size" : "0",
+                "SQL select query" : "\nselect p.id,\n       p.user_id,\n       p.practice_meta_id,\n       dp.description,\n       p.status,\n       p.progress,\n       p.end_time,\n       e.id,\n       e.status,\n       e.progress,\n       e.end_time,\n       erh.id\nfrom practices p\n         join dim_practice dp on p.practice_meta_id = dp.id\n         left join exercises e on p.id = e.practice_id\n         left join exercises_reports_his erh on e.id = erh.exercise_id and erh.exercise_meta_id != 41\nwhere p.practice_meta_id != 5\n  and p.progress = 100\n  and e.progress = 100\n#   and (e.progress = 100 or e.status=1)\n  and erh.id is null;",
+                "esqlrecord-record-writer" : "666fe624-fe5f-313b-bb4e-38ce8d2730f9",
+                "Max Wait Time" : "0 seconds",
+                "Database Connection Pooling Service" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
+                "dbf-user-logical-types" : "false",
+                "esqlrecord-normalize" : "false"
+              },
+              "propertyDescriptors" : {
+                "sql-pre-query" : {
+                  "displayName" : "SQL Pre-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-pre-query",
+                  "sensitive" : false
+                },
+                "esql-max-rows" : {
+                  "displayName" : "Max Rows Per Flow File",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-max-rows",
+                  "sensitive" : false
+                },
+                "esql-output-batch-size" : {
+                  "displayName" : "Output Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-output-batch-size",
+                  "sensitive" : false
+                },
+                "esql-fetch-size" : {
+                  "displayName" : "Fetch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "esql-fetch-size",
+                  "sensitive" : false
+                },
+                "SQL select query" : {
+                  "displayName" : "SQL select query",
+                  "identifiesControllerService" : false,
+                  "name" : "SQL select query",
+                  "sensitive" : false
+                },
+                "esqlrecord-record-writer" : {
+                  "displayName" : "Record Writer",
+                  "identifiesControllerService" : true,
+                  "name" : "esqlrecord-record-writer",
+                  "sensitive" : false
+                },
+                "Max Wait Time" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Wait Time",
+                  "sensitive" : false
+                },
+                "Database Connection Pooling Service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "Database Connection Pooling Service",
+                  "sensitive" : false
+                },
+                "sql-post-query" : {
+                  "displayName" : "SQL Post-Query",
+                  "identifiesControllerService" : false,
+                  "name" : "sql-post-query",
+                  "sensitive" : false
+                },
+                "dbf-user-logical-types" : {
+                  "displayName" : "Use Avro Logical Types",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-user-logical-types",
+                  "sensitive" : false
+                },
+                "esqlrecord-normalize" : {
+                  "displayName" : "Normalize Table/Column Names",
+                  "identifiesControllerService" : false,
+                  "name" : "esqlrecord-normalize",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.ExecuteSQLRecord",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-update-attribute-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "77dc3ab7-8545-3568-b61e-d059dbbd1519",
+              "identifier" : "00642aea-c82d-3c49-ae68-47e53f2eba78",
+              "name" : "UpdateAttribute",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : 648.0,
+                "y" : 32.0
+              },
+              "properties" : {
+                "check_sql" : "# 情景模拟后台进度与学员端不一致\nselect p.id,\n       p.user_id,\n       p.practice_meta_id,\n       dp.description,\n       p.status,\n       p.progress,\n       p.end_time,\n       e.id,\n       e.status,\n       e.progress,\n       e.end_time,\n       erh.id\nfrom practices p\n         join dim_practice dp on p.practice_meta_id = dp.id\n         left join exercises e on p.id = e.practice_id\n         left join exercises_reports_his erh on e.id = erh.exercise_id and erh.exercise_meta_id != 41\nwhere p.practice_meta_id != 5\n  and p.progress = 100\n  and e.progress = 100\n#   and (e.progress = 100 or e.status=1)\n  and erh.id is null;",
+                "Store State" : "Do not store state",
+                "canonical-value-lookup-cache-size" : "100",
+                "event" : "# 情景模拟后台进度与学员端不一致"
               },
               "propertyDescriptors" : {
                 "check_sql" : {
