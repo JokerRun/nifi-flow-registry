@@ -989,18 +989,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "58aa7066-c770-353f-beb1-bbee8c045953",
-            "identifier" : "25891568-e914-38b7-b1a1-8cf2c9b2fae6",
-            "position" : {
-              "x" : 1784.0,
-              "y" : 376.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "58aa7066-c770-353f-beb1-bbee8c045953",
             "identifier" : "226a6418-079b-3998-981e-71c1a57cd521",
             "position" : {
               "x" : 219.0,
               "y" : 305.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "58aa7066-c770-353f-beb1-bbee8c045953",
+            "identifier" : "25891568-e914-38b7-b1a1-8cf2c9b2fae6",
+            "position" : {
+              "x" : 1784.0,
+              "y" : 376.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -3888,18 +3888,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "6c3e4c90-ff7f-3f43-aef7-01353d3ac680",
-              "position" : {
-                "x" : 2744.0,
-                "y" : -320.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
               "identifier" : "0827e3bd-6d95-3b78-afdd-d585e7a4bb0c",
               "position" : {
                 "x" : 1160.0,
                 "y" : -296.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "6c3e4c90-ff7f-3f43-aef7-01353d3ac680",
+              "position" : {
+                "x" : 2744.0,
+                "y" : -320.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -3920,18 +3920,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
-              "identifier" : "43850ef7-9cce-3476-b777-42da5559baa4",
-              "position" : {
-                "x" : 336.0,
-                "y" : 272.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
               "identifier" : "0dad39b8-b1f8-337c-8626-2bf308309d84",
               "position" : {
                 "x" : 2368.0,
                 "y" : 256.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1a5fb928-49bb-3e88-afdb-ea13095b2da0",
+              "identifier" : "43850ef7-9cce-3476-b777-42da5559baa4",
+              "position" : {
+                "x" : 336.0,
+                "y" : 272.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -7223,7 +7223,7 @@
             },
             "properties" : {
               "Support Fragmented Transactions" : "true",
-              "putsql-sql-statement" : "update company_users\nset tag_name       = concat('${tagname}', ';'),\n    department='${employee}'\nwhere company_id = ${company_id}\n  and user_id = ${user_id}",
+              "putsql-sql-statement" : "update company_users\nset tag_name       = concat(ifnull(tag_name,''),'${tagname}', ';'),\n    department='${employee}'\nwhere company_id = ${company_id}\n  and user_id = ${user_id}\n;",
               "Batch Size" : "100",
               "Obtain Generated Keys" : "false",
               "JDBC Connection Pool" : "1cbe746d-ffeb-34e0-b904-0f0690c69332",
