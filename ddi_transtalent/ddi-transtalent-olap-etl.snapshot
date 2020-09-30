@@ -5990,14 +5990,14 @@
                   "qdbtr-record-writer" : "2e622e5f-a776-38df-905f-f261baad7573",
                   "Max Wait Time" : "0 seconds",
                   "Database Connection Pooling Service" : "623e6a7c-8172-3e37-b835-e2367e4735fb",
-                  "Maximum-value Columns" : "create_at,update_at",
+                  "Maximum-value Columns" : "update_at",
                   "dbf-user-logical-types" : "false",
                   "qdbt-output-batch-size" : "0",
                   "qdbt-max-rows" : "0",
                   "qdbt-max-frags" : "0",
                   "Fetch Size" : "0",
                   "qdbtr-normalize" : "false",
-                  "Columns to Return" : "id"
+                  "Columns to Return" : "id,update_at"
                 },
                 "propertyDescriptors" : {
                   "Table Name" : {
