@@ -1,6 +1,6 @@
 flows:
-  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 37, file: ddi-transtalent-olap-etl.snapshot,
-    comments: 'jerry :: 添加每10秒同步一次配课信息', author: anonymous, created: 1601427949655,
+  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 38, file: ddi-transtalent-olap-etl.snapshot,
+    comments: 'jerry :: fix last commit ', author: anonymous, created: 1601428897048,
     flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP ETL}
 layoutVer: 1
 bucketId: a8f0cee7-bc39-42be-bd22-5bc3b3e28ca0
