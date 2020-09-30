@@ -6093,7 +6093,7 @@
                 },
                 "runDurationMillis" : 0,
                 "scheduledState" : "ENABLED",
-                "schedulingPeriod" : "30 sec",
+                "schedulingPeriod" : "1 sec",
                 "schedulingStrategy" : "TIMER_DRIVEN",
                 "style" : { },
                 "type" : "org.apache.nifi.processors.standard.QueryDatabaseTableRecord",
@@ -42298,7 +42298,7 @@
             "description" : "",
             "name" : "source.db.jdbc.url",
             "sensitive" : false,
-            "value" : "jdbc:mysql://139.217.237.147:3306/dditest_v5?useUnicode=true&characterEncoding=utf8"
+            "value" : "jdbc:mysql://139.217.237.147:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
           }, {
             "description" : "",
             "name" : "source.heartbeat.db.jdbc.url",
@@ -42308,7 +42308,7 @@
             "description" : "",
             "name" : "source.db.backup.jdbc.url",
             "sensitive" : false,
-            "value" : "jdbc:mysql://139.217.237.147:3306/dditest_v5?useUnicode=true&characterEncoding=utf8"
+            "value" : "jdbc:mysql://139.217.237.147:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
           }, {
             "description" : "",
             "name" : "source.db.password",
