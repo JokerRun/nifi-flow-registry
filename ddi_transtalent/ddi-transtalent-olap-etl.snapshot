@@ -748,13 +748,43 @@
             "destination" : {
               "comments" : "",
               "groupId" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
+              "id" : "751f44ba-0fa6-35c4-8036-79860581c5ec",
+              "name" : "PutSQL",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
+            "identifier" : "5f83b5d5-f20d-3a6e-82cc-98f2f0d0a0c1",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
+              "id" : "3841bf86-e2e9-34d4-94ad-3d4969b196d6",
+              "name" : "manual set start/end date",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
               "id" : "fabf6aad-b32e-3de1-81ee-0be5ff5e2687",
               "name" : "Funnel",
               "type" : "FUNNEL"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-            "identifier" : "467babc6-91bf-3c1c-8d3b-00a6cdbf3a8a",
+            "identifier" : "562d4902-f5d7-3195-afce-6fac87d92e62",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -777,27 +807,27 @@
             "componentType" : "CONNECTION",
             "destination" : {
               "comments" : "",
-              "groupId" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-              "id" : "751f44ba-0fa6-35c4-8036-79860581c5ec",
-              "name" : "PutSQL",
-              "type" : "PROCESSOR"
+              "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "id" : "c1215af9-4da9-3b32-8c9a-e1eb427af7f7",
+              "name" : "load dims",
+              "type" : "INPUT_PORT"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-            "identifier" : "5f83b5d5-f20d-3a6e-82cc-98f2f0d0a0c1",
+            "identifier" : "96e86dd3-1d0d-33d5-948f-72ee21e37068",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
             "name" : "",
             "partitioningAttribute" : "",
             "prioritizers" : [ ],
-            "selectedRelationships" : [ "success" ],
+            "selectedRelationships" : [ "" ],
             "source" : {
               "comments" : "",
               "groupId" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-              "id" : "3841bf86-e2e9-34d4-94ad-3d4969b196d6",
-              "name" : "manual set start/end date",
-              "type" : "PROCESSOR"
+              "id" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
             },
             "zIndex" : 0
           }, {
@@ -1130,36 +1160,6 @@
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "id" : "c1215af9-4da9-3b32-8c9a-e1eb427af7f7",
-              "name" : "load dims",
-              "type" : "INPUT_PORT"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-            "identifier" : "508c5d42-46c7-302c-98f1-d8c30f3ca1fe",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-              "id" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
-              "name" : "Funnel",
-              "type" : "FUNNEL"
-            },
-            "zIndex" : 0
           } ],
           "controllerServices" : [ ],
           "funnels" : [ {
@@ -1248,7 +1248,7 @@
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "0436fc3a-d75b-32fd-9fcb-d026d4500bdb",
-              "labelIndex" : 1,
+              "labelIndex" : 0,
               "loadBalanceCompression" : "DO_NOT_COMPRESS",
               "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
               "name" : "",
@@ -7582,41 +7582,11 @@
             "connections" : [ {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "dcc7d437-e327-3af2-ab28-c0ab59fd2b1c",
-                "name" : "Load olap.dim_lesson",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "d6fbeb6a-2b5d-3dd9-8ca7-50e91e6a95e3",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "fb815ea7-c4df-3dd0-9ff3-a901f6831c84",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
               "bends" : [ {
-                "x" : 379.60108947753906,
+                "x" : 395.60108947753906,
                 "y" : -252.33206343650818
               }, {
-                "x" : 379.60108947753906,
+                "x" : 395.60108947753906,
                 "y" : -202.33206343650818
               } ],
               "componentType" : "CONNECTION",
@@ -7739,47 +7709,11 @@
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
               "bends" : [ {
-                "x" : 1328.999755859375,
-                "y" : 1000.2893524169922
+                "x" : 389.2600555419922,
+                "y" : -86.68295288085938
               }, {
-                "x" : 1328.999755859375,
-                "y" : 1050.2893524169922
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "c5729fc1-a192-3387-bbc6-6719eab95cc2",
-                "name" : "Load olap.dim_ability",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "e4d7e7fc-f6de-3f09-b49f-422001b1ed78",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "c5729fc1-a192-3387-bbc6-6719eab95cc2",
-                "name" : "Load olap.dim_ability",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 391.80931091308594,
-                "y" : 66.28115844726562
-              }, {
-                "x" : 391.80931091308594,
-                "y" : 116.28115844726562
+                "x" : 389.2600555419922,
+                "y" : -36.682952880859375
               } ],
               "componentType" : "CONNECTION",
               "destination" : {
@@ -7804,42 +7738,6 @@
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "3d01d266-76ec-3031-8d51-d6ab7bcb2c1a",
                 "name" : "Load olap.dim_channel",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 1328.6812744140625,
-                "y" : 563.6603775024414
-              }, {
-                "x" : 1328.6812744140625,
-                "y" : 613.6603775024414
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "c3fb6b35-6f9d-36ed-bc34-af73a6a8d4fb",
-                "name" : "Load olap.dim_exercise",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "476cfbf6-4f22-3b7c-a908-27e1ea6e24d2",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "c3fb6b35-6f9d-36ed-bc34-af73a6a8d4fb",
-                "name" : "Load olap.dim_exercise",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -7907,11 +7805,11 @@
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
               "bends" : [ {
-                "x" : 346.22378556480635,
-                "y" : 1669.6103865664727
+                "x" : 1832.2237855648063,
+                "y" : 449.6103865664727
               }, {
-                "x" : 346.22378556480635,
-                "y" : 1719.6103865664727
+                "x" : 1832.2237855648063,
+                "y" : 499.6103865664727
               } ],
               "componentType" : "CONNECTION",
               "destination" : {
@@ -7936,72 +7834,6 @@
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "caaab97a-7f3c-3273-80bb-03cd5335af4a",
                 "name" : "Load olap.map_exercise_ka",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "ce285d46-2eba-35d6-9b33-d662bbb78af4",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "0b3db169-9675-3923-b1ef-fcc9fc8179b9",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "failure" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "caf1811f-e133-304d-94dc-8c464426ec86",
-                "name" : "Load olap.dim_practice",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 395.9724578857422,
-                "y" : 283.2149353027344
-              }, {
-                "x" : 395.9724578857422,
-                "y" : 333.2149353027344
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "d8bce877-5870-3e06-a8a6-1bef0512e9fc",
-                "name" : "Load olap.dim_company",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "daeed70a-cd52-320e-a304-38f6b145fcfb",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "d8bce877-5870-3e06-a8a6-1bef0512e9fc",
-                "name" : "Load olap.dim_company",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8038,6 +7870,42 @@
             }, {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 383.2385559082031,
+                "y" : 512.6776123046875
+              }, {
+                "x" : 383.2385559082031,
+                "y" : 562.6776123046875
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "17fdc526-837a-35ff-afd7-42d0df73061e",
+                "name" : "dim_learning_path_module",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "645cb695-1671-3d86-a426-58e1d3e862fa",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "17fdc526-837a-35ff-afd7-42d0df73061e",
+                "name" : "dim_learning_path_module",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
@@ -8068,42 +7936,6 @@
             }, {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 387.24900817871094,
-                "y" : 556.2477416992188
-              }, {
-                "x" : 387.24900817871094,
-                "y" : 606.2477416992188
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "25a821f1-9d18-37a4-a8c5-51e6b84a2b4d",
-                "name" : "Load olap.dim_learning_path",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "e4e818a3-ce93-3416-aa5f-c2cea29bdd47",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "25a821f1-9d18-37a4-a8c5-51e6b84a2b4d",
-                "name" : "Load olap.dim_learning_path",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
               "bends" : [ ],
               "componentType" : "CONNECTION",
               "destination" : {
@@ -8128,42 +7960,6 @@
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "40d0fcc5-051b-3218-9024-129d9faf66fe",
                 "name" : "Load olap.map_lesson_question_ka",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 1329.3069458007812,
-                "y" : 784.386360168457
-              }, {
-                "x" : 1329.3069458007812,
-                "y" : 834.386360168457
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "80497df0-cb49-34ad-916c-1a9c12dbf7a7",
-                "name" : "Load olap.dim_survey",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "802bce47-34b7-39cd-beec-4f4193261ac9",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "80497df0-cb49-34ad-916c-1a9c12dbf7a7",
-                "name" : "Load olap.dim_survey",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8230,42 +8026,12 @@
             }, {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "3d01d266-76ec-3031-8d51-d6ab7bcb2c1a",
-                "name" : "Load olap.dim_channel",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "8bf3d179-35d1-390b-8c17-dba802c71805",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "78972236-1428-30e6-827c-3da08976a44d",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
               "bends" : [ {
-                "x" : 387.38075256347656,
-                "y" : 801.6705017089844
+                "x" : 384.6553726196289,
+                "y" : 754.1988830566406
               }, {
-                "x" : 387.38075256347656,
-                "y" : 851.6705017089844
+                "x" : 384.6553726196289,
+                "y" : 804.1988830566406
               } ],
               "componentType" : "CONNECTION",
               "destination" : {
@@ -8290,126 +8056,6 @@
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "736878cf-4337-3c13-88b8-0e47e60870dd",
                 "name" : "Load olap.dim_course",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "d8bce877-5870-3e06-a8a6-1bef0512e9fc",
-                "name" : "Load olap.dim_company",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "f5391019-c82d-3cab-a421-6e33092d59cd",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "success" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "3d01d266-76ec-3031-8d51-d6ab7bcb2c1a",
-                "name" : "Load olap.dim_channel",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "4d1f10ec-990f-32d8-b179-319e63972b59",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "005fdff9-e254-3e5c-9066-62834b9cd46d",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "failure" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "d8bce877-5870-3e06-a8a6-1bef0512e9fc",
-                "name" : "Load olap.dim_company",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "c5729fc1-a192-3387-bbc6-6719eab95cc2",
-                "name" : "Load olap.dim_ability",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "de287d49-e05e-3189-ad2e-64910a3ecaf8",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "success" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "80497df0-cb49-34ad-916c-1a9c12dbf7a7",
-                "name" : "Load olap.dim_survey",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "e9374542-54eb-343c-9ab3-5f3a36f7ce32",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "c629fb90-a432-3fdd-9330-91db30996bc1",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "failure" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "c3fb6b35-6f9d-36ed-bc34-af73a6a8d4fb",
-                "name" : "Load olap.dim_exercise",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8451,36 +8097,6 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "736878cf-4337-3c13-88b8-0e47e60870dd",
-                "name" : "Load olap.dim_course",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "ed784577-3f37-3c7d-9bed-d4794cf72d38",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "success" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "25a821f1-9d18-37a4-a8c5-51e6b84a2b4d",
-                "name" : "Load olap.dim_learning_path",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "72e1eafa-11b6-35fc-91c9-69da4bfd9e1a",
                 "name" : "Load olap.dim_user",
                 "type" : "PROCESSOR"
@@ -8501,78 +8117,6 @@
                 "id" : "c1215af9-4da9-3b32-8c9a-e1eb427af7f7",
                 "name" : "load dims",
                 "type" : "INPUT_PORT"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 368.9871885036491,
-                "y" : 1885.9339949649102
-              }, {
-                "x" : 368.9871885036491,
-                "y" : 1935.9339949649102
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "50ab8a16-c167-39cf-9f3d-e9f8f06f76d5",
-                "name" : "Load olap.map_test_level",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "5b1b2936-c869-33d2-bfb7-720a67e71827",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "50ab8a16-c167-39cf-9f3d-e9f8f06f76d5",
-                "name" : "Load olap.map_test_level",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 1333.139404296875,
-                "y" : 114.1637954711914
-              }, {
-                "x" : 1333.139404296875,
-                "y" : 164.1637954711914
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "dcc7d437-e327-3af2-ab28-c0ab59fd2b1c",
-                "name" : "Load olap.dim_lesson",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "ebff6854-aeb8-33ca-b93f-952bde85bc78",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "dcc7d437-e327-3af2-ab28-c0ab59fd2b1c",
-                "name" : "Load olap.dim_lesson",
-                "type" : "PROCESSOR"
               },
               "zIndex" : 0
             }, {
@@ -8602,42 +8146,6 @@
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "dcc7d437-e327-3af2-ab28-c0ab59fd2b1c",
                 "name" : "Load olap.dim_lesson",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 326.3765563964844,
-                "y" : 1159.0260162353516
-              }, {
-                "x" : 326.3765563964844,
-                "y" : 1209.0260162353516
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "be44336c-c257-3c46-9af5-0218e906bd76",
-                "name" : "Load olap.map_test_ka",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "3135dd52-3afe-35bb-b298-39612ff7f05b",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "be44336c-c257-3c46-9af5-0218e906bd76",
-                "name" : "Load olap.map_test_ka",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8679,9 +8187,9 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "78972236-1428-30e6-827c-3da08976a44d",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
+                "id" : "3d01d266-76ec-3031-8d51-d6ab7bcb2c1a",
+                "name" : "Load olap.dim_channel",
+                "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
@@ -8698,6 +8206,36 @@
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "72e1eafa-11b6-35fc-91c9-69da4bfd9e1a",
                 "name" : "Load olap.dim_user",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "dcc7d437-e327-3af2-ab28-c0ab59fd2b1c",
+                "name" : "Load olap.dim_lesson",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "2e2c632a-0d5f-3064-bc5f-75756dc8e691",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "736878cf-4337-3c13-88b8-0e47e60870dd",
+                "name" : "Load olap.dim_course",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8728,102 +8266,6 @@
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "50ab8a16-c167-39cf-9f3d-e9f8f06f76d5",
                 "name" : "Load olap.map_test_level",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "fb815ea7-c4df-3dd0-9ff3-a901f6831c84",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "2e2c632a-0d5f-3064-bc5f-75756dc8e691",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "success" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "736878cf-4337-3c13-88b8-0e47e60870dd",
-                "name" : "Load olap.dim_course",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 1333.7650756835938,
-                "y" : 334.88977813720703
-              }, {
-                "x" : 1333.7650756835938,
-                "y" : 384.88977813720703
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "caf1811f-e133-304d-94dc-8c464426ec86",
-                "name" : "Load olap.dim_practice",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b6f37108-3218-3d18-966b-9887447c875a",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "retry" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "caf1811f-e133-304d-94dc-8c464426ec86",
-                "name" : "Load olap.dim_practice",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "f27b6801-517d-3d60-9520-7326d00bccb9",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "failure" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "736878cf-4337-3c13-88b8-0e47e60870dd",
-                "name" : "Load olap.dim_course",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -8955,36 +8397,6 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "74ff2c77-6873-32bc-9934-0458654aabc5",
-                "name" : "Funnel",
-                "type" : "FUNNEL"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "82541d51-fbeb-3418-8bf3-ec27bd9c6cae",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "failure" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-                "id" : "80497df0-cb49-34ad-916c-1a9c12dbf7a7",
-                "name" : "Load olap.dim_survey",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
                 "id" : "b27e3274-5ce9-3692-a049-448f7a61baf9",
                 "name" : "Funnel",
                 "type" : "FUNNEL"
@@ -9040,12 +8452,42 @@
             }, {
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "736878cf-4337-3c13-88b8-0e47e60870dd",
+                "name" : "Load olap.dim_course",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "87662a4b-0a99-3ce2-9f20-adce723472c1",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "17fdc526-837a-35ff-afd7-42d0df73061e",
+                "name" : "dim_learning_path_module",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
               "bends" : [ {
-                "x" : 324.0929870605469,
-                "y" : 1420.2501373291016
+                "x" : 1834.0929870605469,
+                "y" : 200.25013732910156
               }, {
-                "x" : 324.0929870605469,
-                "y" : 1470.2501373291016
+                "x" : 1834.0929870605469,
+                "y" : 250.25013732910156
               } ],
               "componentType" : "CONNECTION",
               "destination" : {
@@ -9073,6 +8515,600 @@
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 387.999755859375,
+                "y" : 1840.2894134521484
+              }, {
+                "x" : 387.999755859375,
+                "y" : 1890.2894134521484
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "c5729fc1-a192-3387-bbc6-6719eab95cc2",
+                "name" : "Load olap.dim_ability",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "e4d7e7fc-f6de-3f09-b49f-422001b1ed78",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "c5729fc1-a192-3387-bbc6-6719eab95cc2",
+                "name" : "Load olap.dim_ability",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 387.6812744140625,
+                "y" : 1403.6604385375977
+              }, {
+                "x" : 387.6812744140625,
+                "y" : 1453.6604385375977
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "c3fb6b35-6f9d-36ed-bc34-af73a6a8d4fb",
+                "name" : "Load olap.dim_exercise",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "476cfbf6-4f22-3b7c-a908-27e1ea6e24d2",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "c3fb6b35-6f9d-36ed-bc34-af73a6a8d4fb",
+                "name" : "Load olap.dim_exercise",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "219ae767-2afb-363c-95a3-71e96c479e5f",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "f70043c3-a8f4-3ed1-a2b3-a1475141f3e1",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "17fdc526-837a-35ff-afd7-42d0df73061e",
+                "name" : "dim_learning_path_module",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "ce285d46-2eba-35d6-9b33-d662bbb78af4",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "0b3db169-9675-3923-b1ef-fcc9fc8179b9",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "caf1811f-e133-304d-94dc-8c464426ec86",
+                "name" : "Load olap.dim_practice",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 393.42320251464844,
+                "y" : 130.25082397460938
+              }, {
+                "x" : 393.42320251464844,
+                "y" : 180.25082397460938
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "d8bce877-5870-3e06-a8a6-1bef0512e9fc",
+                "name" : "Load olap.dim_company",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "daeed70a-cd52-320e-a304-38f6b145fcfb",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "d8bce877-5870-3e06-a8a6-1bef0512e9fc",
+                "name" : "Load olap.dim_company",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 384.6997528076172,
+                "y" : 337.350830078125
+              }, {
+                "x" : 384.6997528076172,
+                "y" : 387.350830078125
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "25a821f1-9d18-37a4-a8c5-51e6b84a2b4d",
+                "name" : "Load olap.dim_learning_path",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "e4e818a3-ce93-3416-aa5f-c2cea29bdd47",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "25a821f1-9d18-37a4-a8c5-51e6b84a2b4d",
+                "name" : "Load olap.dim_learning_path",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 388.30694580078125,
+                "y" : 1624.3864212036133
+              }, {
+                "x" : 388.30694580078125,
+                "y" : 1674.3864212036133
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "80497df0-cb49-34ad-916c-1a9c12dbf7a7",
+                "name" : "Load olap.dim_survey",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "802bce47-34b7-39cd-beec-4f4193261ac9",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "80497df0-cb49-34ad-916c-1a9c12dbf7a7",
+                "name" : "Load olap.dim_survey",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "d8bce877-5870-3e06-a8a6-1bef0512e9fc",
+                "name" : "Load olap.dim_company",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "f5391019-c82d-3cab-a421-6e33092d59cd",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "3d01d266-76ec-3031-8d51-d6ab7bcb2c1a",
+                "name" : "Load olap.dim_channel",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "4d1f10ec-990f-32d8-b179-319e63972b59",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "005fdff9-e254-3e5c-9066-62834b9cd46d",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "d8bce877-5870-3e06-a8a6-1bef0512e9fc",
+                "name" : "Load olap.dim_company",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "c5729fc1-a192-3387-bbc6-6719eab95cc2",
+                "name" : "Load olap.dim_ability",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "de287d49-e05e-3189-ad2e-64910a3ecaf8",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "80497df0-cb49-34ad-916c-1a9c12dbf7a7",
+                "name" : "Load olap.dim_survey",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "e9374542-54eb-343c-9ab3-5f3a36f7ce32",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "c629fb90-a432-3fdd-9330-91db30996bc1",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "c3fb6b35-6f9d-36ed-bc34-af73a6a8d4fb",
+                "name" : "Load olap.dim_exercise",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "17fdc526-837a-35ff-afd7-42d0df73061e",
+                "name" : "dim_learning_path_module",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "ed784577-3f37-3c7d-9bed-d4794cf72d38",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "25a821f1-9d18-37a4-a8c5-51e6b84a2b4d",
+                "name" : "Load olap.dim_learning_path",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 1838.9871885036491,
+                "y" : 665.9339949649102
+              }, {
+                "x" : 1838.9871885036491,
+                "y" : 715.9339949649102
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "50ab8a16-c167-39cf-9f3d-e9f8f06f76d5",
+                "name" : "Load olap.map_test_level",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "5b1b2936-c869-33d2-bfb7-720a67e71827",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "50ab8a16-c167-39cf-9f3d-e9f8f06f76d5",
+                "name" : "Load olap.map_test_level",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 392.139404296875,
+                "y" : 954.1638565063477
+              }, {
+                "x" : 392.139404296875,
+                "y" : 1004.1638565063477
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "dcc7d437-e327-3af2-ab28-c0ab59fd2b1c",
+                "name" : "Load olap.dim_lesson",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "ebff6854-aeb8-33ca-b93f-952bde85bc78",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "dcc7d437-e327-3af2-ab28-c0ab59fd2b1c",
+                "name" : "Load olap.dim_lesson",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 1836.3765563964844,
+                "y" : -60.97398376464844
+              }, {
+                "x" : 1836.3765563964844,
+                "y" : -10.973983764648438
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "be44336c-c257-3c46-9af5-0218e906bd76",
+                "name" : "Load olap.map_test_ka",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "3135dd52-3afe-35bb-b298-39612ff7f05b",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "be44336c-c257-3c46-9af5-0218e906bd76",
+                "name" : "Load olap.map_test_ka",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ {
+                "x" : 392.76507568359375,
+                "y" : 1174.8898391723633
+              }, {
+                "x" : 392.76507568359375,
+                "y" : 1224.8898391723633
+              } ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "caf1811f-e133-304d-94dc-8c464426ec86",
+                "name" : "Load olap.dim_practice",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b6f37108-3218-3d18-966b-9887447c875a",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "retry" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "caf1811f-e133-304d-94dc-8c464426ec86",
+                "name" : "Load olap.dim_practice",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "f27b6801-517d-3d60-9520-7326d00bccb9",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "736878cf-4337-3c13-88b8-0e47e60870dd",
+                "name" : "Load olap.dim_course",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "74ff2c77-6873-32bc-9934-0458654aabc5",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "82541d51-fbeb-3418-8bf3-ec27bd9c6cae",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "failure" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+                "id" : "80497df0-cb49-34ad-916c-1a9c12dbf7a7",
+                "name" : "Load olap.dim_survey",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
             } ],
             "controllerServices" : [ ],
             "funnels" : [ {
@@ -9080,8 +9116,8 @@
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "1c6c28e8-00c3-37be-9d56-3de87efa6fde",
               "position" : {
-                "x" : 1480.0,
-                "y" : 216.0
+                "x" : 560.0,
+                "y" : 1064.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -9096,8 +9132,8 @@
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "efbea031-b8d8-37dd-885d-585c0bea566e",
               "position" : {
-                "x" : 80.0,
-                "y" : 2096.0
+                "x" : 1520.0,
+                "y" : 872.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -9112,112 +9148,104 @@
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
               "position" : {
-                "x" : 512.0,
-                "y" : 1792.0
+                "x" : 2016.0,
+                "y" : 584.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "e9374542-54eb-343c-9ab3-5f3a36f7ce32",
               "position" : {
-                "x" : 1480.0,
-                "y" : 664.0
+                "x" : 560.0,
+                "y" : 1512.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "219ae767-2afb-363c-95a3-71e96c479e5f",
+              "position" : {
+                "x" : -552.0,
+                "y" : 448.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "25ba5a1d-a47c-30e1-b1e2-0d043ed9870b",
               "position" : {
-                "x" : 1480.0,
-                "y" : 1104.0
+                "x" : 560.0,
+                "y" : 1952.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
               "position" : {
-                "x" : 520.0,
-                "y" : 1520.0
+                "x" : 2024.0,
+                "y" : 312.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
               "position" : {
-                "x" : -552.0,
-                "y" : 48.0
+                "x" : -560.0,
+                "y" : -104.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "916d785f-129c-3041-810f-45bc092bd5c1",
               "position" : {
-                "x" : 16.0,
-                "y" : 1032.0
+                "x" : 1000.0,
+                "y" : 808.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "4d1f10ec-990f-32d8-b179-319e63972b59",
               "position" : {
-                "x" : -552.0,
-                "y" : 272.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "78972236-1428-30e6-827c-3da08976a44d",
-              "position" : {
-                "x" : 341.5649034143595,
-                "y" : -56.71199118678834
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "fb815ea7-c4df-3dd0-9ff3-a901f6831c84",
-              "position" : {
-                "x" : 1016.0,
-                "y" : -112.0
+                "x" : -560.0,
+                "y" : 120.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "7b46f7ad-d85f-3a49-ad54-7a8018bbbf1a",
               "position" : {
-                "x" : 512.0,
-                "y" : 2008.0
+                "x" : 2016.0,
+                "y" : 800.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "99fa7c83-f5e5-39ee-9f51-b95e5cd964cc",
               "position" : {
-                "x" : 512.0,
-                "y" : 1256.0
+                "x" : 2016.0,
+                "y" : 48.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "ce285d46-2eba-35d6-9b33-d662bbb78af4",
               "position" : {
-                "x" : 1480.0,
-                "y" : 440.0
+                "x" : 560.0,
+                "y" : 1288.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
               "position" : {
-                "x" : 1480.0,
-                "y" : 888.0
+                "x" : 560.0,
+                "y" : 1736.0
               }
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
               "position" : {
-                "x" : -552.0,
-                "y" : 496.0
+                "x" : -560.0,
+                "y" : 272.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -9231,7 +9259,7 @@
               "identifier" : "c1215af9-4da9-3b32-8c9a-e1eb427af7f7",
               "name" : "load dims",
               "position" : {
-                "x" : 0.0,
+                "x" : -16.0,
                 "y" : -392.0
               },
               "type" : "INPUT_PORT"
@@ -9247,14 +9275,14 @@
               "identifier" : "e07ce676-92d2-3b7c-979c-06297322c3dc",
               "name" : "dim_loaded",
               "position" : {
-                "x" : -488.0,
-                "y" : 1872.0
+                "x" : 1424.0,
+                "y" : 1024.0
               },
               "type" : "OUTPUT_PORT"
             } ],
             "position" : {
-              "x" : 136.0,
-              "y" : 88.0
+              "x" : 120.0,
+              "y" : 120.0
             },
             "processGroups" : [ ],
             "processors" : [ {
@@ -9274,8 +9302,8 @@
               "name" : "Load olap.dim_lesson",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 864.0,
-                "y" : 72.0
+                "x" : -72.0,
+                "y" : 920.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -9361,7 +9389,7 @@
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : -72.0,
-                "y" : 32.0
+                "y" : -120.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -9442,12 +9470,98 @@
               "concurrentlySchedulableTaskCount" : 1,
               "executionNode" : "ALL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "17fdc526-837a-35ff-afd7-42d0df73061e",
+              "name" : "dim_learning_path_module",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : -72.0,
+                "y" : 472.0
+              },
+              "properties" : {
+                "Support Fragmented Transactions" : "true",
+                "putsql-sql-statement" : "\nreplace into dim_learning_path_module\nselect dlp.id as learning_path_id,\n       0      as module_id,\n       dlp.name  learning_path_name,\n       '引导'   as module_name,\n       1      as total_unit\nfrom dim_learning_path dlp\nwhere guide_num > 0\nunion\nselect dlp.id as learning_path_id,\n       1      as module_id,\n       dlp.name  learning_path_name,\n       '前测'   as module_name,\n       1      as total_unit\nfrom dim_learning_path dlp\nwhere pre_survey_num > 0\nunion\nselect dlp.id          as learning_path_id,\n       2               as module_id,\n       dlp.name           learning_path_name,\n       '课程学习'          as module_name,\n       course_unit_num as total_unit\nfrom dim_learning_path dlp\nwhere course_unit_num > 0\nunion\nselect dlp.id                                                            as learning_path_id,\n       3                                                                 as module_id,\n       dlp.name                                                             learning_path_name,\n       '情景模拟'                                                            as module_name,\n       case when dlp.id != 2 then exercise_num else exercise_num * 5 end as total_unit\nfrom dim_learning_path dlp\nwhere exercise_num > 0\nunion\nselect dlp.id as learning_path_id,\n       4      as module_id,\n       dlp.name  learning_path_name,\n       '后测'   as module_name,\n       1      as total_unit\nfrom dim_learning_path dlp\nwhere pre_survey_num > 0\n;",
+                "Batch Size" : "100",
+                "Obtain Generated Keys" : "false",
+                "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
+                "database-session-autocommit" : "false",
+                "rollback-on-failure" : "false"
+              },
+              "propertyDescriptors" : {
+                "Support Fragmented Transactions" : {
+                  "displayName" : "Support Fragmented Transactions",
+                  "identifiesControllerService" : false,
+                  "name" : "Support Fragmented Transactions",
+                  "sensitive" : false
+                },
+                "putsql-sql-statement" : {
+                  "displayName" : "SQL Statement",
+                  "identifiesControllerService" : false,
+                  "name" : "putsql-sql-statement",
+                  "sensitive" : false
+                },
+                "Transaction Timeout" : {
+                  "displayName" : "Transaction Timeout",
+                  "identifiesControllerService" : false,
+                  "name" : "Transaction Timeout",
+                  "sensitive" : false
+                },
+                "Batch Size" : {
+                  "displayName" : "Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "Batch Size",
+                  "sensitive" : false
+                },
+                "Obtain Generated Keys" : {
+                  "displayName" : "Obtain Generated Keys",
+                  "identifiesControllerService" : false,
+                  "name" : "Obtain Generated Keys",
+                  "sensitive" : false
+                },
+                "JDBC Connection Pool" : {
+                  "displayName" : "JDBC Connection Pool",
+                  "identifiesControllerService" : true,
+                  "name" : "JDBC Connection Pool",
+                  "sensitive" : false
+                },
+                "database-session-autocommit" : {
+                  "displayName" : "Database Session AutoCommit",
+                  "identifiesControllerService" : false,
+                  "name" : "database-session-autocommit",
+                  "sensitive" : false
+                },
+                "rollback-on-failure" : {
+                  "displayName" : "Rollback On Failure",
+                  "identifiesControllerService" : false,
+                  "name" : "rollback-on-failure",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.PutSQL",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "50ab8a16-c167-39cf-9f3d-e9f8f06f76d5",
               "name" : "Load olap.map_test_level",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : -96.0,
-                "y" : 1840.0
+                "x" : 1368.0,
+                "y" : 616.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -9532,8 +9646,8 @@
               "name" : "Load olap.dim_exercise",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 864.0,
-                "y" : 520.0
+                "x" : -72.0,
+                "y" : 1368.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -9618,8 +9732,8 @@
               "name" : "Load olap.dim_ability",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 864.0,
-                "y" : 960.0
+                "x" : -72.0,
+                "y" : 1808.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -9704,8 +9818,8 @@
               "name" : "Load olap.dim_survey",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 864.0,
-                "y" : 744.0
+                "x" : -72.0,
+                "y" : 1592.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -9790,8 +9904,8 @@
               "name" : "Load olap.map_lesson_question_ka",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : -136.0,
-                "y" : 1376.0
+                "x" : 1368.0,
+                "y" : 152.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -9877,7 +9991,7 @@
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : -72.0,
-                "y" : 520.0
+                "y" : 296.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -9962,7 +10076,7 @@
               "name" : "Load olap.dim_user",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : -88.0,
+                "x" : -72.0,
                 "y" : -288.0
               },
               "properties" : {
@@ -10048,8 +10162,8 @@
               "name" : "Load olap.dim_practice",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : 864.0,
-                "y" : 296.0
+                "x" : -72.0,
+                "y" : 1144.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -10134,8 +10248,8 @@
               "name" : "Load olap.map_test_ka",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : -136.0,
-                "y" : 1112.0
+                "x" : 1368.0,
+                "y" : -112.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -10220,8 +10334,8 @@
               "name" : "Load olap.map_exercise_ka",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : -112.0,
-                "y" : 1624.0
+                "x" : 1368.0,
+                "y" : 400.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -10307,7 +10421,7 @@
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : -72.0,
-                "y" : 768.0
+                "y" : 720.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -10393,7 +10507,7 @@
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : -72.0,
-                "y" : 248.0
+                "y" : 96.0
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
@@ -12759,7 +12873,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n(\n     select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where 1 = 1\n       and (\n             erh.created_at between ${date_start} and ${date_end}\n         ))\n union\n (select erh.id,\n         erh.user_id,\n         lpm.id               as learning_path_id,\n         p.practice_meta_id   as practice_id,\n         erh.exercise_meta_id as exercise_id,\n         erh.exercise_id      as user_practice_exercise_id,\n         erh.start_time,\n         erh.end_time,\n         erh.ka1_score,\n         erh.ka2_score,\n         erh.ka3_score,\n         erh.ka4_score,\n         erh.ka5_score,\n         erh.ka6_score,\n         erh.ka7_score,\n         erh.ka1_star,\n         erh.ka2_star,\n         erh.ka3_star,\n         erh.ka4_star,\n         erh.ka5_star,\n         erh.ka6_star,\n         erh.ka7_star,\n         erh.level,\n         erh.description, -- TODO。\n         erh.created_at\n  from exercises_reports_his erh\n           join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n           join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n  where 1 = 1\n    and (\n          erh.created_at between ${date_start} and ${date_end}\n      )\n )\n;",
+                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n    (\n        select erh.id,\n               erh.user_id,\n               lpm.id                                as learning_path_id,\n               p.practice_meta_id                    as practice_id,\n               erh.exercise_meta_id                  as exercise_id,\n               erh.exercise_id                       as user_practice_exercise_id,\n               erh.start_time,\n               erh.end_time,\n               erh.ka1_score,\n               erh.ka2_score,\n               erh.ka3_score,\n               erh.ka4_score,\n               erh.ka5_score,\n               erh.ka6_score,\n               erh.ka7_score,\n               if(erh.ka1_star > 5, 5, erh.ka1_star) as ka1_star,\n               if(erh.ka2_star > 5, 5, erh.ka2_star) as ka2_star,\n               if(erh.ka3_star > 5, 5, erh.ka3_star) as ka3_star,\n               if(erh.ka4_star > 5, 5, erh.ka4_star) as ka4_star,\n               if(erh.ka5_star > 5, 5, erh.ka5_star) as ka5_star,\n               if(erh.ka6_star > 5, 5, erh.ka6_star) as ka6_star,\n               if(erh.ka7_star > 5, 5, erh.ka7_star) as ka7_star,\n               erh.level,\n               erh.description, -- TODO。\n               erh.created_at\n        from exercises_reports_his erh\n                 join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n                 join practices p on e.practice_id = p.id\n                 join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n        where 1 = 1\n          and (\n            erh.created_at between ${date_start} and ${date_end}\n            ))\nunion\n(select erh.id,\n        erh.user_id,\n        lpm.id               as learning_path_id,\n        p.practice_meta_id   as practice_id,\n        erh.exercise_meta_id as exercise_id,\n        erh.exercise_id      as user_practice_exercise_id,\n        erh.start_time,\n        erh.end_time,\n        erh.ka1_score,\n        erh.ka2_score,\n        erh.ka3_score,\n        erh.ka4_score,\n        erh.ka5_score,\n        erh.ka6_score,\n        erh.ka7_score,\n        if(erh.ka1_star > 5, 5, erh.ka1_star) as ka1_star,\n        if(erh.ka2_star > 5, 5, erh.ka2_star) as ka2_star,\n        if(erh.ka3_star > 5, 5, erh.ka3_star) as ka3_star,\n        if(erh.ka4_star > 5, 5, erh.ka4_star) as ka4_star,\n        if(erh.ka5_star > 5, 5, erh.ka5_star) as ka5_star,\n        if(erh.ka6_star > 5, 5, erh.ka6_star) as ka6_star,\n        if(erh.ka7_star > 5, 5, erh.ka7_star) as ka7_star,\n        erh.level,\n        erh.description, -- TODO。\n        erh.created_at\n from exercises_reports_his erh\n          join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n          join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n where 1 = 1\n   and (\n     erh.created_at between ${date_start} and ${date_end}\n     )\n)\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -20931,7 +21045,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n    (select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            erh.ka1_star,\n            erh.ka2_star,\n            erh.ka3_star,\n            erh.ka4_star,\n            erh.ka5_star,\n            erh.ka6_star,\n            erh.ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where erh.user_id in (${user_id})\n    )\n     union\n(select erh.id,\n        erh.user_id,\n        lpm.id               as learning_path_id,\n        p.practice_meta_id   as practice_id,\n        erh.exercise_meta_id as exercise_id,\n        erh.exercise_id      as user_practice_exercise_id,\n        erh.start_time,\n        erh.end_time,\n        erh.ka1_score,\n        erh.ka2_score,\n        erh.ka3_score,\n        erh.ka4_score,\n        erh.ka5_score,\n        erh.ka6_score,\n        erh.ka7_score,\n        erh.ka1_star,\n        erh.ka2_star,\n        erh.ka3_star,\n        erh.ka4_star,\n        erh.ka5_star,\n        erh.ka6_star,\n        erh.ka7_star,\n        erh.level,\n        erh.description, -- TODO。\n        erh.created_at\n from exercises_reports_his erh\n          join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n          join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n where erh.user_id in (${user_id})\n)\n;",
+                "putsql-sql-statement" : "\n\nreplace into fact_user_practice_exercise_his\n    (select erh.id,\n            erh.user_id,\n            lpm.id               as learning_path_id,\n            p.practice_meta_id   as practice_id,\n            erh.exercise_meta_id as exercise_id,\n            erh.exercise_id      as user_practice_exercise_id,\n            erh.start_time,\n            erh.end_time,\n            erh.ka1_score,\n            erh.ka2_score,\n            erh.ka3_score,\n            erh.ka4_score,\n            erh.ka5_score,\n            erh.ka6_score,\n            erh.ka7_score,\n            if(erh.ka1_star > 5, 5, erh.ka1_star) as ka1_star,\n            if(erh.ka2_star > 5, 5, erh.ka2_star) as ka2_star,\n            if(erh.ka3_star > 5, 5, erh.ka3_star) as ka3_star,\n            if(erh.ka4_star > 5, 5, erh.ka4_star) as ka4_star,\n            if(erh.ka5_star > 5, 5, erh.ka5_star) as ka5_star,\n            if(erh.ka6_star > 5, 5, erh.ka6_star) as ka6_star,\n            if(erh.ka7_star > 5, 5, erh.ka7_star) as ka7_star,\n            erh.level,\n            erh.description, -- TODO。\n            erh.created_at\n     from exercises_reports_his erh\n              join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n              join practices p on e.practice_id = p.id\n              join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n     where erh.user_id in (${user_id})\n    )\n     union\n(select erh.id,\n        erh.user_id,\n        lpm.id               as learning_path_id,\n        p.practice_meta_id   as practice_id,\n        erh.exercise_meta_id as exercise_id,\n        erh.exercise_id      as user_practice_exercise_id,\n        erh.start_time,\n        erh.end_time,\n        erh.ka1_score,\n        erh.ka2_score,\n        erh.ka3_score,\n        erh.ka4_score,\n        erh.ka5_score,\n        erh.ka6_score,\n        erh.ka7_score,\n        if(erh.ka1_star > 5, 5, erh.ka1_star) as ka1_star,\n        if(erh.ka2_star > 5, 5, erh.ka2_star) as ka2_star,\n        if(erh.ka3_star > 5, 5, erh.ka3_star) as ka3_star,\n        if(erh.ka4_star > 5, 5, erh.ka4_star) as ka4_star,\n        if(erh.ka5_star > 5, 5, erh.ka5_star) as ka5_star,\n        if(erh.ka6_star > 5, 5, erh.ka6_star) as ka6_star,\n        if(erh.ka7_star > 5, 5, erh.ka7_star) as ka7_star,\n        erh.level,\n        erh.description, -- TODO。\n        erh.created_at\n from exercises_reports_his erh\n          join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n          join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n where erh.user_id in (${user_id})\n)\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -41457,7 +41571,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_practice_exercise_his\n    (\n        select erh.id,\n               erh.user_id,\n               lpm.id               as learning_path_id,\n               p.practice_meta_id   as practice_id,\n               erh.exercise_meta_id as exercise_id,\n               erh.exercise_id      as user_practice_exercise_id,\n               erh.start_time,\n               erh.end_time,\n               erh.ka1_score,\n               erh.ka2_score,\n               erh.ka3_score,\n               erh.ka4_score,\n               erh.ka5_score,\n               erh.ka6_score,\n               erh.ka7_score,\n               erh.ka1_star,\n               erh.ka2_star,\n               erh.ka3_star,\n               erh.ka4_star,\n               erh.ka5_star,\n               erh.ka6_star,\n               erh.ka7_star,\n               erh.level,\n               erh.description, -- TODO。\n               erh.created_at\n        from exercises_reports_his erh\n                 join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n                 join practices p on e.practice_id = p.id\n                 join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n    )\nunion\n(select erh.id,\n        erh.user_id,\n        lpm.id               as learning_path_id,\n        p.practice_meta_id   as practice_id,\n        erh.exercise_meta_id as exercise_id,\n        erh.exercise_id      as user_practice_exercise_id,\n        erh.start_time,\n        erh.end_time,\n        erh.ka1_score,\n        erh.ka2_score,\n        erh.ka3_score,\n        erh.ka4_score,\n        erh.ka5_score,\n        erh.ka6_score,\n        erh.ka7_score,\n        erh.ka1_star,\n        erh.ka2_star,\n        erh.ka3_star,\n        erh.ka4_star,\n        erh.ka5_star,\n        erh.ka6_star,\n        erh.ka7_star,\n        erh.level,\n        erh.description, -- TODO。\n        erh.created_at\n from exercises_reports_his erh\n          join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n          join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n)\n;",
+                "putsql-sql-statement" : "\n\nreplace into fact_user_practice_exercise_his\n    (\n        select erh.id,\n               erh.user_id,\n               lpm.id               as learning_path_id,\n               p.practice_meta_id   as practice_id,\n               erh.exercise_meta_id as exercise_id,\n               erh.exercise_id      as user_practice_exercise_id,\n               erh.start_time,\n               erh.end_time,\n               erh.ka1_score,\n               erh.ka2_score,\n               erh.ka3_score,\n               erh.ka4_score,\n               erh.ka5_score,\n               erh.ka6_score,\n               erh.ka7_score,\n               if(erh.ka1_star > 5, 5, erh.ka1_star) as ka1_star,\n               if(erh.ka2_star > 5, 5, erh.ka2_star) as ka2_star,\n               if(erh.ka3_star > 5, 5, erh.ka3_star) as ka3_star,\n               if(erh.ka4_star > 5, 5, erh.ka4_star) as ka4_star,\n               if(erh.ka5_star > 5, 5, erh.ka5_star) as ka5_star,\n               if(erh.ka6_star > 5, 5, erh.ka6_star) as ka6_star,\n               if(erh.ka7_star > 5, 5, erh.ka7_star) as ka7_star,\n               erh.level,\n               erh.description, -- TODO。\n               erh.created_at\n        from exercises_reports_his erh\n                 join exercises e on erh.exercise_id = e.id and erh.exercise_meta_id != 41\n                 join practices p on e.practice_id = p.id\n                 join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n    )\nunion\n(select erh.id,\n        erh.user_id,\n        lpm.id               as learning_path_id,\n        p.practice_meta_id   as practice_id,\n        erh.exercise_meta_id as exercise_id,\n        erh.exercise_id      as user_practice_exercise_id,\n        erh.start_time,\n        erh.end_time,\n        erh.ka1_score,\n        erh.ka2_score,\n        erh.ka3_score,\n        erh.ka4_score,\n        erh.ka5_score,\n        erh.ka6_score,\n        erh.ka7_score,\n        if(erh.ka1_star > 5, 5, erh.ka1_star) as ka1_star,\n        if(erh.ka2_star > 5, 5, erh.ka2_star) as ka2_star,\n        if(erh.ka3_star > 5, 5, erh.ka3_star) as ka3_star,\n        if(erh.ka4_star > 5, 5, erh.ka4_star) as ka4_star,\n        if(erh.ka5_star > 5, 5, erh.ka5_star) as ka5_star,\n        if(erh.ka6_star > 5, 5, erh.ka6_star) as ka6_star,\n        if(erh.ka7_star > 5, 5, erh.ka7_star) as ka7_star,\n        erh.level,\n        erh.description, -- TODO。\n        erh.created_at\n from exercises_reports_his erh\n          join practices p on erh.exercise_id = p.learning_path_id and erh.exercise_meta_id = 41\n          join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n)\n;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
