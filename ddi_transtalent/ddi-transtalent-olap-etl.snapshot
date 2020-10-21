@@ -6749,7 +6749,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_posttest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_posttest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       ykl.score,\n       ykl.level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere 1 = 1\n  and yue.type = 2\n  and (yue.createDate between ${date_start} and ${date_end}\n    or yue.updateDate between ${date_start} and ${date_end}\n    )\n;",
+                "putsql-sql-statement" : "\nreplace into fact_user_posttest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_posttest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       if(ykl.score>24,24,ykl.score) as score,\n       if(ykl.score>24,'A',ykl.level) as level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere 1 = 1\n  and yue.type = 2\n  and (yue.createDate between ${date_start} and ${date_end}\n    or yue.updateDate between ${date_start} and ${date_end}\n    )\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -6835,7 +6835,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\n\nreplace into fact_user_pretest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_pretest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       ykl.score,\n       ykl.level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere 1 = 1\n  and yue.type = 1\n  and (yue.createDate between ${date_start} and ${date_end}\n    or yue.updateDate between ${date_start} and ${date_end}\n    )\n;\n",
+                "putsql-sql-statement" : "\n\nreplace into fact_user_pretest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_pretest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       if(ykl.score>24,24,ykl.score) as score,\n       if(ykl.score>24,'A',ykl.level) as level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere 1 = 1\n  and yue.type = 1\n  and (yue.createDate between ${date_start} and ${date_end}\n    or yue.updateDate between ${date_start} and ${date_end}\n    )\n;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -12529,7 +12529,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_posttest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_posttest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       ykl.score,\n       ykl.level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere 1 = 1\n  and yue.type = 2\n  and (yue.createDate between ${date_start} and ${date_end}\n    or yue.updateDate between ${date_start} and ${date_end}\n    )\n;",
+                "putsql-sql-statement" : "\nreplace into fact_user_posttest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_posttest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       if(ykl.score>24,24,ykl.score) as score,\n       if(ykl.score>24,'A',ykl.level) as level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere 1 = 1\n  and yue.type = 2\n  and (yue.createDate between ${date_start} and ${date_end}\n    or yue.updateDate between ${date_start} and ${date_end}\n    )\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -13389,7 +13389,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\n\nreplace into fact_user_pretest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_pretest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       ykl.score,\n       ykl.level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere 1 = 1\n  and yue.type = 1\n  and (yue.createDate between ${date_start} and ${date_end}\n    or yue.updateDate between ${date_start} and ${date_end}\n    )\n;\n",
+                "putsql-sql-statement" : "\n\nreplace into fact_user_pretest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_pretest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       if(ykl.score>24,24,ykl.score) as score,\n       if(ykl.score>24,'A',ykl.level) as level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere 1 = 1\n  and yue.type = 1\n  and (yue.createDate between ${date_start} and ${date_end}\n    or yue.updateDate between ${date_start} and ${date_end}\n    )\n;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -20959,7 +20959,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_posttest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_posttest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       ykl.score,\n       ykl.level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere yue.type = 2\n  and ykl.user_id in( ${user_id} )",
+                "putsql-sql-statement" : "replace into fact_user_posttest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_posttest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       if(ykl.score>24,24,ykl.score) as score,\n       if(ykl.score>24,'A',ykl.level) as level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere yue.type = 2\n  and ykl.user_id in( ${user_id} )",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -21131,7 +21131,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_pretest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_pretest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       ykl.score,\n       ykl.level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere yue.type = 1\n  and ykl.user_id in( ${user_id} )",
+                "putsql-sql-statement" : "\nreplace into fact_user_pretest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_pretest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       if(ykl.score>24,24,ykl.score) as score,\n       if(ykl.score>24,'A',ykl.level) as level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere yue.type = 1\n  and ykl.user_id in( ${user_id} )",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -41227,7 +41227,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_posttest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_posttest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       ykl.score,\n       ykl.level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere yue.type = 2\n ",
+                "putsql-sql-statement" : "replace into fact_user_posttest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_posttest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       if(ykl.score>24,24,ykl.score) as score,\n       if(ykl.score>24,'A',ykl.level) as level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere yue.type = 2\n ",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -42087,7 +42087,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_pretest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_pretest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       ykl.score,\n       ykl.level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere yue.type = 1\n  ",
+                "putsql-sql-statement" : "\nreplace into fact_user_pretest_ka\nselect yue.learning_path_meta_id as learning_path_id,\n       yue.user_id,\n       yue.examid                as user_pretest_id,\n       ykl.id,\n       ykl.testing_keyaction_id,\n       if(ykl.score>24,24,ykl.score) as score,\n       if(ykl.score>24,'A',ykl.level) as level\nfrom yy_ka_level ykl\n         inner join yy_user_exam yue on yue.examid = ykl.examid\nwhere yue.type = 1\n  ",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
