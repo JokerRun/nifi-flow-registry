@@ -15547,8 +15547,7 @@
               "Fetch Size" : "0",
               "Columns to Return" : "id,user_id ",
               "db-fetch-where-clause" : "user_id !=0 and (path = '/wx/login' or path='/wechat/login'or path='/user/login' or path='/api/loginfor' )",
-              "dbf-normalize" : "false",
-              "transaction-isolation-level" : "2"
+              "dbf-normalize" : "false"
             },
             "propertyDescriptors" : {
               "Table Name" : {
@@ -15901,8 +15900,7 @@
               "Fetch Size" : "0",
               "Columns to Return" : "id,\nuser_id,\ndate_format(created_at, '%Y%m%d') as date_key,\ndate(date_add(created_at,interval 1 day ))                  as operation_date",
               "db-fetch-where-clause" : "user_id !=0",
-              "dbf-normalize" : "false",
-              "transaction-isolation-level" : "2"
+              "dbf-normalize" : "false"
             },
             "propertyDescriptors" : {
               "Table Name" : {
