@@ -16980,9 +16980,181 @@
         }, {
           "comments" : "",
           "componentType" : "PROCESS_GROUP",
-          "connections" : [ ],
+          "connections" : [ {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "4492aa19-07c7-3479-bd70-cec5a6506d7a",
+              "name" : "Yestoday",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "4d223b92-4426-31ea-892e-7b034c1c39d8",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "d7b0b73a-86c5-36b6-a15e-800c405cf626",
+              "name" : "GenerateFlowFile",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ {
+              "x" : 1237.0,
+              "y" : -225.0
+            }, {
+              "x" : 1237.0,
+              "y" : -175.0
+            } ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "bb96b7af-c5a7-3181-bd24-53dc9a1fd6a8",
+              "name" : "PutSQL",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "1daa27b3-b45b-36be-a142-bb713f3b9274",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "retry" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "bb96b7af-c5a7-3181-bd24-53dc9a1fd6a8",
+              "name" : "PutSQL",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "d3b722b1-db6c-3069-82c8-23ddc31cfe96",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "f10666b5-ab29-320f-be16-e25151d7c6ca",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "failure" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "bb96b7af-c5a7-3181-bd24-53dc9a1fd6a8",
+              "name" : "PutSQL",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "bb96b7af-c5a7-3181-bd24-53dc9a1fd6a8",
+              "name" : "PutSQL",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "3072f16d-c562-3869-be38-d18076a8179b",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "4492aa19-07c7-3479-bd70-cec5a6506d7a",
+              "name" : "Yestoday",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "b3bd3fb0-2b38-3dad-8117-7278d63ef004",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "199eed1a-03ea-3ce5-a672-70d087f32df1",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+              "id" : "bb96b7af-c5a7-3181-bd24-53dc9a1fd6a8",
+              "name" : "PutSQL",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          } ],
           "controllerServices" : [ ],
-          "funnels" : [ ],
+          "funnels" : [ {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "b3bd3fb0-2b38-3dad-8117-7278d63ef004",
+            "position" : {
+              "x" : 912.0,
+              "y" : 32.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "d3b722b1-db6c-3069-82c8-23ddc31cfe96",
+            "position" : {
+              "x" : 496.0,
+              "y" : -208.0
+            }
+          } ],
           "groupIdentifier" : "6d7c3322-59a1-30a6-9092-1eb44e98b75e",
           "identifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
           "inputPorts" : [ ],
@@ -17788,7 +17960,236 @@
             "remoteProcessGroups" : [ ],
             "variables" : { }
           } ],
-          "processors" : [ ],
+          "processors" : [ {
+            "autoTerminatedRelationships" : [ ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-update-attribute-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "4492aa19-07c7-3479-bd70-cec5a6506d7a",
+            "name" : "Yestoday",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 776.0,
+              "y" : -448.0
+            },
+            "properties" : {
+              "date_start" : "'${now():toNumber():minus(86400000):format(\"yyyy-MM-dd\", \"GMT+8\")}'",
+              "Store State" : "Do not store state",
+              "canonical-value-lookup-cache-size" : "100",
+              "date_end" : "'${now():format(\"yyyy-MM-dd\", \"GMT+8\")}'"
+            },
+            "propertyDescriptors" : {
+              "date_start" : {
+                "displayName" : "date_start",
+                "identifiesControllerService" : false,
+                "name" : "date_start",
+                "sensitive" : false
+              },
+              "Delete Attributes Expression" : {
+                "displayName" : "Delete Attributes Expression",
+                "identifiesControllerService" : false,
+                "name" : "Delete Attributes Expression",
+                "sensitive" : false
+              },
+              "Store State" : {
+                "displayName" : "Store State",
+                "identifiesControllerService" : false,
+                "name" : "Store State",
+                "sensitive" : false
+              },
+              "canonical-value-lookup-cache-size" : {
+                "displayName" : "Cache Value Lookup Cache Size",
+                "identifiesControllerService" : false,
+                "name" : "canonical-value-lookup-cache-size",
+                "sensitive" : false
+              },
+              "date_end" : {
+                "displayName" : "date_end",
+                "identifiesControllerService" : false,
+                "name" : "date_end",
+                "sensitive" : false
+              },
+              "Stateful Variables Initial Value" : {
+                "displayName" : "Stateful Variables Initial Value",
+                "identifiesControllerService" : false,
+                "name" : "Stateful Variables Initial Value",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+            "yieldDuration" : "1 sec"
+          }, {
+            "autoTerminatedRelationships" : [ ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "d7b0b73a-86c5-36b6-a15e-800c405cf626",
+            "name" : "GenerateFlowFile",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 776.0,
+              "y" : -632.0
+            },
+            "properties" : {
+              "character-set" : "UTF-8",
+              "File Size" : "0B",
+              "Batch Size" : "1",
+              "Unique FlowFiles" : "false",
+              "Data Format" : "Text"
+            },
+            "propertyDescriptors" : {
+              "character-set" : {
+                "displayName" : "Character Set",
+                "identifiesControllerService" : false,
+                "name" : "character-set",
+                "sensitive" : false
+              },
+              "File Size" : {
+                "displayName" : "File Size",
+                "identifiesControllerService" : false,
+                "name" : "File Size",
+                "sensitive" : false
+              },
+              "generate-ff-custom-text" : {
+                "displayName" : "Custom Text",
+                "identifiesControllerService" : false,
+                "name" : "generate-ff-custom-text",
+                "sensitive" : false
+              },
+              "Batch Size" : {
+                "displayName" : "Batch Size",
+                "identifiesControllerService" : false,
+                "name" : "Batch Size",
+                "sensitive" : false
+              },
+              "Unique FlowFiles" : {
+                "displayName" : "Unique FlowFiles",
+                "identifiesControllerService" : false,
+                "name" : "Unique FlowFiles",
+                "sensitive" : false
+              },
+              "Data Format" : {
+                "displayName" : "Data Format",
+                "identifiesControllerService" : false,
+                "name" : "Data Format",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 0 2 ? * * *",
+            "schedulingStrategy" : "CRON_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+            "yieldDuration" : "1 sec"
+          }, {
+            "autoTerminatedRelationships" : [ ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "ec2b992e-f982-384f-add2-54e8c35e4a54",
+            "identifier" : "bb96b7af-c5a7-3181-bd24-53dc9a1fd6a8",
+            "name" : "PutSQL",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 768.0,
+              "y" : -264.0
+            },
+            "properties" : {
+              "Support Fragmented Transactions" : "false",
+              "putsql-sql-statement" : "call dv.reload_dv",
+              "Batch Size" : "100",
+              "Obtain Generated Keys" : "false",
+              "JDBC Connection Pool" : "623e6a7c-8172-3e37-b835-e2367e4735fb",
+              "database-session-autocommit" : "false",
+              "rollback-on-failure" : "false"
+            },
+            "propertyDescriptors" : {
+              "Support Fragmented Transactions" : {
+                "displayName" : "Support Fragmented Transactions",
+                "identifiesControllerService" : false,
+                "name" : "Support Fragmented Transactions",
+                "sensitive" : false
+              },
+              "putsql-sql-statement" : {
+                "displayName" : "SQL Statement",
+                "identifiesControllerService" : false,
+                "name" : "putsql-sql-statement",
+                "sensitive" : false
+              },
+              "Transaction Timeout" : {
+                "displayName" : "Transaction Timeout",
+                "identifiesControllerService" : false,
+                "name" : "Transaction Timeout",
+                "sensitive" : false
+              },
+              "Batch Size" : {
+                "displayName" : "Batch Size",
+                "identifiesControllerService" : false,
+                "name" : "Batch Size",
+                "sensitive" : false
+              },
+              "Obtain Generated Keys" : {
+                "displayName" : "Obtain Generated Keys",
+                "identifiesControllerService" : false,
+                "name" : "Obtain Generated Keys",
+                "sensitive" : false
+              },
+              "JDBC Connection Pool" : {
+                "displayName" : "JDBC Connection Pool",
+                "identifiesControllerService" : true,
+                "name" : "JDBC Connection Pool",
+                "sensitive" : false
+              },
+              "database-session-autocommit" : {
+                "displayName" : "Database Session AutoCommit",
+                "identifiesControllerService" : false,
+                "name" : "database-session-autocommit",
+                "sensitive" : false
+              },
+              "rollback-on-failure" : {
+                "displayName" : "Rollback On Failure",
+                "identifiesControllerService" : false,
+                "name" : "rollback-on-failure",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.PutSQL",
+            "yieldDuration" : "1 sec"
+          } ],
           "remoteProcessGroups" : [ ],
           "variables" : { }
         }, {
