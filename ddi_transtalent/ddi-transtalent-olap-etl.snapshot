@@ -4292,18 +4292,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "d9b9a219-743c-3b6d-90ab-a75c999641d5",
-              "position" : {
-                "x" : -784.0,
-                "y" : 224.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "02bf69f8-db69-3d26-b22e-34a73bc6b6f2",
               "position" : {
                 "x" : -168.0,
                 "y" : 856.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "d9b9a219-743c-3b6d-90ab-a75c999641d5",
+              "position" : {
+                "x" : -784.0,
+                "y" : 224.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -4348,18 +4348,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "aa22cc65-be22-39fd-b43a-f5334807a68c",
-              "position" : {
-                "x" : -784.0,
-                "y" : 656.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "e74d50c3-7b37-315a-ac42-c3d7aeeb4a82",
               "position" : {
                 "x" : -776.0,
                 "y" : 1232.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "aa22cc65-be22-39fd-b43a-f5334807a68c",
+              "position" : {
+                "x" : -784.0,
+                "y" : 656.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -9265,18 +9265,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
-              "position" : {
-                "x" : -552.0,
-                "y" : 776.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
               "position" : {
                 "x" : 2016.0,
                 "y" : 584.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
+              "position" : {
+                "x" : -552.0,
+                "y" : 776.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -9305,18 +9305,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
-              "position" : {
-                "x" : -560.0,
-                "y" : -104.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
               "position" : {
                 "x" : 2024.0,
                 "y" : 312.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
+              "position" : {
+                "x" : -560.0,
+                "y" : -104.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -9361,18 +9361,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
-              "position" : {
-                "x" : -560.0,
-                "y" : 272.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
               "position" : {
                 "x" : 560.0,
                 "y" : 1736.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
+              "position" : {
+                "x" : -560.0,
+                "y" : 272.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -12309,10 +12309,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
+              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
               "position" : {
-                "x" : 2776.0,
-                "y" : 128.0
+                "x" : 2736.0,
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12325,10 +12325,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
+              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
               "position" : {
-                "x" : 2736.0,
-                "y" : -680.0
+                "x" : 2776.0,
+                "y" : 128.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -18854,6 +18854,14 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
+            "position" : {
+              "x" : 1160.0,
+              "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "a485a7a5-09a3-314f-b187-7fc5c648d706",
             "position" : {
               "x" : 296.0,
@@ -18866,14 +18874,6 @@
             "position" : {
               "x" : 594.314339028165,
               "y" : 4.165925173674566
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
-            "position" : {
-              "x" : 1160.0,
-              "y" : -16.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -21192,18 +21192,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
-              "position" : {
-                "x" : 2280.0,
-                "y" : 1136.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
               "position" : {
                 "x" : 2784.0,
                 "y" : 1024.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
+              "position" : {
+                "x" : 2280.0,
+                "y" : 1136.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -28033,18 +28033,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
-              "position" : {
-                "x" : 88.0,
-                "y" : -944.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "a75f7fb9-8d7c-3af1-a972-59a0674fc008",
               "position" : {
                 "x" : 88.0,
                 "y" : -768.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
+              "position" : {
+                "x" : 88.0,
+                "y" : -944.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -32582,18 +32582,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
-              "position" : {
-                "x" : -552.0,
-                "y" : 48.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
               "position" : {
                 "x" : 2288.0,
                 "y" : 1648.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
+              "position" : {
+                "x" : -552.0,
+                "y" : 48.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -32646,18 +32646,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
-              "position" : {
-                "x" : -552.0,
-                "y" : 496.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
               "position" : {
                 "x" : 448.0,
                 "y" : 2104.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
+              "position" : {
+                "x" : -552.0,
+                "y" : 496.0
               }
             } ],
             "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
@@ -40526,18 +40526,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
-              "position" : {
-                "x" : 2736.0,
-                "y" : 816.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "74c63417-5d1b-3faa-b69e-0c93758c07c8",
               "position" : {
                 "x" : 726.9341012213749,
                 "y" : 205.58005263177813
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
+              "position" : {
+                "x" : 2736.0,
+                "y" : 816.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -40566,10 +40566,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
+              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
               "position" : {
-                "x" : 2776.0,
-                "y" : 128.0
+                "x" : 2736.0,
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -40582,10 +40582,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
+              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
               "position" : {
-                "x" : 2736.0,
-                "y" : -680.0
+                "x" : 2776.0,
+                "y" : 128.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -42404,6 +42404,7 @@
           "labels" : [ ],
           "name" : "heartbeat",
           "outputPorts" : [ ],
+          "parameterContextName" : "ddi global params",
           "position" : {
             "x" : 840.0,
             "y" : -176.0
@@ -44944,8 +44945,8 @@
             "name" : "auto_sync_by_spec_window_end",
             "outputPorts" : [ ],
             "position" : {
-              "x" : -1040.0,
-              "y" : -368.0
+              "x" : 320.0,
+              "y" : -672.0
             },
             "processGroups" : [ ],
             "processors" : [ {
@@ -45699,6 +45700,763 @@
             } ],
             "remoteProcessGroups" : [ ],
             "variables" : { }
+          }, {
+            "comments" : "",
+            "componentType" : "PROCESS_GROUP",
+            "connections" : [ {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "1821cf73-f619-33ae-86bc-040a56477bf7",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "ef530c23-9e9d-3265-a7ab-2ba04d8317e9",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "de80924b-1a23-381f-95a2-ebb23b4a33e7",
+                "name" : "PutDatabaseRecord",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "45031add-9847-3e5b-8d37-9691631922d6",
+                "name" : "Funnel",
+                "type" : "FUNNEL"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "f2473f73-348e-36d6-9ccb-683f351f9933",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "4053805e-b9fe-3362-a6e4-6671da670f75",
+                "name" : "PutDatabaseRecord",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "4053805e-b9fe-3362-a6e4-6671da670f75",
+                "name" : "PutDatabaseRecord",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "f3cf7fd6-be65-3355-a300-bc015c3551a1",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "48a316d5-bb64-3d4c-9e2a-9c56c08c7ee9",
+                "name" : "yy_user_session",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "de80924b-1a23-381f-95a2-ebb23b4a33e7",
+                "name" : "PutDatabaseRecord",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "c1ae09b8-9c1c-3140-b49f-245983e2090e",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "success" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "db580a3c-0a7e-32ff-8187-4a7629390fa0",
+                "name" : "yy_heartbeat_courses",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            } ],
+            "controllerServices" : [ ],
+            "funnels" : [ {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "45031add-9847-3e5b-8d37-9691631922d6",
+              "position" : {
+                "x" : -248.0,
+                "y" : -8.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "1821cf73-f619-33ae-86bc-040a56477bf7",
+              "position" : {
+                "x" : -680.0,
+                "y" : -8.0
+              }
+            } ],
+            "groupIdentifier" : "75b4f30a-ee0a-3184-b627-67e1a0a7d8d0",
+            "identifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+            "inputPorts" : [ ],
+            "labels" : [ ],
+            "name" : "心跳库表数据同步到正式库",
+            "outputPorts" : [ ],
+            "parameterContextName" : "ddi global params",
+            "position" : {
+              "x" : -512.0,
+              "y" : -616.0
+            },
+            "processGroups" : [ ],
+            "processors" : [ {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "PRIMARY",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "48a316d5-bb64-3d4c-9e2a-9c56c08c7ee9",
+              "name" : "yy_user_session",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : -392.0,
+                "y" : -408.0
+              },
+              "properties" : {
+                "Table Name" : "yy_user_session",
+                "db-fetch-db-type" : "MySQL",
+                "dbf-default-precision" : "10",
+                "Max Wait Time" : "0 seconds",
+                "Database Connection Pooling Service" : "c26455ec-b113-33b8-9ed7-71fec9144faa",
+                "Maximum-value Columns" : "id",
+                "dbf-user-logical-types" : "false",
+                "qdbt-output-batch-size" : "0",
+                "qdbt-max-rows" : "0",
+                "qdbt-max-frags" : "0",
+                "dbf-default-scale" : "0",
+                "Fetch Size" : "0",
+                "dbf-normalize" : "false"
+              },
+              "propertyDescriptors" : {
+                "Table Name" : {
+                  "displayName" : "Table Name",
+                  "identifiesControllerService" : false,
+                  "name" : "Table Name",
+                  "sensitive" : false
+                },
+                "db-fetch-db-type" : {
+                  "displayName" : "Database Type",
+                  "identifiesControllerService" : false,
+                  "name" : "db-fetch-db-type",
+                  "sensitive" : false
+                },
+                "dbf-default-precision" : {
+                  "displayName" : "Default Decimal Precision",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-default-precision",
+                  "sensitive" : false
+                },
+                "Max Wait Time" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Wait Time",
+                  "sensitive" : false
+                },
+                "Database Connection Pooling Service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "Database Connection Pooling Service",
+                  "sensitive" : false
+                },
+                "Maximum-value Columns" : {
+                  "displayName" : "Maximum-value Columns",
+                  "identifiesControllerService" : false,
+                  "name" : "Maximum-value Columns",
+                  "sensitive" : false
+                },
+                "dbf-user-logical-types" : {
+                  "displayName" : "Use Avro Logical Types",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-user-logical-types",
+                  "sensitive" : false
+                },
+                "qdbt-output-batch-size" : {
+                  "displayName" : "Output Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "qdbt-output-batch-size",
+                  "sensitive" : false
+                },
+                "qdbt-max-rows" : {
+                  "displayName" : "Max Rows Per Flow File",
+                  "identifiesControllerService" : false,
+                  "name" : "qdbt-max-rows",
+                  "sensitive" : false
+                },
+                "qdbt-max-frags" : {
+                  "displayName" : "Maximum Number of Fragments",
+                  "identifiesControllerService" : false,
+                  "name" : "qdbt-max-frags",
+                  "sensitive" : false
+                },
+                "dbf-default-scale" : {
+                  "displayName" : "Default Decimal Scale",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-default-scale",
+                  "sensitive" : false
+                },
+                "Fetch Size" : {
+                  "displayName" : "Fetch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "Fetch Size",
+                  "sensitive" : false
+                },
+                "db-fetch-sql-query" : {
+                  "displayName" : "Custom Query",
+                  "identifiesControllerService" : false,
+                  "name" : "db-fetch-sql-query",
+                  "sensitive" : false
+                },
+                "Columns to Return" : {
+                  "displayName" : "Columns to Return",
+                  "identifiesControllerService" : false,
+                  "name" : "Columns to Return",
+                  "sensitive" : false
+                },
+                "db-fetch-where-clause" : {
+                  "displayName" : "Additional WHERE clause",
+                  "identifiesControllerService" : false,
+                  "name" : "db-fetch-where-clause",
+                  "sensitive" : false
+                },
+                "dbf-normalize" : {
+                  "displayName" : "Normalize Table/Column Names",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-normalize",
+                  "sensitive" : false
+                },
+                "transaction-isolation-level" : {
+                  "displayName" : "Transaction Isolation Level",
+                  "identifiesControllerService" : false,
+                  "name" : "transaction-isolation-level",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "10 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.QueryDatabaseTable",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ "failure", "retry" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "de80924b-1a23-381f-95a2-ebb23b4a33e7",
+              "name" : "PutDatabaseRecord",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : -824.0,
+                "y" : -208.0
+              },
+              "properties" : {
+                "put-db-record-allow-multiple-statements" : "false",
+                "table-schema-cache-size" : "100",
+                "put-db-record-quoted-table-identifiers" : "false",
+                "put-db-record-unmatched-column-behavior" : "Fail on Unmatched Columns",
+                "put-db-record-catalog-name" : "#{source_db_catalog}",
+                "put-db-record-translate-field-names" : "false",
+                "put-db-record-dcbp-service" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
+                "put-db-record-query-timeout" : "0 seconds",
+                "rollback-on-failure" : "false",
+                "put-db-record-statement-type" : "INSERT",
+                "put-db-record-quoted-identifiers" : "false",
+                "put-db-record-table-name" : "yy_heartbeat_courses",
+                "put-db-record-unmatched-field-behavior" : "Ignore Unmatched Fields",
+                "put-db-record-max-batch-size" : "0",
+                "put-db-record-record-reader" : "82d9eef3-16e8-3445-ae8f-5ed8dee44705"
+              },
+              "propertyDescriptors" : {
+                "put-db-record-allow-multiple-statements" : {
+                  "displayName" : "Allow Multiple SQL Statements",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-allow-multiple-statements",
+                  "sensitive" : false
+                },
+                "table-schema-cache-size" : {
+                  "displayName" : "Table Schema Cache Size",
+                  "identifiesControllerService" : false,
+                  "name" : "table-schema-cache-size",
+                  "sensitive" : false
+                },
+                "put-db-record-schema-name" : {
+                  "displayName" : "Schema Name",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-schema-name",
+                  "sensitive" : false
+                },
+                "put-db-record-field-containing-sql" : {
+                  "displayName" : "Field Containing SQL",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-field-containing-sql",
+                  "sensitive" : false
+                },
+                "put-db-record-quoted-table-identifiers" : {
+                  "displayName" : "Quote Table Identifiers",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-quoted-table-identifiers",
+                  "sensitive" : false
+                },
+                "put-db-record-unmatched-column-behavior" : {
+                  "displayName" : "Unmatched Column Behavior",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-unmatched-column-behavior",
+                  "sensitive" : false
+                },
+                "put-db-record-catalog-name" : {
+                  "displayName" : "Catalog Name",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-catalog-name",
+                  "sensitive" : false
+                },
+                "put-db-record-translate-field-names" : {
+                  "displayName" : "Translate Field Names",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-translate-field-names",
+                  "sensitive" : false
+                },
+                "put-db-record-dcbp-service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "put-db-record-dcbp-service",
+                  "sensitive" : false
+                },
+                "put-db-record-query-timeout" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-query-timeout",
+                  "sensitive" : false
+                },
+                "rollback-on-failure" : {
+                  "displayName" : "Rollback On Failure",
+                  "identifiesControllerService" : false,
+                  "name" : "rollback-on-failure",
+                  "sensitive" : false
+                },
+                "put-db-record-statement-type" : {
+                  "displayName" : "Statement Type",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-statement-type",
+                  "sensitive" : false
+                },
+                "put-db-record-update-keys" : {
+                  "displayName" : "Update Keys",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-update-keys",
+                  "sensitive" : false
+                },
+                "put-db-record-quoted-identifiers" : {
+                  "displayName" : "Quote Column Identifiers",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-quoted-identifiers",
+                  "sensitive" : false
+                },
+                "put-db-record-table-name" : {
+                  "displayName" : "Table Name",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-table-name",
+                  "sensitive" : false
+                },
+                "put-db-record-unmatched-field-behavior" : {
+                  "displayName" : "Unmatched Field Behavior",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-unmatched-field-behavior",
+                  "sensitive" : false
+                },
+                "put-db-record-max-batch-size" : {
+                  "displayName" : "Maximum Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-max-batch-size",
+                  "sensitive" : false
+                },
+                "put-db-record-record-reader" : {
+                  "displayName" : "Record Reader",
+                  "identifiesControllerService" : true,
+                  "name" : "put-db-record-record-reader",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.PutDatabaseRecord",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ "failure", "retry" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "4053805e-b9fe-3362-a6e4-6671da670f75",
+              "name" : "PutDatabaseRecord",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : -392.0,
+                "y" : -208.0
+              },
+              "properties" : {
+                "put-db-record-allow-multiple-statements" : "false",
+                "table-schema-cache-size" : "100",
+                "put-db-record-quoted-table-identifiers" : "false",
+                "put-db-record-unmatched-column-behavior" : "Fail on Unmatched Columns",
+                "put-db-record-catalog-name" : "#{source_db_catalog}",
+                "put-db-record-translate-field-names" : "false",
+                "put-db-record-dcbp-service" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
+                "put-db-record-query-timeout" : "0 seconds",
+                "rollback-on-failure" : "false",
+                "put-db-record-statement-type" : "INSERT",
+                "put-db-record-quoted-identifiers" : "false",
+                "put-db-record-table-name" : "yy_user_session",
+                "put-db-record-unmatched-field-behavior" : "Ignore Unmatched Fields",
+                "put-db-record-max-batch-size" : "0",
+                "put-db-record-record-reader" : "82d9eef3-16e8-3445-ae8f-5ed8dee44705"
+              },
+              "propertyDescriptors" : {
+                "put-db-record-allow-multiple-statements" : {
+                  "displayName" : "Allow Multiple SQL Statements",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-allow-multiple-statements",
+                  "sensitive" : false
+                },
+                "table-schema-cache-size" : {
+                  "displayName" : "Table Schema Cache Size",
+                  "identifiesControllerService" : false,
+                  "name" : "table-schema-cache-size",
+                  "sensitive" : false
+                },
+                "put-db-record-schema-name" : {
+                  "displayName" : "Schema Name",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-schema-name",
+                  "sensitive" : false
+                },
+                "put-db-record-field-containing-sql" : {
+                  "displayName" : "Field Containing SQL",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-field-containing-sql",
+                  "sensitive" : false
+                },
+                "put-db-record-quoted-table-identifiers" : {
+                  "displayName" : "Quote Table Identifiers",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-quoted-table-identifiers",
+                  "sensitive" : false
+                },
+                "put-db-record-unmatched-column-behavior" : {
+                  "displayName" : "Unmatched Column Behavior",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-unmatched-column-behavior",
+                  "sensitive" : false
+                },
+                "put-db-record-catalog-name" : {
+                  "displayName" : "Catalog Name",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-catalog-name",
+                  "sensitive" : false
+                },
+                "put-db-record-translate-field-names" : {
+                  "displayName" : "Translate Field Names",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-translate-field-names",
+                  "sensitive" : false
+                },
+                "put-db-record-dcbp-service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "put-db-record-dcbp-service",
+                  "sensitive" : false
+                },
+                "put-db-record-query-timeout" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-query-timeout",
+                  "sensitive" : false
+                },
+                "rollback-on-failure" : {
+                  "displayName" : "Rollback On Failure",
+                  "identifiesControllerService" : false,
+                  "name" : "rollback-on-failure",
+                  "sensitive" : false
+                },
+                "put-db-record-statement-type" : {
+                  "displayName" : "Statement Type",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-statement-type",
+                  "sensitive" : false
+                },
+                "put-db-record-update-keys" : {
+                  "displayName" : "Update Keys",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-update-keys",
+                  "sensitive" : false
+                },
+                "put-db-record-quoted-identifiers" : {
+                  "displayName" : "Quote Column Identifiers",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-quoted-identifiers",
+                  "sensitive" : false
+                },
+                "put-db-record-table-name" : {
+                  "displayName" : "Table Name",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-table-name",
+                  "sensitive" : false
+                },
+                "put-db-record-unmatched-field-behavior" : {
+                  "displayName" : "Unmatched Field Behavior",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-unmatched-field-behavior",
+                  "sensitive" : false
+                },
+                "put-db-record-max-batch-size" : {
+                  "displayName" : "Maximum Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "put-db-record-max-batch-size",
+                  "sensitive" : false
+                },
+                "put-db-record-record-reader" : {
+                  "displayName" : "Record Reader",
+                  "identifiesControllerService" : true,
+                  "name" : "put-db-record-record-reader",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.PutDatabaseRecord",
+              "yieldDuration" : "1 sec"
+            }, {
+              "autoTerminatedRelationships" : [ ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-standard-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "PRIMARY",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "db580a3c-0a7e-32ff-8187-4a7629390fa0",
+              "name" : "yy_heartbeat_courses",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : -824.0,
+                "y" : -408.0
+              },
+              "properties" : {
+                "Table Name" : "yy_heartbeat_courses",
+                "db-fetch-db-type" : "MySQL",
+                "dbf-default-precision" : "10",
+                "Max Wait Time" : "0 seconds",
+                "Database Connection Pooling Service" : "c26455ec-b113-33b8-9ed7-71fec9144faa",
+                "Maximum-value Columns" : "id",
+                "dbf-user-logical-types" : "false",
+                "qdbt-output-batch-size" : "0",
+                "qdbt-max-rows" : "0",
+                "qdbt-max-frags" : "0",
+                "dbf-default-scale" : "0",
+                "Fetch Size" : "0",
+                "dbf-normalize" : "false"
+              },
+              "propertyDescriptors" : {
+                "Table Name" : {
+                  "displayName" : "Table Name",
+                  "identifiesControllerService" : false,
+                  "name" : "Table Name",
+                  "sensitive" : false
+                },
+                "db-fetch-db-type" : {
+                  "displayName" : "Database Type",
+                  "identifiesControllerService" : false,
+                  "name" : "db-fetch-db-type",
+                  "sensitive" : false
+                },
+                "dbf-default-precision" : {
+                  "displayName" : "Default Decimal Precision",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-default-precision",
+                  "sensitive" : false
+                },
+                "Max Wait Time" : {
+                  "displayName" : "Max Wait Time",
+                  "identifiesControllerService" : false,
+                  "name" : "Max Wait Time",
+                  "sensitive" : false
+                },
+                "Database Connection Pooling Service" : {
+                  "displayName" : "Database Connection Pooling Service",
+                  "identifiesControllerService" : true,
+                  "name" : "Database Connection Pooling Service",
+                  "sensitive" : false
+                },
+                "Maximum-value Columns" : {
+                  "displayName" : "Maximum-value Columns",
+                  "identifiesControllerService" : false,
+                  "name" : "Maximum-value Columns",
+                  "sensitive" : false
+                },
+                "dbf-user-logical-types" : {
+                  "displayName" : "Use Avro Logical Types",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-user-logical-types",
+                  "sensitive" : false
+                },
+                "qdbt-output-batch-size" : {
+                  "displayName" : "Output Batch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "qdbt-output-batch-size",
+                  "sensitive" : false
+                },
+                "qdbt-max-rows" : {
+                  "displayName" : "Max Rows Per Flow File",
+                  "identifiesControllerService" : false,
+                  "name" : "qdbt-max-rows",
+                  "sensitive" : false
+                },
+                "qdbt-max-frags" : {
+                  "displayName" : "Maximum Number of Fragments",
+                  "identifiesControllerService" : false,
+                  "name" : "qdbt-max-frags",
+                  "sensitive" : false
+                },
+                "dbf-default-scale" : {
+                  "displayName" : "Default Decimal Scale",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-default-scale",
+                  "sensitive" : false
+                },
+                "Fetch Size" : {
+                  "displayName" : "Fetch Size",
+                  "identifiesControllerService" : false,
+                  "name" : "Fetch Size",
+                  "sensitive" : false
+                },
+                "db-fetch-sql-query" : {
+                  "displayName" : "Custom Query",
+                  "identifiesControllerService" : false,
+                  "name" : "db-fetch-sql-query",
+                  "sensitive" : false
+                },
+                "Columns to Return" : {
+                  "displayName" : "Columns to Return",
+                  "identifiesControllerService" : false,
+                  "name" : "Columns to Return",
+                  "sensitive" : false
+                },
+                "db-fetch-where-clause" : {
+                  "displayName" : "Additional WHERE clause",
+                  "identifiesControllerService" : false,
+                  "name" : "db-fetch-where-clause",
+                  "sensitive" : false
+                },
+                "dbf-normalize" : {
+                  "displayName" : "Normalize Table/Column Names",
+                  "identifiesControllerService" : false,
+                  "name" : "dbf-normalize",
+                  "sensitive" : false
+                },
+                "transaction-isolation-level" : {
+                  "displayName" : "Transaction Isolation Level",
+                  "identifiesControllerService" : false,
+                  "name" : "transaction-isolation-level",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "10 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.standard.QueryDatabaseTable",
+              "yieldDuration" : "1 sec"
+            } ],
+            "remoteProcessGroups" : [ ],
+            "variables" : { }
           } ],
           "processors" : [ ],
           "remoteProcessGroups" : [ ],
@@ -45792,6 +46550,11 @@
           "name" : "ddi global params",
           "parameters" : [ {
             "description" : "",
+            "name" : "source_db_catalog",
+            "sensitive" : false,
+            "value" : "dditest_v5"
+          }, {
+            "description" : "",
             "name" : "source.db.trail.jdbc.url",
             "sensitive" : false,
             "value" : "jdbc:mysql://52.130.87.138:3306/ddiprod?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
@@ -45804,34 +46567,34 @@
             "description" : "",
             "name" : "source.db.user",
             "sensitive" : false,
-            "value" : "root"
+            "value" : "dditest"
           }, {
             "description" : "",
             "name" : "source.db.jdbc.url",
             "sensitive" : false,
-            "value" : "jdbc:mysql://139.217.237.147:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
+            "value" : "jdbc:mysql://rm-uf6date0p08219sq43o.mysql.rds.aliyuncs.com:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
           }, {
             "description" : "",
             "name" : "source.heartbeat.db.jdbc.url",
             "sensitive" : false,
-            "value" : "jdbc:mysql://139.217.237.147:3306/dditest_heartbeat?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
+            "value" : "jdbc:mysql://rm-uf6date0p08219sq43o.mysql.rds.aliyuncs.com:3306/heartbeat_test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
           }, {
             "description" : "",
             "name" : "source.db.backup.jdbc.url",
             "sensitive" : false,
-            "value" : "jdbc:mysql://139.217.237.147:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
+            "value" : "jdbc:mysql://rm-uf6date0p08219sq43o.mysql.rds.aliyuncs.com:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
           }, {
             "description" : "",
             "name" : "source.db.password",
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "sourceMinimumIdleConnections",
+            "name" : "Max_Connections",
             "sensitive" : false,
             "value" : "1"
           }, {
             "description" : "",
-            "name" : "Max_Connections",
+            "name" : "sourceMinimumIdleConnections",
             "sensitive" : false,
             "value" : "1"
           }, {
