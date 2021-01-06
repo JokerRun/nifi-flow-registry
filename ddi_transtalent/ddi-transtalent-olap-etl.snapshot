@@ -45771,6 +45771,36 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "4053805e-b9fe-3362-a6e4-6671da670f75",
+                "name" : "PutDatabaseRecord",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "135c8d19-6e1d-39bb-bf46-7a392cef25a1",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "split" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "c8a84e25-f023-3537-8529-ab7d31c22a82",
+                "name" : "SplitAvro",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
                 "id" : "1821cf73-f619-33ae-86bc-040a56477bf7",
                 "name" : "Funnel",
                 "type" : "FUNNEL"
@@ -45831,8 +45861,8 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
-                "id" : "4053805e-b9fe-3362-a6e4-6671da670f75",
-                "name" : "PutDatabaseRecord",
+                "id" : "c8a84e25-f023-3537-8529-ab7d31c22a82",
+                "name" : "SplitAvro",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -45891,6 +45921,36 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "de80924b-1a23-381f-95a2-ebb23b4a33e7",
+                "name" : " INSERT",
+                "type" : "PROCESSOR"
+              },
+              "flowFileExpiration" : "0 sec",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "1708d423-2bd8-331a-867b-909d49c303b9",
+              "labelIndex" : 1,
+              "loadBalanceCompression" : "DO_NOT_COMPRESS",
+              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+              "name" : "",
+              "partitioningAttribute" : "",
+              "prioritizers" : [ ],
+              "selectedRelationships" : [ "split" ],
+              "source" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+                "id" : "6d757911-4063-39c9-a90d-d21ae056db01",
+                "name" : "SplitAvro",
+                "type" : "PROCESSOR"
+              },
+              "zIndex" : 0
+            }, {
+              "backPressureDataSizeThreshold" : "1 GB",
+              "backPressureObjectThreshold" : 10000,
+              "bends" : [ ],
+              "componentType" : "CONNECTION",
+              "destination" : {
+                "comments" : "",
+                "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
                 "id" : "45031add-9847-3e5b-8d37-9691631922d6",
                 "name" : "Funnel",
                 "type" : "FUNNEL"
@@ -45921,8 +45981,8 @@
               "destination" : {
                 "comments" : "",
                 "groupId" : "48b9207f-3d2c-334b-b70d-376028595c8d",
-                "id" : "de80924b-1a23-381f-95a2-ebb23b4a33e7",
-                "name" : " INSERT",
+                "id" : "6d757911-4063-39c9-a90d-d21ae056db01",
+                "name" : "SplitAvro",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -45975,6 +46035,65 @@
             },
             "processGroups" : [ ],
             "processors" : [ {
+              "autoTerminatedRelationships" : [ "original", "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-avro-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "6d757911-4063-39c9-a90d-d21ae056db01",
+              "name" : "SplitAvro",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : -856.0,
+                "y" : -392.0
+              },
+              "properties" : {
+                "Split Strategy" : "Record",
+                "Output Strategy" : "Datafile",
+                "Transfer Metadata" : "true",
+                "Output Size" : "1"
+              },
+              "propertyDescriptors" : {
+                "Split Strategy" : {
+                  "displayName" : "Split Strategy",
+                  "identifiesControllerService" : false,
+                  "name" : "Split Strategy",
+                  "sensitive" : false
+                },
+                "Output Strategy" : {
+                  "displayName" : "Output Strategy",
+                  "identifiesControllerService" : false,
+                  "name" : "Output Strategy",
+                  "sensitive" : false
+                },
+                "Transfer Metadata" : {
+                  "displayName" : "Transfer Metadata",
+                  "identifiesControllerService" : false,
+                  "name" : "Transfer Metadata",
+                  "sensitive" : false
+                },
+                "Output Size" : {
+                  "displayName" : "Output Size",
+                  "identifiesControllerService" : false,
+                  "name" : "Output Size",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.avro.SplitAvro",
+              "yieldDuration" : "1 sec"
+            }, {
               "autoTerminatedRelationships" : [ ],
               "bulletinLevel" : "WARN",
               "bundle" : {
@@ -45991,8 +46110,8 @@
               "name" : "yy_user_session",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : -392.0,
-                "y" : -408.0
+                "x" : -384.0,
+                "y" : -616.0
               },
               "properties" : {
                 "Table Name" : "yy_user_session",
@@ -46583,6 +46702,65 @@
               "type" : "org.apache.nifi.processors.standard.PutDatabaseRecord",
               "yieldDuration" : "1 sec"
             }, {
+              "autoTerminatedRelationships" : [ "original", "failure" ],
+              "bulletinLevel" : "WARN",
+              "bundle" : {
+                "artifact" : "nifi-avro-nar",
+                "group" : "org.apache.nifi",
+                "version" : "1.11.4"
+              },
+              "comments" : "",
+              "componentType" : "PROCESSOR",
+              "concurrentlySchedulableTaskCount" : 1,
+              "executionNode" : "ALL",
+              "groupIdentifier" : "48b9207f-3d2c-334b-b70d-376028595c8d",
+              "identifier" : "c8a84e25-f023-3537-8529-ab7d31c22a82",
+              "name" : "SplitAvro",
+              "penaltyDuration" : "30 sec",
+              "position" : {
+                "x" : -384.0,
+                "y" : -400.0
+              },
+              "properties" : {
+                "Split Strategy" : "Record",
+                "Output Strategy" : "Datafile",
+                "Transfer Metadata" : "true",
+                "Output Size" : "1"
+              },
+              "propertyDescriptors" : {
+                "Split Strategy" : {
+                  "displayName" : "Split Strategy",
+                  "identifiesControllerService" : false,
+                  "name" : "Split Strategy",
+                  "sensitive" : false
+                },
+                "Output Strategy" : {
+                  "displayName" : "Output Strategy",
+                  "identifiesControllerService" : false,
+                  "name" : "Output Strategy",
+                  "sensitive" : false
+                },
+                "Transfer Metadata" : {
+                  "displayName" : "Transfer Metadata",
+                  "identifiesControllerService" : false,
+                  "name" : "Transfer Metadata",
+                  "sensitive" : false
+                },
+                "Output Size" : {
+                  "displayName" : "Output Size",
+                  "identifiesControllerService" : false,
+                  "name" : "Output Size",
+                  "sensitive" : false
+                }
+              },
+              "runDurationMillis" : 0,
+              "scheduledState" : "ENABLED",
+              "schedulingPeriod" : "0 sec",
+              "schedulingStrategy" : "TIMER_DRIVEN",
+              "style" : { },
+              "type" : "org.apache.nifi.processors.avro.SplitAvro",
+              "yieldDuration" : "1 sec"
+            }, {
               "autoTerminatedRelationships" : [ ],
               "bulletinLevel" : "WARN",
               "bundle" : {
@@ -46753,8 +46931,8 @@
               "name" : "yy_heartbeat_courses",
               "penaltyDuration" : "30 sec",
               "position" : {
-                "x" : -824.0,
-                "y" : -408.0
+                "x" : -816.0,
+                "y" : -576.0
               },
               "properties" : {
                 "Table Name" : "yy_heartbeat_courses",
