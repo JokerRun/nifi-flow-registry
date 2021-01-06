@@ -46233,7 +46233,7 @@
                 }
               },
               "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
+              "scheduledState" : "DISABLED",
               "schedulingPeriod" : "10 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
@@ -46947,6 +46947,7 @@
                 "qdbt-max-frags" : "0",
                 "dbf-default-scale" : "0",
                 "Fetch Size" : "0",
+                "db-fetch-where-clause" : "learning_path_meta_id = 201",
                 "dbf-normalize" : "false"
               },
               "propertyDescriptors" : {
