@@ -46119,7 +46119,7 @@
                 "dbf-default-precision" : "10",
                 "Max Wait Time" : "0 seconds",
                 "Database Connection Pooling Service" : "c26455ec-b113-33b8-9ed7-71fec9144faa",
-                "Maximum-value Columns" : "id",
+                "Maximum-value Columns" : "last_time",
                 "dbf-user-logical-types" : "false",
                 "qdbt-output-batch-size" : "0",
                 "qdbt-max-rows" : "0",
