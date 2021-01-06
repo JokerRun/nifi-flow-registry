@@ -3131,7 +3131,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_learning_path_used_time\nselect ycr.user_id,\n       ycr.learning_path_meta_id as learning_path_id,\n       ycem.total_time * 60      as recommend_used_second,\n       sum(ycr.usedtime)         as total_used_second\nfrom yy_customer_record ycr\n         join yy_course_elements_metas ycem\n              on ycr.learning_path_meta_id = ycem.learning_path_meta_id\ngroup by ycr.user_id, ycem.learning_path_meta_id;\n",
+                "putsql-sql-statement" : "replace into fact_user_learning_path_used_time\nselect user_id, learning_path_id, recommend_used_second, total_used_second\nfrom (\n         select ycr.user_id,\n                ycr.learning_path_meta_id as learning_path_id,\n                ycem.total_time * 60      as recommend_used_second,\n                sum(ycr.usedtime)         as total_used_second\n         from yy_customer_record ycr\n                  join yy_course_elements_metas ycem\n                       on ycr.learning_path_meta_id = ycem.learning_path_meta_id\n         where ycr.learning_path_meta_id != 201\n         group by ycr.user_id, ycem.learning_path_meta_id\n         union\n         select yhc.user_id,\n                yhc.learning_path_meta_id,\n                ycem.total_time * 60 as recommend_used_second,\n                sum(yhc.during_time) as total_used_second\n         from yy_heartbeat_courses yhc\n                  join yy_course_elements_metas ycem\n                       on yhc.learning_path_meta_id = ycem.learning_path_meta_id\n         where yhc.learning_path_meta_id = 201\n         group by yhc.user_id, ycem.learning_path_meta_id\n     ) tmp\ngroup by user_id, learning_path_id\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -22642,7 +22642,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "586eddfa-b92c-3d93-8a43-7f6d4fd5b7c0",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_login_count",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -22659,7 +22659,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "586eddfa-b92c-3d93-8a43-7f6d4fd5b7c0",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_login_count",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -22749,7 +22749,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "03e16ef3-ba6f-33dc-913c-d00e26bd08ee",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_learning_period",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -22762,7 +22762,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "03e16ef3-ba6f-33dc-913c-d00e26bd08ee",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_learning_period",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -22809,7 +22809,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "586eddfa-b92c-3d93-8a43-7f6d4fd5b7c0",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_login_count",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -22822,7 +22822,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "586eddfa-b92c-3d93-8a43-7f6d4fd5b7c0",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_login_count",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -22839,7 +22839,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "03e16ef3-ba6f-33dc-913c-d00e26bd08ee",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_learning_period",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -22888,7 +22888,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "03e16ef3-ba6f-33dc-913c-d00e26bd08ee",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_learning_period",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -22905,7 +22905,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "03e16ef3-ba6f-33dc-913c-d00e26bd08ee",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_learning_period",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -23037,7 +23037,7 @@
                 "comments" : "",
                 "groupId" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
                 "id" : "586eddfa-b92c-3d93-8a43-7f6d4fd5b7c0",
-                "name" : "Load olap.fact_user_login_count",
+                "name" : "fact_user_login_count",
                 "type" : "PROCESSOR"
               },
               "zIndex" : 0
@@ -23127,7 +23127,7 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
               "identifier" : "03e16ef3-ba6f-33dc-913c-d00e26bd08ee",
-              "name" : "Load olap.fact_user_login_count",
+              "name" : "fact_user_learning_period",
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : 1216.0,
@@ -23307,7 +23307,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into  fact_user_learning_path_used_time\nselect ycr.user_id,\n       ycr.learning_path_meta_id as learning_path_id,\n       ycem.total_time * 60      as recommend_used_second,\n       sum(ycr.usedtime)         as total_used_second\nfrom yy_customer_record ycr\n         join yy_course_elements_metas ycem\n              on ycr.learning_path_meta_id = ycem.learning_path_meta_id\nwhere ycr.user_id in( ${user_id})\ngroup by ycr.user_id, ycem.learning_path_meta_id",
+                "putsql-sql-statement" : "replace into fact_user_learning_path_used_time\nselect user_id, learning_path_id, recommend_used_second, total_used_second\nfrom (\n         select ycr.user_id,\n                ycr.learning_path_meta_id as learning_path_id,\n                ycem.total_time * 60      as recommend_used_second,\n                sum(ycr.usedtime)         as total_used_second\n         from yy_customer_record ycr\n                  join yy_course_elements_metas ycem\n                       on ycr.learning_path_meta_id = ycem.learning_path_meta_id\n         where user_id in (${user_id}) and ycr.learning_path_meta_id != 201\n         group by ycr.user_id, ycem.learning_path_meta_id\n         union\n         select yhc.user_id,\n                yhc.learning_path_meta_id,\n                ycem.total_time * 60 as recommend_used_second,\n                sum(yhc.during_time) as total_used_second\n         from yy_heartbeat_courses yhc\n                  join yy_course_elements_metas ycem\n                       on yhc.learning_path_meta_id = ycem.learning_path_meta_id\n         where user_id in (${user_id}) and  yhc.learning_path_meta_id = 201\n         group by yhc.user_id, ycem.learning_path_meta_id\n     ) tmp\ngroup by user_id, learning_path_id\n;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -23385,7 +23385,7 @@
               "executionNode" : "ALL",
               "groupIdentifier" : "297c8d62-8348-3ddd-bd95-88114a76fb7f",
               "identifier" : "586eddfa-b92c-3d93-8a43-7f6d4fd5b7c0",
-              "name" : "Load olap.fact_user_login_count",
+              "name" : "fact_user_login_count",
               "penaltyDuration" : "30 sec",
               "position" : {
                 "x" : 1216.0,
