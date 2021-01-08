@@ -1316,18 +1316,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
-            "position" : {
-              "x" : 296.0,
-              "y" : 8.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
             "identifier" : "69699720-90c8-3f25-b3f6-e23dfe82ab76",
             "position" : {
               "x" : 1432.0,
               "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
+            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
+            "position" : {
+              "x" : 296.0,
+              "y" : 8.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -1869,18 +1869,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "3440388a-a2f3-3016-be41-12dc75c53634",
-              "position" : {
-                "x" : 760.0,
-                "y" : -80.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "d6797ebf-4628-37a4-acc2-4d097b586952",
               "position" : {
                 "x" : 776.0,
                 "y" : 144.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "3440388a-a2f3-3016-be41-12dc75c53634",
+              "position" : {
+                "x" : 760.0,
+                "y" : -80.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -4348,18 +4348,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "e74d50c3-7b37-315a-ac42-c3d7aeeb4a82",
-              "position" : {
-                "x" : -776.0,
-                "y" : 1232.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "aa22cc65-be22-39fd-b43a-f5334807a68c",
               "position" : {
                 "x" : -784.0,
                 "y" : 656.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "e74d50c3-7b37-315a-ac42-c3d7aeeb4a82",
+              "position" : {
+                "x" : -776.0,
+                "y" : 1232.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -9265,14 +9265,6 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
-              "position" : {
-                "x" : 2016.0,
-                "y" : 584.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
               "position" : {
                 "x" : -552.0,
@@ -9281,10 +9273,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "219ae767-2afb-363c-95a3-71e96c479e5f",
+              "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
               "position" : {
-                "x" : -552.0,
-                "y" : 448.0
+                "x" : 2016.0,
+                "y" : 584.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -9293,6 +9285,14 @@
               "position" : {
                 "x" : 560.0,
                 "y" : 1512.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "219ae767-2afb-363c-95a3-71e96c479e5f",
+              "position" : {
+                "x" : -552.0,
+                "y" : 448.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -9337,18 +9337,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "99fa7c83-f5e5-39ee-9f51-b95e5cd964cc",
-              "position" : {
-                "x" : 2016.0,
-                "y" : 48.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "7b46f7ad-d85f-3a49-ad54-7a8018bbbf1a",
               "position" : {
                 "x" : 2016.0,
                 "y" : 800.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "99fa7c83-f5e5-39ee-9f51-b95e5cd964cc",
+              "position" : {
+                "x" : 2016.0,
+                "y" : 48.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -9361,18 +9361,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
-              "position" : {
-                "x" : 560.0,
-                "y" : 1736.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
               "position" : {
                 "x" : -560.0,
                 "y" : 272.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
+              "position" : {
+                "x" : 560.0,
+                "y" : 1736.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -12309,10 +12309,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
+              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
               "position" : {
-                "x" : 2736.0,
-                "y" : -680.0
+                "x" : 2776.0,
+                "y" : 128.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12325,10 +12325,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
+              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
               "position" : {
-                "x" : 2776.0,
-                "y" : 128.0
+                "x" : 2736.0,
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12914,7 +12914,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_practice\nselect p.id,\n       p.user_id,\n       lpm.id             as learning_path_id,\n       p.practice_meta_id as practice_id,\n       p.learning_path_id as user_learning_path_id,\n       p.progress,\n       p.status,\n       p.next_exercise_start_time,\n       p.start_time,\n       p.end_time,\n       ycem.exercise_num  as total_exercise_count,\n       sum(e.status = 2)  as finish_exercise_count\nfrom practices p\n         left join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join exercises e on p.id = e.practice_id\nwhere 1 = 1\n#   and (p.start_time between ${date_start} and ${date_end}\n#     or p.end_time between ${date_start} and ${date_end}\n#     or e.start_time between ${date_start} and ${date_end}\n#     or e.end_time between ${date_start} and ${date_end}\n#     )\ngroup by p.id\n;",
+                "putsql-sql-statement" : "replace into fact_user_practice\nselect p.id,\n       p.user_id,\n       lpm.id             as learning_path_id,\n       p.practice_meta_id as practice_id,\n       p.learning_path_id as user_learning_path_id,\n       p.progress,\n       p.status,\n       p.next_exercise_start_time,\n       p.start_time,\n       p.end_time,\n       ycem.exercise_num  as total_exercise_count,\n       sum(e.level is not null or e.status=2)  as finish_exercise_count\nfrom practices p\n         left join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join exercises e on p.id = e.practice_id\nwhere 1 = 1\n#   and (p.start_time between ${date_start} and ${date_end}\n#     or p.end_time between ${date_start} and ${date_end}\n#     or e.start_time between ${date_start} and ${date_end}\n#     or e.end_time between ${date_start} and ${date_end}\n#     )\ngroup by p.id\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -13344,7 +13344,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_learning_path\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id    as learning_path_id,\n       lp.learning_tour_id         as user_learning_tour_id,\n       lp.start_time,\n       lp.end_time,\n       lp.progress,\n       -- 根据模块完成数判断当前能力的进度\n       case\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) =\n                (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) +\n                (ycem.exercise_num != 0) +\n                (ycem.post_survey_num != 0) then 2\n           else lp.status end      as status,\n       ycem.total_time,\n       lp.guide_shown,\n       preTest.point is not null   as pretest_done,\n       (ifnull(c.status, 0) != 0)  as course_done,\n       (ifnull(p.status, 0) != 0)  as practice_done,\n       postTest.point is not null  as posttest_done,\n       (preTest.point is not null) + (postTest.point is not null) + (ifnull(p.status, 0) != 0) +\n       (ifnull(c.status, 0) != 0)  as finished_module,\n       (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) + (ycem.exercise_num != 0) +\n       (ycem.post_survey_num != 0) as total_elements_num\nfrom learning_paths lp\n         left join yy_course_elements_metas ycem\n                   on lp.learning_path_meta_id = ycem.learning_path_meta_id\n         left join yy_user_exam preTest\n                   on lp.user_id = preTest.user_id and lp.learning_path_meta_id = preTest.learning_path_meta_id and\n                      preTest.type = 1\n         left join yy_user_exam postTest\n                   on lp.user_id = postTest.user_id and lp.learning_path_meta_id = postTest.learning_path_meta_id and\n                      postTest.type = 2\n         left join courses c on lp.id = c.learning_path_id\n         left join practices p on lp.id = p.learning_path_id\nwhere 1 = 1\n#  and (lp.start_time between ${date_start} and ${date_end}\n#    or lp.end_time between ${date_start} and ${date_end}\n#    or preTest.createDate between ${date_start} and ${date_end}\n#    or preTest.updateDate between ${date_start} and ${date_end}\n#     or c.start_time between ${date_start} and ${date_end}\n#     or c.end_time between ${date_start} and ${date_end}\n#    or p.start_time between ${date_start} and ${date_end}\n#    or p.end_time between ${date_start} and ${date_end}\n#    or postTest.createDate between ${date_start} and ${date_end}\n#    or postTest.updateDate between ${date_start} and ${date_end}\n#    )",
+                "putsql-sql-statement" : "replace into fact_user_learning_path\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id    as learning_path_id,\n       lp.learning_tour_id         as user_learning_tour_id,\n       lp.start_time,\n       lp.end_time,\n       lp.progress,\n       -- 根据模块完成数判断当前能力的进度\n       case\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) =\n                (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) +\n                (ycem.exercise_num != 0) +\n                (ycem.post_survey_num != 0) then 2\n           else lp.status end      as status,\n       ycem.total_time,\n       lp.guide_shown,\n       preTest.point is not null   as pretest_done,\n       (ifnull(c.status, 0) != 0)  as course_done,\n       (ifnull(p.status, 0) != 0)  as practice_done,\n       postTest.point is not null  as posttest_done,\n       (preTest.point is not null) + (postTest.point is not null) + (ifnull(p.status, 0) != 0) +\n       (ifnull(c.status, 0) != 0)  as finished_module,\n       (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) + (ycem.exercise_num != 0) +\n       (ycem.post_survey_num != 0) as total_elements_num\nfrom learning_paths lp\n         left join yy_course_elements_metas ycem\n                   on lp.learning_path_meta_id = ycem.learning_path_meta_id\n         left join yy_user_exam preTest\n                   on lp.user_id = preTest.user_id and lp.learning_path_meta_id = preTest.learning_path_meta_id and\n                      preTest.type = 1\n         left join yy_user_exam postTest\n                   on lp.user_id = postTest.user_id and lp.learning_path_meta_id = postTest.learning_path_meta_id and\n                      postTest.type = 2\n         left join courses c on  lp.user_id = c.user_id and  lp.id = c.learning_path_id\n         left join practices p on lp.user_id = p.user_id and lp.id = p.learning_path_id\nwhere 1 = 1\n#  and (lp.start_time between ${date_start} and ${date_end}\n#    or lp.end_time between ${date_start} and ${date_end}\n#    or preTest.createDate between ${date_start} and ${date_end}\n#    or preTest.updateDate between ${date_start} and ${date_end}\n#     or c.start_time between ${date_start} and ${date_end}\n#     or c.end_time between ${date_start} and ${date_end}\n#    or p.start_time between ${date_start} and ${date_end}\n#    or p.end_time between ${date_start} and ${date_end}\n#    or postTest.createDate between ${date_start} and ${date_end}\n#    or postTest.updateDate between ${date_start} and ${date_end}\n#    )",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -13863,18 +13863,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
-              "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
-              "position" : {
-                "x" : 736.0,
-                "y" : -760.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
               "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
               "position" : {
                 "x" : 1376.0,
                 "y" : -576.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
+              "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
+              "position" : {
+                "x" : 736.0,
+                "y" : -760.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -18838,14 +18838,6 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "4ed14dcf-a5f3-3717-bff1-3b22357dfe57",
-            "position" : {
-              "x" : 904.0,
-              "y" : 0.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "2ad92b76-dc10-323a-bd66-338c291d0e1b",
             "position" : {
               "x" : 1392.0,
@@ -18854,10 +18846,10 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
+            "identifier" : "4ed14dcf-a5f3-3717-bff1-3b22357dfe57",
             "position" : {
-              "x" : 1160.0,
-              "y" : -16.0
+              "x" : 904.0,
+              "y" : 0.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -18866,6 +18858,14 @@
             "position" : {
               "x" : 296.0,
               "y" : 8.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
+            "position" : {
+              "x" : 1160.0,
+              "y" : -16.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -21264,18 +21264,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "a2d4d118-d16e-3f44-8368-fc86a768ec00",
-              "position" : {
-                "x" : 726.9341012213749,
-                "y" : -298.41994736822187
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "1d9aab4c-552c-3755-a20e-0804e04973c2",
               "position" : {
                 "x" : 2736.0,
                 "y" : -680.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "a2d4d118-d16e-3f44-8368-fc86a768ec00",
+              "position" : {
+                "x" : 726.9341012213749,
+                "y" : -298.41994736822187
               }
             }, {
               "componentType" : "FUNNEL",
@@ -21869,7 +21869,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_learning_path\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id    as learning_path_id,\n       lp.learning_tour_id         as user_learning_tour_id,\n       lp.start_time,\n       lp.end_time,\n       lp.progress,\n       -- 根据模块完成数判断当前能力的进度\n       case\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) =\n                (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) +\n                (ycem.exercise_num != 0) +\n                (ycem.post_survey_num != 0) then 2\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) > 0 then 1\n           else lp.status end      as status,\n       ycem.total_time,\n       lp.guide_shown,\n       preTest.point is not null   as pretest_done,\n       (ifnull(c.status, 0) != 0)  as course_done,\n       (ifnull(p.status, 0) != 0)  as practice_done,\n       postTest.point is not null  as posttest_done,\n        (preTest.point is not null) + (postTest.point is not null) + (ifnull(p.status, 0) != 0) +\n       (ifnull(c.status, 0) != 0)  as finished_module,\n       (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) + (ycem.exercise_num != 0) +\n       (ycem.post_survey_num != 0) as total_elements_num\nfrom learning_paths lp\n         left join yy_course_elements_metas ycem\n                   on lp.learning_path_meta_id = ycem.learning_path_meta_id\n         left join yy_user_exam preTest\n                   on lp.user_id = preTest.user_id and lp.learning_path_meta_id = preTest.learning_path_meta_id and\n                      preTest.type = 1\n         left join yy_user_exam postTest\n                   on lp.user_id = postTest.user_id and lp.learning_path_meta_id = postTest.learning_path_meta_id and\n                      postTest.type = 2\n         left join courses c on lp.id = c.learning_path_id\n         left join practices p on lp.id = p.learning_path_id\nwhere \n    ( lp.user_id in( ${user_id} ))",
+                "putsql-sql-statement" : "\nreplace into fact_user_learning_path\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id    as learning_path_id,\n       lp.learning_tour_id         as user_learning_tour_id,\n       lp.start_time,\n       lp.end_time,\n       lp.progress,\n       -- 根据模块完成数判断当前能力的进度\n       case\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) =\n                (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) +\n                (ycem.exercise_num != 0) +\n                (ycem.post_survey_num != 0) then 2\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) > 0 then 1\n           else lp.status end      as status,\n       ycem.total_time,\n       lp.guide_shown,\n       preTest.point is not null   as pretest_done,\n       (ifnull(c.status, 0) != 0)  as course_done,\n       (ifnull(p.status, 0) != 0)  as practice_done,\n       postTest.point is not null  as posttest_done,\n        (preTest.point is not null) + (postTest.point is not null) + (ifnull(p.status, 0) != 0) +\n       (ifnull(c.status, 0) != 0)  as finished_module,\n       (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) + (ycem.exercise_num != 0) +\n       (ycem.post_survey_num != 0) as total_elements_num\nfrom learning_paths lp\n         left join yy_course_elements_metas ycem\n                   on lp.learning_path_meta_id = ycem.learning_path_meta_id\n         left join yy_user_exam preTest\n                   on lp.user_id = preTest.user_id and lp.learning_path_meta_id = preTest.learning_path_meta_id and\n                      preTest.type = 1\n         left join yy_user_exam postTest\n                   on lp.user_id = postTest.user_id and lp.learning_path_meta_id = postTest.learning_path_meta_id and\n                      postTest.type = 2\n         left join courses c on  lp.user_id = c.user_id and  lp.id = c.learning_path_id\n         left join practices p on lp.user_id = p.user_id and lp.id = p.learning_path_id\nwhere \n    ( lp.user_id in( ${user_id} ))",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -21955,7 +21955,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_practice\nselect p.id,\n       p.user_id,\n       lpm.id             as learning_path_id,\n       p.practice_meta_id as practice_id,\n       p.learning_path_id as user_learning_path_id,\n       p.progress,\n       p.status,\n       p.next_exercise_start_time,\n       p.start_time,\n       p.end_time,\n       ycem.exercise_num  as total_exercise_count,\n       sum(e.status = 2)  as finish_exercise_count\nfrom practices p\n         left join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join exercises e on p.id = e.practice_id\nwhere p.user_id in (${user_id})\ngroup by p.id\n\n;",
+                "putsql-sql-statement" : "replace into fact_user_practice\nselect p.id,\n       p.user_id,\n       lpm.id             as learning_path_id,\n       p.practice_meta_id as practice_id,\n       p.learning_path_id as user_learning_path_id,\n       p.progress,\n       p.status,\n       p.next_exercise_start_time,\n       p.start_time,\n       p.end_time,\n       ycem.exercise_num  as total_exercise_count,\n       sum(e.level is not null or e.status=2)  as finish_exercise_count\nfrom practices p\n         left join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join exercises e on p.id = e.practice_id\nwhere p.user_id in (${user_id})\ngroup by p.id\n\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -28025,10 +28025,10 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
+              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
               "position" : {
-                "x" : 726.9341012213749,
-                "y" : -298.41994736822187
+                "x" : 88.0,
+                "y" : -944.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -28041,10 +28041,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
+              "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
               "position" : {
-                "x" : 88.0,
-                "y" : -944.0
+                "x" : 726.9341012213749,
+                "y" : -298.41994736822187
               }
             }, {
               "componentType" : "FUNNEL",
@@ -41171,7 +41171,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_practice\nselect p.id,\n       p.user_id,\n       lpm.id             as learning_path_id,\n       p.practice_meta_id as practice_id,\n       p.learning_path_id as user_learning_path_id,\n       p.progress,\n       p.status,\n       p.next_exercise_start_time,\n       p.start_time,\n       p.end_time,\n       ycem.exercise_num  as total_exercise_count,\n       sum(e.status = 2)  as finish_exercise_count\nfrom practices p\n         left join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join exercises e on p.id = e.practice_id\n\ngroup by p.id\n\n;",
+                "putsql-sql-statement" : "replace into fact_user_practice\nselect p.id,\n       p.user_id,\n       lpm.id             as learning_path_id,\n       p.practice_meta_id as practice_id,\n       p.learning_path_id as user_learning_path_id,\n       p.progress,\n       p.status,\n       p.next_exercise_start_time,\n       p.start_time,\n       p.end_time,\n       ycem.exercise_num  as total_exercise_count,\n       sum(e.level is not null or e.status=2)  as finish_exercise_count\nfrom practices p\n         left join learning_path_metas lpm on p.practice_meta_id = lpm.practice_meta_id and lpm.enabled = 1\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\n         left join exercises e on p.id = e.practice_id\n\ngroup by p.id\n\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -41601,7 +41601,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_learning_path\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id    as learning_path_id,\n       lp.learning_tour_id         as user_learning_tour_id,\n       lp.start_time,\n       lp.end_time,\n       lp.progress,\n       -- 根据模块完成数判断当前能力的进度\n       case\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) =\n                (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) +\n                (ycem.exercise_num != 0) +\n                (ycem.post_survey_num != 0) then 2\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) > 0 then 1\n           else lp.status end      as status,\n       ycem.total_time,\n       lp.guide_shown,\n       preTest.point is not null   as pretest_done,\n       (ifnull(c.status, 0) != 0)  as course_done,\n       (ifnull(p.status, 0) != 0)  as practice_done,\n       postTest.point is not null  as posttest_done,\n       (preTest.point is not null) + (postTest.point is not null) + (ifnull(p.status, 0) != 0) +\n       (ifnull(c.status, 0) != 0)  as finished_module,\n       (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) + (ycem.exercise_num != 0) +\n       (ycem.post_survey_num != 0) as total_elements_num\nfrom learning_paths lp\n         left join yy_course_elements_metas ycem\n                   on lp.learning_path_meta_id = ycem.learning_path_meta_id\n         left join yy_user_exam preTest\n                   on lp.user_id = preTest.user_id and lp.learning_path_meta_id = preTest.learning_path_meta_id and\n                      preTest.type = 1\n         left join yy_user_exam postTest\n                   on lp.user_id = postTest.user_id and lp.learning_path_meta_id = postTest.learning_path_meta_id and\n                      postTest.type = 2\n         left join courses c on lp.id = c.learning_path_id\n         left join practices p on lp.id = p.learning_path_id\n",
+                "putsql-sql-statement" : "\nreplace into fact_user_learning_path\nselect lp.id,\n       lp.user_id,\n       lp.learning_path_meta_id    as learning_path_id,\n       lp.learning_tour_id         as user_learning_tour_id,\n       lp.start_time,\n       lp.end_time,\n       lp.progress,\n       -- 根据模块完成数判断当前能力的进度\n       case\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) =\n                (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) +\n                (ycem.exercise_num != 0) +\n                (ycem.post_survey_num != 0) then 2\n           when (preTest.point is not null) + (postTest.point is not null) +\n                (ifnull(p.status, 0) != 0) +\n                (ifnull(c.status, 0) != 0) > 0 then 1\n           else lp.status end      as status,\n       ycem.total_time,\n       lp.guide_shown,\n       preTest.point is not null   as pretest_done,\n       (ifnull(c.status, 0) != 0)  as course_done,\n       (ifnull(p.status, 0) != 0)  as practice_done,\n       postTest.point is not null  as posttest_done,\n       (preTest.point is not null) + (postTest.point is not null) + (ifnull(p.status, 0) != 0) +\n       (ifnull(c.status, 0) != 0)  as finished_module,\n       (ycem.pre_survey_num != 0) + (ycem.course_unit_num != 0) + (ycem.exercise_num != 0) +\n       (ycem.post_survey_num != 0) as total_elements_num\nfrom learning_paths lp\n         left join yy_course_elements_metas ycem\n                   on lp.learning_path_meta_id = ycem.learning_path_meta_id\n         left join yy_user_exam preTest\n                   on lp.user_id = preTest.user_id and lp.learning_path_meta_id = preTest.learning_path_meta_id and\n                      preTest.type = 1\n         left join yy_user_exam postTest\n                   on lp.user_id = postTest.user_id and lp.learning_path_meta_id = postTest.learning_path_meta_id and\n                      postTest.type = 2\n         left join courses c on  lp.user_id = c.user_id and  lp.id = c.learning_path_id\n         left join practices p on lp.user_id = p.user_id and lp.id = p.learning_path_id\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -47196,12 +47196,12 @@
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "Max_Connections",
+            "name" : "sourceMinimumIdleConnections",
             "sensitive" : false,
             "value" : "1"
           }, {
             "description" : "",
-            "name" : "sourceMinimumIdleConnections",
+            "name" : "Max_Connections",
             "sensitive" : false,
             "value" : "1"
           }, {

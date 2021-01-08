@@ -1,6 +1,7 @@
 flows:
-  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 57, file: ddi-transtalent-olap-etl.snapshot,
-    comments: 'jerry :: 心跳课程时长表限制201课程', author: anonymous, created: 1609926478703,
+  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 58, file: ddi-transtalent-olap-etl.snapshot,
+    comments: 'jerry :: fix fact_user_practice.finish_exercise_count and fact_user_learning_path.join
+      courses & practices with user_id', author: anonymous, created: 1610094747348,
     flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP ETL}
 layoutVer: 1
 bucketId: a8f0cee7-bc39-42be-bd22-5bc3b3e28ca0
