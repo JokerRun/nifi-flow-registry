@@ -1,7 +1,6 @@
 flows:
-  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 58, file: ddi-transtalent-olap-etl.snapshot,
-    comments: 'jerry :: fix fact_user_practice.finish_exercise_count and fact_user_learning_path.join
-      courses & practices with user_id', author: anonymous, created: 1610094747348,
+  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 59, file: ddi-transtalent-olap-etl.snapshot,
+    comments: 'jerry :: datamart fix trail merge queue', author: anonymous, created: 1610418521935,
     flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP ETL}
 layoutVer: 1
 bucketId: a8f0cee7-bc39-42be-bd22-5bc3b3e28ca0
