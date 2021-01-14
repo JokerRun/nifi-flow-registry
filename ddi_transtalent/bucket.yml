@@ -1,7 +1,6 @@
 flows:
-  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 61, file: ddi-transtalent-olap-etl.snapshot,
-    comments: 'jerry :: fact_user_learning_period 取值来源添加 yy_heartbeat_courses', author: anonymous,
-    created: 1610445595234, flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP
-      ETL}
+  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 62, file: ddi-transtalent-olap-etl.snapshot,
+    comments: 'jerry :: 心跳数据同步方式调整为replace', author: anonymous, created: 1610592707359,
+    flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP ETL}
 layoutVer: 1
 bucketId: a8f0cee7-bc39-42be-bd22-5bc3b3e28ca0
