@@ -1,6 +1,7 @@
 flows:
-  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 62, file: ddi-transtalent-olap-etl.snapshot,
-    comments: 'jerry :: 心跳数据同步方式调整为replace', author: anonymous, created: 1610592707359,
+  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 63, file: ddi-transtalent-olap-etl.snapshot,
+    comments: 'jerry :: fix fact_user_learning_path_allocation  where learning_path_meta_ids
+      != '''' and learning_path_meta_ids is not null', author: anonymous, created: 1612261332602,
     flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP ETL}
 layoutVer: 1
 bucketId: a8f0cee7-bc39-42be-bd22-5bc3b3e28ca0

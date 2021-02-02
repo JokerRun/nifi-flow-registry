@@ -1316,18 +1316,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
-            "position" : {
-              "x" : 296.0,
-              "y" : 8.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
             "identifier" : "69699720-90c8-3f25-b3f6-e23dfe82ab76",
             "position" : {
               "x" : 1432.0,
               "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
+            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
+            "position" : {
+              "x" : 296.0,
+              "y" : 8.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -1845,18 +1845,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
-              "position" : {
-                "x" : 726.9341012213749,
-                "y" : -298.41994736822187
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
               "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
               "position" : {
                 "x" : 88.0,
                 "y" : -944.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
+              "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
+              "position" : {
+                "x" : 726.9341012213749,
+                "y" : -298.41994736822187
               }
             }, {
               "componentType" : "FUNNEL",
@@ -4292,18 +4292,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "d9b9a219-743c-3b6d-90ab-a75c999641d5",
-              "position" : {
-                "x" : -784.0,
-                "y" : 224.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "02bf69f8-db69-3d26-b22e-34a73bc6b6f2",
               "position" : {
                 "x" : -168.0,
                 "y" : 856.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "d9b9a219-743c-3b6d-90ab-a75c999641d5",
+              "position" : {
+                "x" : -784.0,
+                "y" : 224.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -4316,18 +4316,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "32d8cd1e-1d4a-34fa-8c6e-30373f696718",
-              "position" : {
-                "x" : -800.0,
-                "y" : 1024.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "0d05043a-fa16-36fc-982a-a7110105b2a9",
               "position" : {
                 "x" : -784.0,
                 "y" : 0.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "32d8cd1e-1d4a-34fa-8c6e-30373f696718",
+              "position" : {
+                "x" : -800.0,
+                "y" : 1024.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -4348,18 +4348,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "aa22cc65-be22-39fd-b43a-f5334807a68c",
-              "position" : {
-                "x" : -784.0,
-                "y" : 656.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "e74d50c3-7b37-315a-ac42-c3d7aeeb4a82",
               "position" : {
                 "x" : -776.0,
                 "y" : 1232.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "aa22cc65-be22-39fd-b43a-f5334807a68c",
+              "position" : {
+                "x" : -784.0,
+                "y" : 656.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -9378,18 +9378,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
-              "position" : {
-                "x" : -552.0,
-                "y" : 776.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
               "position" : {
                 "x" : 2016.0,
                 "y" : 584.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
+              "position" : {
+                "x" : -552.0,
+                "y" : 776.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -9450,18 +9450,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "7b46f7ad-d85f-3a49-ad54-7a8018bbbf1a",
-              "position" : {
-                "x" : 2016.0,
-                "y" : 800.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "99fa7c83-f5e5-39ee-9f51-b95e5cd964cc",
               "position" : {
                 "x" : 2016.0,
                 "y" : 48.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "7b46f7ad-d85f-3a49-ad54-7a8018bbbf1a",
+              "position" : {
+                "x" : 2016.0,
+                "y" : 800.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12358,18 +12358,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "0624aeca-6c2f-34d0-b01c-42df9ea992e3",
-              "position" : {
-                "x" : 2736.0,
-                "y" : 400.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "ec8a9322-e3f2-3be0-8871-f45e725595a9",
               "position" : {
                 "x" : 2784.0,
                 "y" : 1024.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "0624aeca-6c2f-34d0-b01c-42df9ea992e3",
+              "position" : {
+                "x" : 2736.0,
+                "y" : 400.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12382,18 +12382,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "74c63417-5d1b-3faa-b69e-0c93758c07c8",
-              "position" : {
-                "x" : 726.9341012213749,
-                "y" : 205.58005263177813
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
               "position" : {
                 "x" : 2736.0,
                 "y" : 816.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "74c63417-5d1b-3faa-b69e-0c93758c07c8",
+              "position" : {
+                "x" : 726.9341012213749,
+                "y" : 205.58005263177813
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12422,10 +12422,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
+              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
               "position" : {
                 "x" : 2736.0,
-                "y" : 624.0
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12438,10 +12438,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
+              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
               "position" : {
                 "x" : 2736.0,
-                "y" : -680.0
+                "y" : 624.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -14135,7 +14135,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_learning_path_allocation \nselect company_user_id,\n       user_id,\n       ifnull(ycem.learning_path_meta_id, 0) as learning_path_id,\n       active_status\nfrom (\n         SELECT c.id                 company_user_id,\n                c.user_id,\n                b.help_topic_id,\n                c.learning_path_meta_ids,\n                substring_index(substring_index(c.learning_path_meta_ids, ',', b.help_topic_id), ',',\n                                - 1) learning_path_element_id,\n                c.product_status as  active_status\n         FROM company_users c\n                  JOIN mysql.help_topic b\n                       ON b.help_topic_id <=\n                          (length(c.learning_path_meta_ids) - length(REPLACE(c.learning_path_meta_ids, ',', '')) + 1)\n                           and b.help_topic_id != 0\n     ) culp\n         left join yy_course_elements_metas ycem on culp.learning_path_element_id = ycem.background_mapping_id\n;",
+                "putsql-sql-statement" : "replace into fact_user_learning_path_allocation\nselect company_user_id,\n       user_id,\n       ifnull(ycem.learning_path_meta_id, 0) as learning_path_id, -- 如果关联不到，则为DNA\n       active_status\nfrom (\n         SELECT c.id                 company_user_id,\n                c.user_id,\n                b.help_topic_id,\n                c.learning_path_meta_ids,\n                substring_index(substring_index(c.learning_path_meta_ids, ',', b.help_topic_id), ',',\n                                - 1) learning_path_element_id,\n                c.product_status as  active_status\n         FROM company_users c\n                  JOIN mysql.help_topic b\n                       ON b.help_topic_id <=\n                          (length(c.learning_path_meta_ids) - length(REPLACE(c.learning_path_meta_ids, ',', '')) + 1)\n                           and b.help_topic_id != 0\n         where learning_path_meta_ids != '' and learning_path_meta_ids is not null\n     ) culp\n         left join yy_course_elements_metas ycem on culp.learning_path_element_id = ycem.background_mapping_id\n;\n\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -17902,7 +17902,7 @@
                 "esql-max-rows" : "0",
                 "esql-output-batch-size" : "0",
                 "esql-fetch-size" : "0",
-                "SQL select query" : "select u.id     as trail_user_id,\n       u.openid as trail_user_openid,\n       c.name   as company_name,\n       c.size   as company_size,\n       u.name   as user_name,\n       u.title  as user_title,\n       u.phone,\n       u.email,\n       u.created_at,\n       u.updated_at,\n       u.expire_time,\n       u.login_time\nfrom ddiprod.users u\n         left join ddiprod.companies c on u.company_id = c.id",
+                "SQL select query" : "select u.id     as trail_user_id,\n       u.openid as trail_user_openid,\n       c.name   as company_name,\n       c.size   as company_size,\n       u.name   as user_name,\n       u.title  as user_title,\n       u.phone,\n       u.email,\n       u.created_at,\n       u.updated_at,\n       u.expire_time,\n       u.login_time\nfrom ddiprod.users u\n         left join ddiprod.companies c on u.company_id = c.id\nwhere u.role_id !=4",
                 "esqlrecord-record-writer" : "2e622e5f-a776-38df-905f-f261baad7573",
                 "Max Wait Time" : "0 seconds",
                 "Database Connection Pooling Service" : "34063ca0-9a11-3455-9e9a-7351cb584878",
@@ -18967,14 +18967,6 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
-            "position" : {
-              "x" : 1160.0,
-              "y" : -16.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "a485a7a5-09a3-314f-b187-7fc5c648d706",
             "position" : {
               "x" : 296.0,
@@ -18987,6 +18979,14 @@
             "position" : {
               "x" : 594.314339028165,
               "y" : 4.165925173674566
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
+            "position" : {
+              "x" : 1160.0,
+              "y" : -16.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -19706,7 +19706,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_learning_path_allocation \nselect company_user_id,\n       user_id,\n       ifnull(ycem.learning_path_meta_id, 0) as learning_path_id,\n       active_status\nfrom (\n         SELECT c.id                 company_user_id,\n                c.user_id,\n                b.help_topic_id,\n                c.learning_path_meta_ids,\n                substring_index(substring_index(c.learning_path_meta_ids, ',', b.help_topic_id), ',',\n                                - 1) learning_path_element_id,\n                c.product_status as  active_status\n         FROM company_users c\n                  JOIN mysql.help_topic b\n                       ON b.help_topic_id <=\n                          (length(c.learning_path_meta_ids) - length(REPLACE(c.learning_path_meta_ids, ',', '')) + 1)\n                           and b.help_topic_id != 0\n     ) culp\n         left join yy_course_elements_metas ycem on culp.learning_path_element_id = ycem.background_mapping_id\nwhere culp.user_id in(${user_id})\n;",
+                "putsql-sql-statement" : "replace into fact_user_learning_path_allocation\nselect company_user_id,\n       user_id,\n       ifnull(ycem.learning_path_meta_id, 0) as learning_path_id, -- 如果关联不到，则为DNA\n       active_status\nfrom (\n         SELECT c.id                 company_user_id,\n                c.user_id,\n                b.help_topic_id,\n                c.learning_path_meta_ids,\n                substring_index(substring_index(c.learning_path_meta_ids, ',', b.help_topic_id), ',',\n                                - 1) learning_path_element_id,\n                c.product_status as  active_status\n         FROM company_users c\n                  JOIN mysql.help_topic b\n                       ON b.help_topic_id <=\n                          (length(c.learning_path_meta_ids) - length(REPLACE(c.learning_path_meta_ids, ',', '')) + 1)\n                           and b.help_topic_id != 0\n         where learning_path_meta_ids != '' and learning_path_meta_ids is not null\n     ) culp\n         left join yy_course_elements_metas ycem on culp.learning_path_element_id = ycem.background_mapping_id\nwhere culp.user_id in (${user_id})\n;\n\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -21305,18 +21305,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
-              "position" : {
-                "x" : 2784.0,
-                "y" : 1024.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
               "position" : {
                 "x" : 2280.0,
                 "y" : 1136.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
+              "position" : {
+                "x" : 2784.0,
+                "y" : 1024.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -28138,10 +28138,10 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
+              "identifier" : "a75f7fb9-8d7c-3af1-a972-59a0674fc008",
               "position" : {
                 "x" : 88.0,
-                "y" : -944.0
+                "y" : -768.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -28154,10 +28154,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "a75f7fb9-8d7c-3af1-a972-59a0674fc008",
+              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
               "position" : {
                 "x" : 88.0,
-                "y" : -768.0
+                "y" : -944.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -40679,10 +40679,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
+              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
               "position" : {
-                "x" : 2736.0,
-                "y" : 624.0
+                "x" : 2776.0,
+                "y" : 128.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -40695,10 +40695,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
+              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
               "position" : {
-                "x" : 2776.0,
-                "y" : 128.0
+                "x" : 2736.0,
+                "y" : 624.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -42203,18 +42203,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
-              "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
-              "position" : {
-                "x" : 736.0,
-                "y" : -760.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
               "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
               "position" : {
                 "x" : 1376.0,
                 "y" : -576.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
+              "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
+              "position" : {
+                "x" : 736.0,
+                "y" : -760.0
               }
             } ],
             "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
@@ -42276,7 +42276,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_learning_path_allocation\nselect company_user_id,\n       user_id,\n       ifnull(ycem.learning_path_meta_id, 0) as learning_path_id, -- 如果关联不到，则为DNA\n       active_status\nfrom (\n         SELECT c.id                 company_user_id,\n                c.user_id,\n                b.help_topic_id,\n                c.learning_path_meta_ids,\n                substring_index(substring_index(c.learning_path_meta_ids, ',', b.help_topic_id), ',',\n                                - 1) learning_path_element_id,\n                c.product_status as  active_status\n         FROM company_users c\n                  JOIN mysql.help_topic b\n                       ON b.help_topic_id <=\n                          (length(c.learning_path_meta_ids) - length(REPLACE(c.learning_path_meta_ids, ',', '')) + 1)\n                           and b.help_topic_id != 0\n     ) culp\n         left join yy_course_elements_metas ycem on culp.learning_path_element_id = ycem.background_mapping_id\n;",
+                "putsql-sql-statement" : "replace into fact_user_learning_path_allocation\nselect company_user_id,\n       user_id,\n       ifnull(ycem.learning_path_meta_id, 0) as learning_path_id, -- 如果关联不到，则为DNA\n       active_status\nfrom (\n         SELECT c.id                 company_user_id,\n                c.user_id,\n                b.help_topic_id,\n                c.learning_path_meta_ids,\n                substring_index(substring_index(c.learning_path_meta_ids, ',', b.help_topic_id), ',',\n                                - 1) learning_path_element_id,\n                c.product_status as  active_status\n         FROM company_users c\n                  JOIN mysql.help_topic b\n                       ON b.help_topic_id <=\n                          (length(c.learning_path_meta_ids) - length(REPLACE(c.learning_path_meta_ids, ',', '')) + 1)\n                           and b.help_topic_id != 0\n         where learning_path_meta_ids != '' and learning_path_meta_ids is not null\n     ) culp\n         left join yy_course_elements_metas ycem on culp.learning_path_element_id = ycem.background_mapping_id\n;\n\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
