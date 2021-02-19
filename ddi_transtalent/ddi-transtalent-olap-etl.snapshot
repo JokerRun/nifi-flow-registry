@@ -3131,7 +3131,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_learning_path_used_time\nselect user_id, learning_path_id, recommend_used_second, total_used_second\nfrom (\n         select ycr.user_id,\n                ycr.learning_path_meta_id as learning_path_id,\n                ycem.total_time * 60      as recommend_used_second,\n                sum(ycr.usedtime)         as total_used_second\n         from yy_customer_record ycr\n                  join yy_course_elements_metas ycem\n                       on ycr.learning_path_meta_id = ycem.learning_path_meta_id\n         where ycr.learning_path_meta_id != 201\n         group by ycr.user_id, ycem.learning_path_meta_id\n         union\n         select yhc.user_id,\n                yhc.learning_path_meta_id,\n                ycem.total_time * 60 as recommend_used_second,\n                sum(yhc.during_time) as total_used_second\n         from yy_heartbeat_courses yhc\n                  join yy_course_elements_metas ycem\n                       on yhc.learning_path_meta_id = ycem.learning_path_meta_id\n         where yhc.learning_path_meta_id = 201\n         group by yhc.user_id, ycem.learning_path_meta_id\n     ) tmp\ngroup by user_id, learning_path_id\n;",
+                "putsql-sql-statement" : "replace into fact_user_learning_path_used_time\nselect user_id, learning_path_id, recommend_used_second, total_used_second\nfrom (\n         select ycr.user_id,\n                ycr.learning_path_meta_id as learning_path_id,\n                ycem.total_time * 60      as recommend_used_second,\n                sum(ycr.usedtime)         as total_used_second\n         from yy_customer_record ycr\n                  join yy_course_elements_metas ycem\n                       on ycr.learning_path_meta_id = ycem.learning_path_meta_id\n         where ycr.learning_path_meta_id not in(201,202)\n         group by ycr.user_id, ycem.learning_path_meta_id\n         union\n         select yhc.user_id,\n                yhc.learning_path_meta_id,\n                ycem.total_time * 60 as recommend_used_second,\n                sum(yhc.during_time) as total_used_second\n         from yy_heartbeat_courses yhc\n                  join yy_course_elements_metas ycem\n                       on yhc.learning_path_meta_id = ycem.learning_path_meta_id\n         where yhc.learning_path_meta_id in(201,202)\n         group by yhc.user_id, ycem.learning_path_meta_id\n     ) tmp\ngroup by user_id, learning_path_id\n;",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -3217,7 +3217,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_learning_period(user_id, date_key, weekday, period, duration_second)\nselect user_id, date_key, weekday, period, sum(duration_second) as duration_second\nfrom (\n         select user_id,\n                date_key,\n                date_format(ddp.time_start, '%w') as weekday,\n                period,\n                sum(usedtime)                     as duration_second\n         from yy_customer_recorddetail ycr\n                  left join dim_date_period ddp on (ddp.time_start between ${date_start} and ${date_end}) and\n                                                   (ycr.recorddate between ddp.time_start and ddp.time_end)\n         where ycr.learning_path_meta_id != 201\n           and ycr.recorddate between ${date_start} and ${date_end}\n         group by user_id, date_key, period\n         union all\n         select user_id,\n                date_key,\n                date_format(ddp.time_start, '%w') as weekday,\n                period,\n                sum(during_time)                  as duration_second\n         from yy_heartbeat_courses yhc\n                  left join dim_date_period ddp on (ddp.time_start between ${date_start} and ${date_end}) and\n                                                   (yhc.created_at between ddp.time_start and ddp.time_end)\n         where yhc.learning_path_meta_id = 201\n           and yhc.created_at between ${date_start} and ${date_end}\n         group by user_id, date_key, period\n     ) tmp\ngroup by user_id, date_key, period;\n",
+                "putsql-sql-statement" : "replace into fact_user_learning_period(user_id, date_key, weekday, period, duration_second)\nselect user_id, date_key, weekday, period, sum(duration_second) as duration_second\nfrom (\n         select user_id,\n                date_key,\n                date_format(ddp.time_start, '%w') as weekday,\n                period,\n                sum(usedtime)                     as duration_second\n         from yy_customer_recorddetail ycr\n                  left join dim_date_period ddp on (ddp.time_start between ${date_start} and ${date_end}) and\n                                                   (ycr.recorddate between ddp.time_start and ddp.time_end)\n         where ycr.learning_path_meta_id not in(201,202)\n           and ycr.recorddate between ${date_start} and ${date_end}\n         group by user_id, date_key, period\n         union all\n         select user_id,\n                date_key,\n                date_format(ddp.time_start, '%w') as weekday,\n                period,\n                sum(during_time)                  as duration_second\n         from yy_heartbeat_courses yhc\n                  left join dim_date_period ddp on (ddp.time_start between ${date_start} and ${date_end}) and\n                                                   (yhc.created_at between ddp.time_start and ddp.time_end)\n         where yhc.learning_path_meta_id in(201,202)\n           and yhc.created_at between ${date_start} and ${date_end}\n         group by user_id, date_key, period\n     ) tmp\ngroup by user_id, date_key, period;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -4348,18 +4348,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "e74d50c3-7b37-315a-ac42-c3d7aeeb4a82",
-              "position" : {
-                "x" : -776.0,
-                "y" : 1232.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "aa22cc65-be22-39fd-b43a-f5334807a68c",
               "position" : {
                 "x" : -784.0,
                 "y" : 656.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "e74d50c3-7b37-315a-ac42-c3d7aeeb4a82",
+              "position" : {
+                "x" : -776.0,
+                "y" : 1232.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -9450,18 +9450,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "99fa7c83-f5e5-39ee-9f51-b95e5cd964cc",
-              "position" : {
-                "x" : 2016.0,
-                "y" : 48.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "7b46f7ad-d85f-3a49-ad54-7a8018bbbf1a",
               "position" : {
                 "x" : 2016.0,
                 "y" : 800.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "99fa7c83-f5e5-39ee-9f51-b95e5cd964cc",
+              "position" : {
+                "x" : 2016.0,
+                "y" : 48.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12358,18 +12358,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "ec8a9322-e3f2-3be0-8871-f45e725595a9",
-              "position" : {
-                "x" : 2784.0,
-                "y" : 1024.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "0624aeca-6c2f-34d0-b01c-42df9ea992e3",
               "position" : {
                 "x" : 2736.0,
                 "y" : 400.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "ec8a9322-e3f2-3be0-8871-f45e725595a9",
+              "position" : {
+                "x" : 2784.0,
+                "y" : 1024.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12382,18 +12382,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
-              "position" : {
-                "x" : 2736.0,
-                "y" : 816.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "74c63417-5d1b-3faa-b69e-0c93758c07c8",
               "position" : {
                 "x" : 726.9341012213749,
                 "y" : 205.58005263177813
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
+              "position" : {
+                "x" : 2736.0,
+                "y" : 816.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12422,10 +12422,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
+              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
               "position" : {
                 "x" : 2736.0,
-                "y" : -680.0
+                "y" : 624.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12438,10 +12438,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
+              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
               "position" : {
                 "x" : 2736.0,
-                "y" : 624.0
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -13976,18 +13976,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
-              "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
-              "position" : {
-                "x" : 1376.0,
-                "y" : -576.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
               "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
               "position" : {
                 "x" : 736.0,
                 "y" : -760.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
+              "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
+              "position" : {
+                "x" : 1376.0,
+                "y" : -576.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -18951,18 +18951,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "2ad92b76-dc10-323a-bd66-338c291d0e1b",
-            "position" : {
-              "x" : 1392.0,
-              "y" : 368.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "4ed14dcf-a5f3-3717-bff1-3b22357dfe57",
             "position" : {
               "x" : 904.0,
               "y" : 0.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "2ad92b76-dc10-323a-bd66-338c291d0e1b",
+            "position" : {
+              "x" : 1392.0,
+              "y" : 368.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -18975,18 +18975,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "f53d28bc-9512-32aa-b4e9-da8f981c0786",
-            "position" : {
-              "x" : 594.314339028165,
-              "y" : 4.165925173674566
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
             "position" : {
               "x" : 1160.0,
               "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "f53d28bc-9512-32aa-b4e9-da8f981c0786",
+            "position" : {
+              "x" : 594.314339028165,
+              "y" : 4.165925173674566
             }
           }, {
             "componentType" : "FUNNEL",
@@ -21305,18 +21305,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
-              "position" : {
-                "x" : 2280.0,
-                "y" : 1136.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
               "position" : {
                 "x" : 2784.0,
                 "y" : 1024.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
+              "position" : {
+                "x" : 2280.0,
+                "y" : 1136.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -21377,18 +21377,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "a2d4d118-d16e-3f44-8368-fc86a768ec00",
-              "position" : {
-                "x" : 726.9341012213749,
-                "y" : -298.41994736822187
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "1d9aab4c-552c-3755-a20e-0804e04973c2",
               "position" : {
                 "x" : 2736.0,
                 "y" : -680.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "a2d4d118-d16e-3f44-8368-fc86a768ec00",
+              "position" : {
+                "x" : 726.9341012213749,
+                "y" : -298.41994736822187
               }
             }, {
               "componentType" : "FUNNEL",
@@ -23248,7 +23248,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "\nreplace into fact_user_learning_period(user_id, date_key, weekday, period, duration_second)\nselect user_id, date_key, weekday, period, sum(duration_second) as duration_second\nfrom (\n         select user_id,\n                date_key,\n                date_format(ddp.time_start, '%w') as weekday,\n                period,\n                sum(usedtime)                     as duration_second\n         from yy_customer_recorddetail ycr\n                  left join dim_date_period ddp on recorddate between ddp.time_start and ddp.time_end\n         where ycr.learning_path_meta_id != 201\n           and ycr.user_id in (${user_id})\n         group by user_id, date_key, period\n         union all\n         select user_id,\n                date_key,\n                date_format(ddp.time_start, '%w') as weekday,\n                period,\n                sum(during_time)                  as duration_second\n         from yy_heartbeat_courses yhc\n                  left join dim_date_period ddp on yhc.created_at between ddp.time_start and ddp.time_end\n         where yhc.learning_path_meta_id = 201\n           and yhc.user_id in (${user_id})\n         group by user_id, date_key, period\n     ) tmp\ngroup by user_id, date_key, period;\n",
+                "putsql-sql-statement" : "replace into fact_user_learning_period(user_id, date_key, weekday, period, duration_second)\nselect user_id, date_key, weekday, period, sum(duration_second) as duration_second\nfrom (\n         select user_id,\n                date_key,\n                date_format(ddp.time_start, '%w') as weekday,\n                period,\n                sum(usedtime)                     as duration_second\n         from yy_customer_recorddetail ycr\n                  left join dim_date_period ddp on recorddate between ddp.time_start and ddp.time_end\n         where ycr.learning_path_meta_id not in(201,202)\n           and ycr.user_id in (${user_id})\n         group by user_id, date_key, period\n         union all\n         select user_id,\n                date_key,\n                date_format(ddp.time_start, '%w') as weekday,\n                period,\n                sum(during_time)                  as duration_second\n         from yy_heartbeat_courses yhc\n                  left join dim_date_period ddp on yhc.created_at between ddp.time_start and ddp.time_end\n         where yhc.learning_path_meta_id in(201,202)\n           and yhc.user_id in (${user_id})\n         group by user_id, date_key, period\n     ) tmp\ngroup by user_id, date_key, period;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -23420,7 +23420,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into fact_user_learning_path_used_time\nselect user_id, learning_path_id, recommend_used_second, total_used_second\nfrom (\n         select ycr.user_id,\n                ycr.learning_path_meta_id as learning_path_id,\n                ycem.total_time * 60      as recommend_used_second,\n                sum(ycr.usedtime)         as total_used_second\n         from yy_customer_record ycr\n                  join yy_course_elements_metas ycem\n                       on ycr.learning_path_meta_id = ycem.learning_path_meta_id\n         where user_id in (${user_id}) and ycr.learning_path_meta_id != 201\n         group by ycr.user_id, ycem.learning_path_meta_id\n         union\n         select yhc.user_id,\n                yhc.learning_path_meta_id,\n                ycem.total_time * 60 as recommend_used_second,\n                sum(yhc.during_time) as total_used_second\n         from yy_heartbeat_courses yhc\n                  join yy_course_elements_metas ycem\n                       on yhc.learning_path_meta_id = ycem.learning_path_meta_id\n         where user_id in (${user_id}) and  yhc.learning_path_meta_id = 201\n         group by yhc.user_id, ycem.learning_path_meta_id\n     ) tmp\ngroup by user_id, learning_path_id\n;\n",
+                "putsql-sql-statement" : "\nreplace into fact_user_learning_path_used_time\nselect user_id, learning_path_id, recommend_used_second, total_used_second\nfrom (\n         select ycr.user_id,\n                ycr.learning_path_meta_id as learning_path_id,\n                ycem.total_time * 60      as recommend_used_second,\n                sum(ycr.usedtime)         as total_used_second\n         from yy_customer_record ycr\n                  join yy_course_elements_metas ycem\n                       on ycr.learning_path_meta_id = ycem.learning_path_meta_id\n         where user_id in (${user_id})\n           and ycr.learning_path_meta_id not in(201,202)\n         group by ycr.user_id, ycem.learning_path_meta_id\n         union\n         select yhc.user_id,\n                yhc.learning_path_meta_id,\n                ycem.total_time * 60 as recommend_used_second,\n                sum(yhc.during_time) as total_used_second\n         from yy_heartbeat_courses yhc\n                  join yy_course_elements_metas ycem\n                       on yhc.learning_path_meta_id = ycem.learning_path_meta_id\n         where user_id in (${user_id})\n           and yhc.learning_path_meta_id in(201,202)\n         group by yhc.user_id, ycem.learning_path_meta_id\n     ) tmp\ngroup by user_id, learning_path_id\n;\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -32695,18 +32695,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
-              "position" : {
-                "x" : -552.0,
-                "y" : 48.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "23a3b156-2d5c-3fc3-9532-1e600179136c",
               "position" : {
                 "x" : 2288.0,
                 "y" : 1648.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b99fb071-3624-3dce-a316-b01c60a996ea",
+              "position" : {
+                "x" : -552.0,
+                "y" : 48.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -32759,18 +32759,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
-              "position" : {
-                "x" : 448.0,
-                "y" : 2104.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "6c39f599-8ab2-3e4b-a84d-aa43adb7aff5",
               "position" : {
                 "x" : -552.0,
                 "y" : 496.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "74ff2c77-6873-32bc-9934-0458654aabc5",
+              "position" : {
+                "x" : 448.0,
+                "y" : 2104.0
               }
             } ],
             "groupIdentifier" : "09511a41-97cf-3139-ae36-41469d2601f2",
@@ -40639,18 +40639,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
-              "position" : {
-                "x" : 2736.0,
-                "y" : 816.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "74c63417-5d1b-3faa-b69e-0c93758c07c8",
               "position" : {
                 "x" : 726.9341012213749,
                 "y" : 205.58005263177813
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
+              "position" : {
+                "x" : 2736.0,
+                "y" : 816.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -48041,12 +48041,12 @@
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "Max_Connections",
+            "name" : "sourceMinimumIdleConnections",
             "sensitive" : false,
             "value" : "1"
           }, {
             "description" : "",
-            "name" : "sourceMinimumIdleConnections",
+            "name" : "Max_Connections",
             "sensitive" : false,
             "value" : "1"
           }, {
