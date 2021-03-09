@@ -1,6 +1,15 @@
 flows:
-  6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 65, file: ddi-transtalent-olap-etl.snapshot,
-    comments: 'jerry :: [datamart] 添加已校验客户归属地获取功能', author: anonymous, created: 1614657527563,
-    flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP ETL}
+  6c9898b5-b9f4-457f-9062-ede19c2fb7a3:
+    ver: 66
+    file: ddi-transtalent-olap-etl.snapshot
+    comments: |-
+      jerry :: [datamart] update newdv.sat_company with more info like :
+      size
+      type
+      industry
+    author: anonymous
+    created: 1615262545213
+    flowName: ddi-transtalent-olap-etl
+    flowDesc: ddi 英跃OLAP ETL
 layoutVer: 1
 bucketId: a8f0cee7-bc39-42be-bd22-5bc3b3e28ca0
