@@ -1,0 +1,39 @@
+{
+  "name" : "tech_util_params",
+  "description" : "",
+  "parameters" : [ {
+    "parameter" : {
+      "name" : "DBPassword",
+      "description" : "",
+      "sensitive" : true
+    }
+  }, {
+    "parameter" : {
+      "name" : "DatabaseUser",
+      "description" : "",
+      "sensitive" : false,
+      "value" : "prod"
+    }
+  }, {
+    "parameter" : {
+      "name" : "JsonSchema.ByEmail",
+      "description" : "",
+      "sensitive" : false,
+      "value" : "{\n  \"name\": \"ByEmail\",\n  \"type\": \"record\",\n  \"fields\": [\n    {\n      \"name\": \"companyName\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"email\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"tag\",\n      \"type\": \"string\"\n    },\n    {\n      \"name\": \"employee\",\n      \"type\": \"string\"\n    }\n  ]\n}"
+    }
+  }, {
+    "parameter" : {
+      "name" : "driver_jar",
+      "description" : "",
+      "sensitive" : false,
+      "value" : "/opt/nifi-1.11.4/mylib/mysql-connector-java-8.0.15.jar"
+    }
+  }, {
+    "parameter" : {
+      "name" : "jdbc_url",
+      "description" : "",
+      "sensitive" : false,
+      "value" : "jdbc:mysql://10.0.1.5:3306/ddiprod?useUnicode=true&characterEncoding=utf8"
+    }
+  } ]
+}

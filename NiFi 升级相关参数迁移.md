@@ -284,6 +284,22 @@ usage: import-param-context
 
 
 
+```bash
+cli.sh nifi list-param-contexts -u http://10.0.1.23:8080 -ot simple
+
+#   Id                                     Name                Description
+-   ------------------------------------   -----------------   -----------
+1   d5685e6b-6cd3-39a8-1e96-a84abba4b05b   ddi global params
+2   058aeabd-a0ea-3709-a03f-6bbebe5a6297   tech_util_params
+
+cli.sh nifi export-param-context -u http://10.0.1.23:8080  --paramContextId d5685e6b-6cd3-39a8-1e96-a84abba4b05b -ot json -o ddi_global_params.json
+cli.sh nifi export-param-context -u http://10.0.1.23:8080  --paramContextId 058aeabd-a0ea-3709-a03f-6bbebe5a6297  -ot json -o tech_util_params.json
+
+
+```
+
+
+
 ## Reference
 
 [DevOps: Working with Parameter Contexts in Apache NiFi 1.11.4+](https://www.datainmotion.dev/2020/09/devops-working-with-parameter-contexts.html)
