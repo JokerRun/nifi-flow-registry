@@ -276,10 +276,10 @@ usage: import-param-context
 2   058aeabd-a0ea-3709-a03f-6bbebe5a6297   tech_util_params
 
 # 导出localhost环境参数
-./bin/cli.sh nifi export-param-context -u http://10.0.1.23:8080  --paramContextId d5685e6b-6cd3-39a8-1e96-a84abba4b05b -ot json -o ddi_global_params.json
+./bin/cli.sh nifi export-param-context -u http://localhost:8080  --paramContextId d5685e6b-6cd3-39a8-1e96-a84abba4b05b -ot json -o ddi_global_params.json
 
 # 导入环境参数到10.0.1.23服务器
-./bin/cli.sh nifi import-param-context -u http://localhost:8080 -i ddi_global_params.json
+./bin/cli.sh nifi import-param-context -u http://10.0.1.23:8080 -i ddi_global_params.json
 ```
 
 
