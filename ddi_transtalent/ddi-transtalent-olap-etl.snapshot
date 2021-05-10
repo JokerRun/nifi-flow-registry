@@ -16127,8 +16127,8 @@
             "name" : "extract companiesVertified",
             "outputPorts" : [ ],
             "position" : {
-              "x" : 1488.0,
-              "y" : -264.0
+              "x" : 16.0,
+              "y" : -528.0
             },
             "processGroups" : [ ],
             "processors" : [ {
@@ -47795,7 +47795,7 @@
                 }
               },
               "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
+              "scheduledState" : "DISABLED",
               "schedulingPeriod" : "0 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
@@ -47939,7 +47939,7 @@
                 }
               },
               "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
+              "scheduledState" : "DISABLED",
               "schedulingPeriod" : "0 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
@@ -48450,7 +48450,7 @@
                 }
               },
               "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
+              "scheduledState" : "DISABLED",
               "schedulingPeriod" : "0 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
@@ -48703,7 +48703,7 @@
                 }
               },
               "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
+              "scheduledState" : "DISABLED",
               "schedulingPeriod" : "0 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
@@ -48876,7 +48876,7 @@
                 }
               },
               "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
+              "scheduledState" : "DISABLED",
               "schedulingPeriod" : "0 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
@@ -49018,7 +49018,7 @@
                 }
               },
               "runDurationMillis" : 0,
-              "scheduledState" : "ENABLED",
+              "scheduledState" : "DISABLED",
               "schedulingPeriod" : "0 sec",
               "schedulingStrategy" : "TIMER_DRIVEN",
               "style" : { },
