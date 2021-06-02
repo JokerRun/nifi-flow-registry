@@ -1479,18 +1479,18 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
-            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
-            "position" : {
-              "x" : 296.0,
-              "y" : 8.0
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
             "identifier" : "69699720-90c8-3f25-b3f6-e23dfe82ab76",
             "position" : {
               "x" : 1432.0,
               "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
+            "identifier" : "c72e58b0-f488-3dd5-917e-085b1d7e020d",
+            "position" : {
+              "x" : 296.0,
+              "y" : 8.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -5029,18 +5029,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
-              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
-              "position" : {
-                "x" : -552.0,
-                "y" : 776.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
               "identifier" : "8b2012a4-d9be-3c35-9274-5314f48435c2",
               "position" : {
                 "x" : 2016.0,
                 "y" : 584.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b8e6334b-35c3-3e11-8a42-94f0c1592275",
+              "identifier" : "b5dd196d-3168-3b3f-b668-fd1abadd9513",
+              "position" : {
+                "x" : -552.0,
+                "y" : 776.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -5886,7 +5886,7 @@
               },
               "properties" : {
                 "Support Fragmented Transactions" : "true",
-                "putsql-sql-statement" : "replace into dim_learning_path\nselect lpm.id,\n       lpm.name,\n       lpm.description,\n       lpm.target_user,\n       lpm.goal,\n       lpm.total_hours,\n       lpm.ability_id,\n       lpm.guide,\n       lpm.course_meta_id   as course_id,\n       lpm.practice_meta_id as practice_id,\n       lpm.short_description,\n       ycem.total_time,\n       ycem.guide_num,\n       ycem.pre_survey_num,\n       ycem.course_unit_num,\n       ycem.exercise_num,\n       ycem.post_survey_num,\n       ycem.apptask_num,\n       ycem.total_elements_num,\n       ycem.background_mapping_id,\n       ycem.report_index\nfrom learning_path_metas lpm\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\nwhere lpm.enabled = 1\n",
+                "putsql-sql-statement" : "replace into dim_learning_path\nselect lpm.id,\n       lpm.name,\n       lpm.version,\n       lpm.description,\n       lpm.target_user,\n       lpm.goal,\n       lpm.total_hours,\n       lpm.ability_id,\n       lpm.guide,\n       lpm.course_meta_id   as course_id,\n       lpm.practice_meta_id as practice_id,\n       lpm.short_description,\n       ycem.total_time,\n       ycem.guide_num,\n       ycem.pre_survey_num,\n       ycem.course_unit_num,\n       ycem.exercise_num,\n       ycem.post_survey_num,\n       ycem.apptask_num,\n       ycem.total_elements_num,\n       ycem.background_mapping_id,\n       ycem.report_index\nfrom learning_path_metas lpm\n         left join yy_course_elements_metas ycem on lpm.id = ycem.learning_path_meta_id\nwhere lpm.enabled = 1\n",
                 "Batch Size" : "100",
                 "Obtain Generated Keys" : "false",
                 "JDBC Connection Pool" : "0d18b197-0bc1-3af7-9b6d-15de20fb4494",
@@ -7503,18 +7503,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
-              "identifier" : "0d05043a-fa16-36fc-982a-a7110105b2a9",
-              "position" : {
-                "x" : -784.0,
-                "y" : 0.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
               "identifier" : "32d8cd1e-1d4a-34fa-8c6e-30373f696718",
               "position" : {
                 "x" : -800.0,
                 "y" : 1024.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "1181de6c-4629-3600-b961-90d86965f1a5",
+              "identifier" : "0d05043a-fa16-36fc-982a-a7110105b2a9",
+              "position" : {
+                "x" : -784.0,
+                "y" : 0.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12621,18 +12621,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
-              "position" : {
-                "x" : 2736.0,
-                "y" : 816.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "74c63417-5d1b-3faa-b69e-0c93758c07c8",
               "position" : {
                 "x" : 726.9341012213749,
                 "y" : 205.58005263177813
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "7b47470f-1880-31e6-b6c4-ceeb6e3ccdc2",
+              "position" : {
+                "x" : 2736.0,
+                "y" : 816.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12661,10 +12661,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
+              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
               "position" : {
-                "x" : 2776.0,
-                "y" : 128.0
+                "x" : 2736.0,
+                "y" : 624.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -12677,10 +12677,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
+              "identifier" : "28675a2e-ac50-312c-8d2e-b955c35b8290",
               "position" : {
-                "x" : 2736.0,
-                "y" : 624.0
+                "x" : 2776.0,
+                "y" : 128.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -14217,18 +14217,18 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
-              "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
-              "position" : {
-                "x" : 736.0,
-                "y" : -760.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
               "identifier" : "131f931a-e83e-3595-b4ab-519481d7b396",
               "position" : {
                 "x" : 1376.0,
                 "y" : -576.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "b3264019-01fd-3e0d-a35e-09dcdb51902c",
+              "identifier" : "d33277ce-41f6-3aab-a034-2d4d3bba7ed9",
+              "position" : {
+                "x" : 736.0,
+                "y" : -760.0
               }
             } ],
             "groupIdentifier" : "a7d9b43e-d477-385a-90e4-4da435fdef97",
@@ -19775,6 +19775,14 @@
           }, {
             "componentType" : "FUNNEL",
             "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
+            "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
+            "position" : {
+              "x" : 1160.0,
+              "y" : -16.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
             "identifier" : "a485a7a5-09a3-314f-b187-7fc5c648d706",
             "position" : {
               "x" : 296.0,
@@ -19787,14 +19795,6 @@
             "position" : {
               "x" : 594.314339028165,
               "y" : 4.165925173674566
-            }
-          }, {
-            "componentType" : "FUNNEL",
-            "groupIdentifier" : "5c38d510-ed3e-3a40-9648-62406529833a",
-            "identifier" : "975708e8-c635-302d-9b08-c9dc8789288b",
-            "position" : {
-              "x" : 1160.0,
-              "y" : -16.0
             }
           }, {
             "componentType" : "FUNNEL",
@@ -21827,18 +21827,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
-              "position" : {
-                "x" : 2280.0,
-                "y" : 1136.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "86798a44-d7b7-33cd-a052-0b02b4d0e52f",
               "position" : {
                 "x" : 2784.0,
                 "y" : 1024.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "2049ccfd-21b7-3848-b70b-6e8501230227",
+              "position" : {
+                "x" : 2280.0,
+                "y" : 1136.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -21899,18 +21899,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
-              "identifier" : "1d9aab4c-552c-3755-a20e-0804e04973c2",
-              "position" : {
-                "x" : 2736.0,
-                "y" : -680.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
               "identifier" : "a2d4d118-d16e-3f44-8368-fc86a768ec00",
               "position" : {
                 "x" : 726.9341012213749,
                 "y" : -298.41994736822187
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "25e9f9f3-a197-33f2-b62b-8e913b870211",
+              "identifier" : "1d9aab4c-552c-3755-a20e-0804e04973c2",
+              "position" : {
+                "x" : 2736.0,
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -28998,10 +28998,10 @@
             "funnels" : [ {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
+              "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
               "position" : {
-                "x" : 88.0,
-                "y" : -944.0
+                "x" : 726.9341012213749,
+                "y" : -298.41994736822187
               }
             }, {
               "componentType" : "FUNNEL",
@@ -29014,10 +29014,10 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "ac345531-2f70-36e5-ab1d-bb4dfa6be46b",
-              "identifier" : "c3d7373f-b790-3bfa-a434-92c57f8f2324",
+              "identifier" : "ab545599-ba88-3372-9b58-5d9a3eccd3d1",
               "position" : {
-                "x" : 726.9341012213749,
-                "y" : -298.41994736822187
+                "x" : 88.0,
+                "y" : -944.0
               }
             }, {
               "componentType" : "FUNNEL",
@@ -41593,18 +41593,18 @@
             }, {
               "componentType" : "FUNNEL",
               "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
-              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
-              "position" : {
-                "x" : 2736.0,
-                "y" : -680.0
-              }
-            }, {
-              "componentType" : "FUNNEL",
-              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
               "identifier" : "5b39cc54-f691-33b5-9de1-cb20b1b022de",
               "position" : {
                 "x" : 2736.0,
                 "y" : 624.0
+              }
+            }, {
+              "componentType" : "FUNNEL",
+              "groupIdentifier" : "f3855bb1-e10a-3e7b-8a35-cc18b696a814",
+              "identifier" : "84a9e8a2-d46b-33ac-a2b1-3ccb497073b2",
+              "position" : {
+                "x" : 2736.0,
+                "y" : -680.0
               }
             }, {
               "componentType" : "FUNNEL",
