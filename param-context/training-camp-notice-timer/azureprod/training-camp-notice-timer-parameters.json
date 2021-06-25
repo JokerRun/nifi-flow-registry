@@ -6,7 +6,7 @@
       "name" : "driver.jar",
       "description" : "",
       "sensitive" : false,
-      "value" : "/opt/nifi-1.11.4/mylib/mysql-connector-java-8.0.15.jar"
+      "value" : "/opt/nifi-1.13.2/mylib/mysql-connector-java-8.0.15.jar"
     }
   }, {
     "parameter" : {
@@ -20,7 +20,7 @@
       "name" : "source.db.jdbc.url",
       "description" : "",
       "sensitive" : false,
-      "value" : "jdbc:mysql://rm-uf64804rnp5g9l127123930.mysql.rds.aliyuncs.com:3306/ddiprod?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
+      "value" : "jdbc:mysql://40.73.117.90:8306/ddiprod?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
     }
   }, {
     "parameter" : {
@@ -33,7 +33,7 @@
       "name" : "source.db.user",
       "description" : "",
       "sensitive" : false,
-      "value" : "etl"
+      "value" : "root"
     }
   } ]
 }

@@ -1,0 +1,39 @@
+{
+  "name" : "training-camp-notice-timer-parameters",
+  "description" : "",
+  "parameters" : [ {
+    "parameter" : {
+      "name" : "driver.jar",
+      "description" : "",
+      "sensitive" : false,
+      "value" : "/opt/nifi-1.13.2/mylib/mysql-connector-java-8.0.15.jar"
+    }
+  }, {
+    "parameter" : {
+      "name" : "source.db.driver.class",
+      "description" : "",
+      "sensitive" : false,
+      "value" : "com.mysql.cj.jdbc.Driver"
+    }
+  }, {
+    "parameter" : {
+      "name" : "source.db.jdbc.url",
+      "description" : "",
+      "sensitive" : false,
+      "value" : "jdbc:mysql://rm-uf6date0p08219sq4.mysql.rds.aliyuncs.com:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
+    }
+  }, {
+    "parameter" : {
+      "name" : "source.db.password",
+      "description" : "",
+      "sensitive" : true
+    }
+  }, {
+    "parameter" : {
+      "name" : "source.db.user",
+      "description" : "",
+      "sensitive" : false,
+      "value" : "dditest"
+    }
+  } ]
+}

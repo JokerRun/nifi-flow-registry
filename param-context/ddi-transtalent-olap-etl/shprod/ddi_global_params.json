@@ -1,5 +1,5 @@
 {
-  "name" : "ddi global params",
+  "name" : "pre",
   "description" : "",
   "parameters" : [ {
     "parameter" : {
@@ -13,41 +13,28 @@
       "name" : "driver.jar",
       "description" : "",
       "sensitive" : false,
-      "value" : "/opt/nifi-1.11.4/mylib/mysql-connector-java-8.0.15.jar"
-    }
-  }, {
-    "parameter" : {
-      "name" : "heartbeat.db.password",
-      "description" : "",
-      "sensitive" : true
-    }
-  }, {
-    "parameter" : {
-      "name" : "heartbeat.db.user",
-      "description" : "",
-      "sensitive" : false,
-      "value" : "etl"
+      "value" : "/opt/nifi-1.13.2/mylib/mysql-connector-java-8.0.15.jar"
     }
   }, {
     "parameter" : {
       "name" : "olap_batch_reload_by_user_Listening_Port",
       "description" : "",
       "sensitive" : false,
-      "value" : "60003"
+      "value" : "60005"
     }
   }, {
     "parameter" : {
       "name" : "source.db.backup.jdbc.url",
       "description" : "",
       "sensitive" : false,
-      "value" : "jdbc:mysql://10.0.1.10:8306/ddiprod?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
+      "value" : "jdbc:mysql://rm-uf64804rnp5g9l127123930.mysql.rds.aliyuncs.com:3306/ddiprod?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
     }
   }, {
     "parameter" : {
       "name" : "source.db.jdbc.url",
       "description" : "",
       "sensitive" : false,
-      "value" : "jdbc:mysql://10.0.1.5:3306/ddiprod?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
+      "value" : "jdbc:mysql://rm-uf64804rnp5g9l127123930.mysql.rds.aliyuncs.com:3306/ddiprod?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
     }
   }, {
     "parameter" : {
@@ -67,14 +54,14 @@
       "name" : "source.db.user",
       "description" : "",
       "sensitive" : false,
-      "value" : "root"
+      "value" : "etl"
     }
   }, {
     "parameter" : {
       "name" : "source.heartbeat.db.jdbc.url",
       "description" : "",
       "sensitive" : false,
-      "value" : "jdbc:mysql://rm-uf64804rnp5g9l127vo.mysql.rds.aliyuncs.com:3306/heartbeat_prod?useUnicode=true&characterEncoding=utf8"
+      "value" : "jdbc:mysql://rm-uf64804rnp5g9l127123930.mysql.rds.aliyuncs.com:3306/heartbeat_pre_prod?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
     }
   }, {
     "parameter" : {

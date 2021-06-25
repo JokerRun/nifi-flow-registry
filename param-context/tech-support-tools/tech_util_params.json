@@ -26,7 +26,7 @@
       "name" : "driver_jar",
       "description" : "",
       "sensitive" : false,
-      "value" : "/opt/nifi-1.11.4/mylib/mysql-connector-java-8.0.15.jar"
+      "value" : "/opt/nifi-1.13.2/mylib/mysql-connector-java-8.0.15.jar"
     }
   }, {
     "parameter" : {
