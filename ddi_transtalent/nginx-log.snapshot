@@ -1,0 +1,242 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "4e54a79e-3d4a-3d7b-add8-12b792fb1026",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "0df39e31-f0f3-3c05-96df-86439b45c8eb",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "699ddc9f-c0df-3b19-a565-0caeb7f4fe8c",
+            "name" : "FromMiNiFi",
+            "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "14cff6eb-afe1-317a-b8ed-b1a5433fff28",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "366db2b1-a020-3c68-bf20-4b2bf212c90c",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "cd51ccce-0d95-3f8e-906c-18ec663d787c",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "10 GB",
+          "backPressureObjectThreshold" : 10000000000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "4d0a23f9-c4fb-3353-8301-1cc6651ffc65",
+            "name" : "Data for Flink",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "df40eb69-2ffe-3412-b97f-ceab28a6348e",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "14cff6eb-afe1-317a-b8ed-b1a5433fff28",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "10 GB",
+          "backPressureObjectThreshold" : 10000000000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "01270650-0985-33a1-a1f4-fc76ac1ffe49",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "c4953ce2-4d86-36a9-bde4-9a5a22a0a788",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "cd51ccce-0d95-3f8e-906c-18ec663d787c",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "cd51ccce-0d95-3f8e-906c-18ec663d787c",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "a31768eb-611b-388c-a784-0de4c02ee269",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+            "id" : "4e54a79e-3d4a-3d7b-add8-12b792fb1026",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "cd51ccce-0d95-3f8e-906c-18ec663d787c",
+          "position" : {
+            "x" : 1584.0,
+            "y" : 976.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "14cff6eb-afe1-317a-b8ed-b1a5433fff28",
+          "position" : {
+            "x" : 1912.0,
+            "y" : 1008.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "4e54a79e-3d4a-3d7b-add8-12b792fb1026",
+          "position" : {
+            "x" : 1608.0,
+            "y" : 872.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "01270650-0985-33a1-a1f4-fc76ac1ffe49",
+          "position" : {
+            "x" : 1616.0,
+            "y" : 1144.0
+          }
+        } ],
+        "identifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+        "inputPorts" : [ {
+          "allowRemoteAccess" : true,
+          "comments" : "",
+          "componentType" : "INPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "699ddc9f-c0df-3b19-a565-0caeb7f4fe8c",
+          "name" : "FromMiNiFi",
+          "position" : {
+            "x" : 1504.0,
+            "y" : 720.0
+          },
+          "type" : "INPUT_PORT"
+        } ],
+        "labels" : [ ],
+        "name" : "nginx-log",
+        "outputPorts" : [ {
+          "allowRemoteAccess" : true,
+          "comments" : "",
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "fcbeec98-c173-3ad2-a472-4abe61f2e50a",
+          "identifier" : "4d0a23f9-c4fb-3353-8301-1cc6651ffc65",
+          "name" : "Data for Flink",
+          "position" : {
+            "x" : 1824.0,
+            "y" : 1144.0
+          },
+          "type" : "OUTPUT_PORT"
+        } ],
+        "position" : {
+          "x" : 1824.0,
+          "y" : 424.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { }
+    }
+  }
+}

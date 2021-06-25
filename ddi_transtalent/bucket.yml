@@ -1,4 +1,6 @@
 flows:
+  eb968459-757a-478c-8f8f-76f0120a76c5: {ver: 1, file: nginx-log.snapshot, comments: 'init
+      commit ', author: anonymous, created: 1624614883689, flowName: nginx-log, flowDesc: nginx-log}
   6c9898b5-b9f4-457f-9062-ede19c2fb7a3: {ver: 73, file: ddi-transtalent-olap-etl.snapshot,
     comments: add 605 learning_path_used_time, author: anonymous, created: 1623037680164,
     flowName: ddi-transtalent-olap-etl, flowDesc: ddi 英跃OLAP ETL}
