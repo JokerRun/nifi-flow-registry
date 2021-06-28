@@ -392,7 +392,8 @@
             "Database User" : "#{source.db.user}",
             "dbcp-soft-min-evictable-idle-time" : "-1",
             "database-driver-locations" : "#{driver.jar}",
-            "dbcp-max-idle-conns" : "8"
+            "dbcp-max-idle-conns" : "8",
+            "Password" : "#{source.db.password}"
           },
           "propertyDescriptors" : {
             "kerberos-password" : {
@@ -1140,28 +1141,28 @@
             "value" : "dditest"
           }, {
             "description" : "",
-            "name" : "source.db.jdbc.url",
-            "sensitive" : false,
-            "value" : "jdbc:mysql://rm-uf6date0p08219sq43o.mysql.rds.aliyuncs.com:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
-          }, {
-            "description" : "",
             "name" : "fire-notic-url",
             "sensitive" : false,
             "value" : "http://customer.transtalent.cn/pe/v1/notice/fire"
+          }, {
+            "description" : "",
+            "name" : "source.db.jdbc.url",
+            "sensitive" : false,
+            "value" : "jdbc:mysql://rm-uf6date0p08219sq43o.mysql.rds.aliyuncs.com:3306/dditest_v5?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai"
           }, {
             "description" : "",
             "name" : "source.db.password",
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "source.db.driver.class",
-            "sensitive" : false,
-            "value" : "com.mysql.cj.jdbc.Driver"
-          }, {
-            "description" : "",
             "name" : "driver.jar",
             "sensitive" : false,
             "value" : "/Users/rico/apps/flink-1.12.2/lib/mysql-connector-java-8.0.21.jar"
+          }, {
+            "description" : "",
+            "name" : "source.db.driver.class",
+            "sensitive" : false,
+            "value" : "com.mysql.cj.jdbc.Driver"
           } ]
         }
       }
